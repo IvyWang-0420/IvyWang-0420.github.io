@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "{{DATE}} AI 行业新闻日报"
-date: {{DATE}} +0800
+title: "2026-06-12 AI 行业新闻日报"
+date: 2026-06-12 09:00:00 +0800
 categories: AI
 ---
 # 2026-06-12 AI行业新闻
