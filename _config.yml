@@ -1,24 +1,16 @@
-timeline:
-    title:  IvyWang-020.github.io
-    description: "IvyWang's blog
-
-  author:
-    name: IvyWang
-    email: 1020402020@gmail.com
+title: IvyWang-0420.github.io
+description: "IvyWang's blog"
+author:
+  name: IvyWang
+  email: 1020402020@gmail.com
 theme:
-    minima
-  plugins:
-    - jekyll-seo-tag
-    - jekyll-feated-generator
-    - jekyll-pages-build-content
-    - jekyll-post-date
+  minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
 exclude:
-   - Gemiloc
-
- - ventor
-   - readme
-   - .licenses
-default:
-  permink: /posts:/slug/
-  source: 
-    path: "/_posts"
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+permalink: /posts/:slug/
