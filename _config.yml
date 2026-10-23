@@ -13,4 +13,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
-permalink: /posts/:slug/
+permalink: /posts/:year-:month-:day-:slug/
