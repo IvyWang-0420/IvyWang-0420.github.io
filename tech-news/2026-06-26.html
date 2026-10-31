@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-26 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 8px;
+        }
+        
+        .stats {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(100, 255, 218, 0.1);
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        
+        .tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+        .tag-security { background: rgba(239, 83, 80, 0.15); color: #ef5350; }
+        .tag-product { background: rgba(255, 202, 40, 0.15); color: #ffca28; }
+        .tag-trend { background: rgba(121, 112, 180, 0.15); color: #9575cd; }
+        
+        .card-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .card-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            margin-top: 20px;
+        }
+        
+        footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.3), transparent);
+            margin: 30px 0;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="date">📅 2026.06.26</p>
+            <h1 class="main-title">🌐 科技行业新闻简报</h1>
+            <p class="subtitle">每日科技行业资讯精选 · 08:30 更新</p>
+            <p class="stats">📊 共 10 条新闻 | AI · 芯片 · 机器人 · 商业</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-robot">🤖 自动驾驶</span>
+                <div class="card-emoji">🚗</div>
+                <h2 class="card-title">Waymo 无人出租车服务在纳什维尔全面开放</h2>
+                <p class="card-content">Alphabet 旗下的 Waymo 宣布，其自动驾驶出租车服务现已对纳什维尔所有用户开放，不再限于等待名单用户。该公司还透露正在测试前往纳什维尔国际机场的路线，并计划今年晚些时候在 Lyft 应用中提供 Waymo 选项。这标志着 Waymo 持续扩大其商业化运营范围。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔐 安全</span>
+                <div class="card-emoji">💰</div>
+                <h2 class="card-title">Polymarket 遭黑客攻击，约 300 万美元被盗</h2>
+                <p class="card-content">去中心化预测市场 Polymarket 披露第三方供应商被入侵，部分用户钱包中约 300 万美元加密货币被盗。Polymarket 正在处理退款事宜。</p>
+                <p class="card-source">📎 来源：The Verge / TechCrunch</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-emoji">📧</div>
+                <h2 class="card-title">Notion Mail 将于 9 月 22 日关停</h2>
+                <p class="card-content">Notion 宣布停止运营 Notion Mail 邮件服务，将重心转向 inbox agents（收件箱智能代理）。目前超过一半用户从不打开收件箱，完全依赖 AI 代理处理。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💼 商业</span>
+                <div class="card-emoji">💻</div>
+                <h2 class="card-title">RAM 短缺危机：苹果、微软、Valve 集体涨价</h2>
+                <p class="card-content">苹果新款 iPad、MacBook Neo 价格上涨；Framework 警告全线产品即将涨价；Xbox Series X 裸机 $749.99、带光驱版 $799.99。持续性内存短缺是主因。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💼 商业</span>
+                <div class="card-emoji">📡</div>
+                <h2 class="card-title">Qualcomm 收购芯片初创公司 Modular 近 40 亿美元</h2>
+                <p class="card-content">Qualcomm 宣布收购模块化芯片初创公司 Modular，收购价接近 40 亿美元。此举被视为 Qualcomm 加速 AI 芯片布局的重要战略。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-emoji">🗃️</div>
+                <h2 class="card-title">微软困境：AI 产品滞销、GitHub 问题频发</h2>
+                <p class="card-content">据 Wired 深入报道，微软 AI 产品销售表现不佳，GitHub 也面临诸多问题。内部VP级别人士表示微软目前处于追赶模式。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-trend">📊 趋势</span>
+                <div class="card-emoji">⚽</div>
+                <h2 class="card-title">FIFA 2026 世界杯：各队竞逐 AI 主导权</h2>
+                <p class="card-content">国际足联向各球队提供 AI 代理工具，但专家质疑是否足以平衡竞争格局。未来冠军或将取决于各队能否负担最好的 AI 工具。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🎮 产品</span>
+                <div class="card-emoji">🕹️</div>
+                <h2 class="card-title">Valve 修改 Steam Machine 宣传：不再承诺「4K 60FPS」</h2>
+                <p class="card-content">Valve 将 Steam Machine 页面描述从「4K gaming at 60 FPS with FSR」改为「Up to 4k gaming with FSR 4.1」，实际测试显示难以稳定维持 4K/60FPS。</p>
+                <p class="card-source">📎 来源：The Verge / Ars Technica</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-emoji">🌐</div>
+                <h2 class="card-title">Meta 仍未签署美国政府 AI 模型审查协议</h2>
+                <p class="card-content">据《纽约时报》报道，Meta 尚未同意让美国政府审查其 AI 模型。OpenAI、Anthropic、Google、Microsoft 和 xAI 已签署相关协议。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第10条：重要新闻大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-trend">📰 人物</span>
+                <div class="card-emoji">🗞️</div>
+                <h2 class="card-title">科技写作先驱 Om Malik 去世，享年 60 岁</h2>
+                <p class="card-content">著名科技作家和投资人 Om Malik 于 6 月 24 日在斯坦福医院去世。Om Malik 于 2001 年创立科技博客 GigaOm，后转型为风险投资家。他的离世在科技行业引发广泛悼念，被视为科技写作领域的先驱人物。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 2026-06-26 科技行业新闻简报 | 共 10 条</p>
+        </footer>
+    </div>
+</body>
+</html>

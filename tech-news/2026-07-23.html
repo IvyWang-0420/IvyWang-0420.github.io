@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-23 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 152, 0, 0.2); color: #ff9800; }
+        .tag-policy { background: rgba(255, 138, 128, 0.2); color: #ff8a80; }
+        .tag-law { background: rgba(128, 203, 196, 0.2); color: #80cbc4; }
+
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .news-card.large .emoji {
+            font-size: 40px;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-card.large .news-title {
+            font-size: 22px;
+        }
+
+        .news-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 12px;
+        }
+
+        footer span {
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .main-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026 / 07 / 23</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选 10 条 · 每日早 8:30 更新</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 第1条：通栏大卡片（头条） -->
+            <div class="news-card large">
+                <div class="card-header">
+                    <span class="tag tag-ai">AI</span>
+                </div>
+                <span class="emoji">🔥</span>
+                <h2 class="news-title">Google Gemini 月活突破 9.5 亿，Q2 营收同比增长 24%</h2>
+                <p class="news-content">Google 母公司 Alphabet 发布 2026 年第二季度财报，Gemini 月活跃用户数从 2 月的 7.5 亿增长至 9.5 亿。Alphabet 营收达到 1198 亿美元，同比增长 24%，AI 业务成为核心驱动力。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第2条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-ai">AI</span>
+                </div>
+                <span class="emoji">🇨🇳</span>
+                <h2 class="news-title">中国 AI 重拳出击：Moonshot Kimi K3 与阿里 Qwen3.8 挑战 OpenAI</h2>
+                <p class="news-content">Moonshot 发布 Kimi K3（2.8万亿参数），阿里巴巴预览 Qwen3.8，两者均为开源模型，声称在多项基准测试中仅次于 GPT-5.6 Sol 和 Claude Fable 5。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第3条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-policy">政策</span>
+                </div>
+                <span class="emoji">🇺🇸</span>
+                <h2 class="news-title">特朗普政府启动"创世纪任务"，超 50 亿美元 AI 科学项目</h2>
+                <p class="news-content">白宫 Genesis Mission 计划涉及 278 个奖项、342 家机构，微软和 Google 已宣布数百万美元计算资源投入，旨在解决 AI 数据中心能源消耗问题。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第4条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-biz">商业</span>
+                </div>
+                <span class="emoji">💰</span>
+                <h2 class="news-title">Anthropic 年化营收达 470 亿美元，Menlo Ventures 详解投资逻辑</h2>
+                <p class="news-content">Anthropic 截至 5 月年化营收 470 亿美元（2025 年为 90 亿）。Menlo 合伙人称这是 25 年投资生涯最快增长，Anthropic 成功"不是靠模型本身"。</p>
+                <p class="news-source">📎 来源：TechCrunch</p>
+            </div>
+
+            <!-- 第5条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-biz">商业</span>
+                </div>
+                <span class="emoji">📉</span>
+                <h2 class="news-title">亚马逊 AGI 团队裁员，聚焦核心客户项目</h2>
+                <p class="news-content">亚马逊确认正在"精简"其 AGI（通用人工智能）组织部分岗位，公司将专注于"对客户最重要的项目"，这是亚马逊在 AI 领域的最新战略调整。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第6条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-product">产品</span>
+                </div>
+                <span class="emoji">📷</span>
+                <h2 class="news-title">索尼发布 FX5 电影摄影机，售价 4900 美元</h2>
+                <p class="news-content">索尼 FX5 搭载全画幅 5K 堆叠式传感器，支持 120fps 录制、双增益模式，配备可拆卸 OLED 取景器（$698），瞄准独立电影制作人市场。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第7条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-product">产品</span>
+                </div>
+                <span class="emoji">🎮</span>
+                <h2 class="news-title">Valve 优化 Steam 愿望单与礼品系统</h2>
+                <p class="news-content">Steam 推出自定义愿望单分类（可设置分类价格提醒）及非账户用户直接购买游戏礼品功能，支持跨区礼品赠送，大幅提升用户体验。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第8条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-law">法律</span>
+                </div>
+                <span class="emoji">⚖️</span>
+                <h2 class="news-title">谷歌诉 SerpApi 网络抓取案败诉</h2>
+                <p class="news-content">联邦法官驳回谷歌对 SerpApi 的版权诉讼，法院认为谷歌指控"不足以"证明侵权。该判决被视为网络抓取服务行业的重要胜利。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 第9条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-chip">芯片</span>
+                </div>
+                <span class="emoji">🤖</span>
+                <h2 class="news-title">业界首个 RISC-V AI 算力超节点方案亮相 WAIC 2026</h2>
+                <p class="news-content">2026 世界人工智能大会上，业界首个 RISC-V 架构 AI 算力超节点方案正式发布，标志着中国 AI 芯片自主可控的又一重要进展。</p>
+                <p class="news-source">📎 来源：智东西（量子位）</p>
+            </div>
+
+            <!-- 第10条：通栏大卡片（重要新闻） -->
+            <div class="news-card large">
+                <div class="card-header">
+                    <span class="tag tag-product">产品</span>
+                </div>
+                <span class="emoji">🍎</span>
+                <h2 class="news-title">苹果 MacBook Neo 将搭载 A19 Pro 芯片，高端 Mac 全面升级 OLED</h2>
+                <p class="news-content">据报道，苹果 MacBook Neo 将迎来 A19 Pro 芯片更新，同时部分高端 MacBook 机型将升级至 OLED 屏幕。这是苹果自研芯片路线图的持续推进，也将大幅提升 Mac 产品的显示效果和能效表现。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+        </div>
+
+        <footer>
+            <span>|</span>
+            共 10 条精选新闻
+            <span>|</span>
+            数据来源：The Verge · TechCrunch · 智东西
+            <span>|</span>
+            Mochi 自动整理
+        </footer>
+    </div>
+</body>
+</html>

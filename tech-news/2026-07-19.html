@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技行业新闻简报 2026-07-19</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 1px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-security { background: rgba(255, 138, 128, 0.2); color: #ff8a80; }
+        .tag-space { background: rgba(128, 203, 196, 0.2); color: #80cbc4; }
+        .tag-social { background: rgba(144, 202, 249, 0.2); color: #90caf9; }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .emoji {
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+
+        .news-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+        }
+
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="date">2026.07.19 · 周日</p>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选 10 条 · 涵盖 AI / 芯片 / 机器人 / 商业动态</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 第1条：通栏大卡片（头条） -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-content">
+                    <span class="emoji">🍎</span>
+                    <h2 class="news-title">Apple 起诉 OpenAI 窃取商业机密，或影响其 IPO 计划</h2>
+                    <p class="news-desc">Apple 于上周五对 OpenAI 提起商业秘密诉讼，指控其不当行为涉及 OpenAI 首席硬件官，并声称超过 400 名苹果前员工现已入职 OpenAI。OpenAI 的回应谨慎而有保留，而此时正值该公司据报正寻求最快于今年晚些时候上市。</p>
+                    <p class="news-source">📎 来源：TechCrunch</p>
+                </div>
+            </div>
+
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-social">📱 通信</span>
+                <div class="card-content">
+                    <span class="emoji">🔗</span>
+                    <h2 class="news-title">TikTok 美国业务交易正式完成，字节跳动持股降至 19.9%</h2>
+                    <p class="news-desc">经历一年多谈判，TikTok 美国业务正式成立 TikTok USDS Joint Venture LLC。字节跳动仅保留 19.9% 股份，80.1% 由银湖资本、Oracle 和 MGX 持有。</p>
+                    <p class="news-source">📎 来源：The Verge</p>
+                </div>
+            </div>
+
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🛡️ 安全</span>
+                <div class="card-content">
+                    <span class="emoji">🚫</span>
+                    <h2 class="news-title">Apple 与 Google 被要求下架 13 款 AI"脱衣"应用</h2>
+                    <p class="news-desc">旧金山市检察官 David Chiu 向 Apple 和 Google 发出停止销售函，要求移除 13 款可生成非自愿裸体图像的 AI 应用。</p>
+                    <p class="news-source">📎 来源：The Verge / Wired</p>
+                </div>
+            </div>
+
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="card-content">
+                    <span class="emoji">🦾</span>
+                    <h2 class="news-title">人形机器人公司获特朗普之子支持，正研发"机器人战士"</h2>
+                    <p class="news-desc">由 Eric Trump 担任首席战略顾问的 Foundation Future Industries 宣布，正为其人形机器人 Phantom MK1 开发武器系统。</p>
+                    <p class="news-source">📎 来源：WIRED</p>
+                </div>
+            </div>
+
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🛡️ 安全</span>
+                <div class="card-content">
+                    <span class="emoji">🚔</span>
+                    <h2 class="news-title">AI 监控隐忧：Flock 摄像头错误追踪引发警方误判</h2>
+                    <p class="news-desc">Flock 摄像头系统错误地将记者车牌识别为"被盗"，导致警察追踪拦截。凸显 AI 监控技术的可靠性问题。</p>
+                    <p class="news-source">📎 来源：The Verge / The Drive</p>
+                </div>
+            </div>
+
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💳 商业</span>
+                <div class="card-content">
+                    <span class="emoji">💳</span>
+                    <h2 class="news-title">全球首张 AI 原生信用卡"Kimi 信用卡"正式开启预约</h2>
+                    <p class="news-desc">Kimi 推出首张 AI 原生信用卡，消费可转化为 AI 算力额度，直接兑换 Agent 使用权限及高级功能。</p>
+                    <p class="news-source">📎 来源：少数派</p>
+                </div>
+            </div>
+
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🧠 AI</span>
+                <div class="card-content">
+                    <span class="emoji">🔍</span>
+                    <h2 class="news-title">AI 警务崛起：科技公司向警方大规模推销 AI 监控产品</h2>
+                    <p class="news-desc">在 IACP 技术大会上，众多科技公司向警方推销面部识别、无人机、报告撰写工具等 AI 产品，引发隐私担忧。</p>
+                    <p class="news-source">📎 来源：The Verge</p>
+                </div>
+            </div>
+
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="card-content">
+                    <span class="emoji">🧠</span>
+                    <h2 class="news-title">蚂蚁集团发布灵波 VLA2.0 机器人"大脑"</h2>
+                    <p class="news-desc">蚂蚁集团发布灵波 VLA2.0（Vision-Language-Action Model），为大模型与机器人本体的深度合作开启新篇章。</p>
+                    <p class="news-source">📎 来源：智东西</p>
+                </div>
+            </div>
+
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-social">📺 平台</span>
+                <div class="card-content">
+                    <span class="emoji">📺</span>
+                    <h2 class="news-title">YouTube 和 X 成为"脱衣"AI 应用传播渠道</h2>
+                    <p class="news-desc">WIRED 调查发现，YouTube 和 X 平台正成为 AI"脱衣"应用的重要推广渠道，引发对平台责任的广泛担忧。</p>
+                    <p class="news-source">📎 来源：WIRED</p>
+                </div>
+            </div>
+
+            <!-- 第10条：通栏大卡片（航天大事件） -->
+            <div class="news-card large">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="card-content">
+                    <span class="emoji">🚀</span>
+                    <h2 class="news-title">SpaceX 星舰完成第九次试飞，"筷子臂"再次成功夹住助推器</h2>
+                    <p class="news-desc">SpaceX 在德克萨斯州博卡奇卡基地完成星舰（Starship）第九次综合测试飞行。飞船成功进入轨道并完成再入大气层，而 SpaceX 著名的"筷子臂"（Mechazilla）再次成功夹住了返回的超级重型助推器。这是 SpaceX 在可重复使用运载系统方面的又一重大里程碑。</p>
+                    <p class="news-source">📎 来源：The Verge / Ars Technica</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>共 10 条精选新闻 · 整理时间：2026-07-19 08:30 CST</p>
+        </footer>
+    </div>
+</body>
+</html>

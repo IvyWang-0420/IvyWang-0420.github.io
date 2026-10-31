@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-04 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #fff;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.date-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.subtitle {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.news-card.large {
+  grid-column: 1 / -1;
+}
+.tag {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; border: 1px solid rgba(100,255,218,0.3); }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; border: 1px solid rgba(255,167,38,0.3); }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; border: 1px solid rgba(206,147,216,0.3); }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; border: 1px solid rgba(100,181,246,0.3); }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; border: 1px solid rgba(129,199,132,0.3); }
+.tag-health { background: rgba(255,138,128,0.15); color: #ff8a80; border: 1px solid rgba(255,138,128,0.3); }
+.tag-auto { background: rgba(255,213,79,0.15); color: #ffd54f; border: 1px solid rgba(255,213,79,0.3); }
+.emoji { font-size: 32px; margin-bottom: 10px; display: block; }
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.card-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <div class="date-label">MONDAY · MAY 4, 2026</div>
+  <h1 class="main-title">科技行业新闻简报</h1>
+  <div class="subtitle">Tech Industry Daily Briefing · 精选10条 · 每日早8点更新</div>
+</header>
+
+<div class="news-grid">
+  <!-- Card 1: 头条大卡片 -->
+  <div class="news-card large">
+    <span class="tag tag-robot">🤖 机器人</span>
+    <span class="emoji">🌍</span>
+    <div class="card-title">机器人即将迎来"ChatGPT时刻"——物理世界AI正在突破</div>
+    <div class="card-content">Eka公司研发的机器人夹爪已能熟练完成分类鸡块、拧灯泡等精细操作，业界认为这预示着物理世界AI的"ChatGPT时刻"即将到来，机器人正从简单重复任务向复杂多场景应用演进。</div>
+    <div class="source">📎 来源：Wired</div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="news-card">
+    <span class="tag tag-biz">🏪 商业</span>
+    <span class="emoji">🎮</span>
+    <div class="card-title">GameStop据报正考虑收购eBay，进军电商领域</div>
+    <div class="card-content">据《华尔街日报》报道，GameStop可能最早于本月提出收购eBay的报价，此举旨在将这家游戏零售商转型为更广泛的电商平台。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🧠 AI</span>
+    <span class="emoji">🤖</span>
+    <div class="card-title">Meta收购机器人AI初创公司，加速人形机器人布局</div>
+    <div class="card-content">Meta宣布收购Assured Robot Intelligence公司，其团队已加入Meta Superintelligence Labs，标志着Meta正式进军人形机器人领域。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🎧 内容</span>
+    <span class="emoji">🎙️</span>
+    <div class="card-title">近四成新播客由AI生成，播客生态面临冲击</div>
+    <div class="card-content">数据显示，在最近9天内创建的新播客中，约39%（约4,243个）可能由AI生成。Inception Point AI每周发布约3,000期AI播客，平台正面临严重的内容泛滥问题。</div>
+    <div class="source">📎 来源：Bloomberg / Gizmodo</div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="news-card">
+    <span class="tag tag-chip">💻 硬件</span>
+    <span class="emoji">🍎</span>
+    <div class="card-title">Apple已停产最便宜的Mac mini，入门价升至799美元</div>
+    <div class="card-content">Apple似乎已停止销售最便宜的Mac mini型号，目前Mac mini起售价为799美元，存储容量从512GB起步。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="news-card">
+    <span class="tag tag-auto">🚗 汽车</span>
+    <span class="emoji">⚡</span>
+    <div class="card-title">特斯拉开始向加拿大销售中国产Model 3，价格创历史新低</div>
+    <div class="card-content">特斯拉开始向加拿大销售上海Gigafactory生产的Model 3，起售价为39,490加元（约29,000美元），这是该车型有史以来最低价格。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="news-card">
+    <span class="tag tag-auto">🚗 汽车</span>
+    <span class="emoji">🚙</span>
+    <div class="card-title">Waymo扩大无人驾驶汽车儿童独自乘车限制政策</div>
+    <div class="card-content">随着成年乘客报告新的年龄验证检查，Waymo无人驾驶汽车公司表示正在继续"优化"其系统，此前部分地区已禁止儿童独自乘车。</div>
+    <div class="source">📎 来源：Wired</div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🧠 AI</span>
+    <span class="emoji">🏛️</span>
+    <div class="card-title">AWS、Microsoft、NVIDIA将向五角大楼提供AI技术</div>
+    <div class="card-content">继Google、OpenAI和xAI之后，亚马逊网络服务、Microsoft和NVIDIA也将向五角大楼提供AI技术，标志着AI军事应用进一步扩大。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 9 -->
+  <div class="news-card">
+    <span class="tag tag-comm">📱 社交</span>
+    <span class="emoji">📸</span>
+    <div class="card-title">Instagram将惩罚"非原创"内容，减少信息流垃圾</div>
+    <div class="card-content">Instagram宣布将尝试对"非原创"帖子进行惩罚，旨在减少平台信息流中的低质量内容，应对日益严重的内容同质化问题。</div>
+    <div class="source">📎 来源：Engadget</div>
+  </div>
+
+  <!-- Card 10: 底部大卡片 -->
+  <div class="news-card large">
+    <span class="tag tag-health">💊 医疗</span>
+    <span class="emoji">💊</span>
+    <div class="card-title">科学家研发单次注射可逆转骨关节炎的新疗法</div>
+    <div class="card-content">研究人员开发出一种新型治疗方法，通过单次注射即可逆转骨关节炎导致的关节损伤，为数百万患者带来全新希望。这一突破性疗法正在临床试验中展现显著效果。</div>
+    <div class="source">📎 来源：Wired</div>
+  </div>
+</div>
+
+<footer>
+  共 10 条新闻 · 整理自 Engadget / Wired / Bloomberg · 2026-05-04 08:30
+</footer>
+</div>
+</body>
+</html>

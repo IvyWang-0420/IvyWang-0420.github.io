@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-05 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #8892b0;
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+.tag-space { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+.tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; }
+.tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; }
+.tag-product { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+.tag-auto { background: rgba(255, 138, 101, 0.15); color: #ff8a65; }
+.tag-security { background: rgba(255, 112, 112, 0.15); color: #ff7070; }
+.tag-commercial { background: rgba(255, 215, 64, 0.15); color: #ffd740; }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #a8b2d1;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: #6c7a99;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+.large .card-title {
+  font-size: 22px;
+}
+
+.large .card-content {
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  color: #5a6a8a;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="date">📅 2026年7月5日 · 星期日</div>
+  <h1 class="main-title">🚀 科技行业新闻简报</h1>
+  <div class="subtitle">精选 · 深度 · 每日更新</div>
+</header>
+
+<div class="news-grid">
+
+  <!-- 1. 头条大卡片：NASA紧急任务 -->
+  <div class="news-card large">
+    <span class="tag tag-space">🌌 航天</span>
+    <span class="emoji">🚀</span>
+    <div class="card-title">NASA紧急启动太空救援任务，拯救即将坠毁的Swift天文台</div>
+    <div class="card-content">NASA派遣Katalyst Space Technologies公司的Link spacecraft航天器，试图拯救2004年发射的Swift天文台。由于太阳风暴影响，Swift轨道已降至224英里，面临年内坠毁大气层燃烧风险。Link航天器目标与无推进系统的Swift对接并将其轨道提升约150英里，这将是人类首次尝试用机器人航天器提升活跃天文卫星轨道。</div>
+    <div class="card-source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 2. AI：阿里禁用Claude Code -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">🔒</span>
+    <div class="card-title">阿里内部全面禁用Claude Code：因安全风险推荐Qoder替代</div>
+    <div class="card-content">阿里巴巴内部人士透露，因Claude Code被曝存在植入后门的安全风险，阿里已将其列入高风险软件名单。自7月10日起全面禁止内部员工使用Claude Code，推荐使用阿里自研Qoder作为替代方案。</div>
+    <div class="card-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 3. 微软AI公司 -->
+  <div class="news-card">
+    <span class="tag tag-ai">💰 商业</span>
+    <span class="emoji">💻</span>
+    <div class="card-title">微软砸25亿美元组建6000人AI新公司Frontier Company</div>
+    <div class="card-content">微软宣布成立Microsoft Frontier Company，投入25亿美元资金配备6000名专家，为企业客户提供有成效的AI部署项目服务。整合现有FDE工程师、技术顾问及行业销售团队，提供AI技术选型与系统集成服务。</div>
+    <div class="card-source">📎 来源：36氪 / 界面新闻</div>
+  </div>
+
+  <!-- 4. Midjourney vs 好莱坞 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🎬 版权</span>
+    <span class="emoji">⚖️</span>
+    <div class="card-title">Midjourney要求好莱坞工作室披露AI使用细节</div>
+    <div class="card-content">在与三家好莱坞工作室的持续法律纠纷中，Midjourney寻求法院强制工作室披露其自身如何使用AI的细节。Midjourney正在反击工作室指控其未经授权使用版权作品训练模型的诉讼。</div>
+    <div class="card-source">📎 来源：TechCrunch</div>
+  </div>
+
+  <!-- 5. Google DeepMind工会 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤝 职场</span>
+    <span class="emoji">🏛️</span>
+    <div class="card-title">Google DeepMind工会谈判进展缓慢，员工表达不满</div>
+    <div class="card-content">Google DeepMind员工与管理层之间的工会化谈判在周三继续进行，员工对高管们不愿认真参与工会化前景讨论表示失望，反映科技行业AI从业者对工作条件和权益关注日益增加。</div>
+    <div class="card-source">📎 来源：Wired</div>
+  </div>
+
+  <!-- 6. 索尼RX10相机 -->
+  <div class="news-card">
+    <span class="tag tag-product">📷 硬件</span>
+    <span class="emoji">📸</span>
+    <div class="card-title">索尼新一代RX10超级变焦相机将于7月9日发布</div>
+    <div class="card-content">索尼Alpha官方发布预告，新一代RX10相机将于7月9日上午10点正式发布。这是该系列自2017年RX10 IV发布以来的首次更新，RX10 IV配备24-600mm 25倍光学变焦镜头。</div>
+    <div class="card-source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 7. Matic扫地机器人涨价 -->
+  <div class="news-card">
+    <span class="tag tag-product">🏠 智能家居</span>
+    <span class="emoji">🧹</span>
+    <div class="card-title">Matic扫地机器人将于9月涨价250美元</div>
+    <div class="card-content">被评为最佳扫地机器人的Matic宣布将于9月9日提价250美元，从1245美元涨至1495美元。Matic公司表示新价格反映了供应链和研发成本上涨，同时提供一年内免费更换集尘袋政策。</div>
+    <div class="card-source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 8. 特斯拉限制AI开支 -->
+  <div class="news-card">
+    <span class="tag tag-auto">⚡ 汽车</span>
+    <span class="emoji">🚗</span>
+    <div class="card-title">特斯拉限制员工AI开支：每周上限200美元</div>
+    <div class="card-content">特斯拉将从7月6日起把每名员工使用AI的费用限制在每周200美元。几个月前特斯拉还要求员工更积极使用AI，政策迅速转向表明押注AI的企业也难以控制不断增长的使用成本。</div>
+    <div class="card-source">📎 来源：36氪 / 新浪科技</div>
+  </div>
+
+  <!-- 9. 三星Meta芯片订单 -->
+  <div class="news-card">
+    <span class="tag tag-chip">🖥️ 芯片</span>
+    <span class="emoji">💾</span>
+    <div class="card-title">三星获Meta超10万亿韩元AI芯片代工订单</div>
+    <div class="card-content">三星电子正成为全球大科技公司自研AI芯片的核心生产基地。Meta推进与三星合作，采用2纳米尖端工艺量产AI加速器MTIA数十万组。三星中长期积压订单有望逼近50万亿韩元。</div>
+    <div class="card-source">📎 来源：36氪 / 界面新闻</div>
+  </div>
+
+  <!-- 10. 头条大卡片：傲鲨外骨骼 -->
+  <div class="news-card large">
+    <span class="tag tag-robot">🦾 机器人</span>
+    <span class="emoji">🤖</span>
+    <div class="card-title">傲鲨外骨骼：从科幻机甲到户外装备的突破</div>
+    <div class="card-content">傲鲨VIATRIX增程动力外骨骼机器人正在将《流浪地球2》与《死亡搁浅》中的科幻场景变为现实。用户徒步时穿戴外骨骼，AI自动学习步态并在抬腿瞬间提供推力，使6公里徒步体验更像悠闲的City walk。傲鲨已在全国布局20个文旅生态合作网点，并获得CES 2026创新奖。</div>
+    <div class="card-source">📎 来源：36氪</div>
+  </div>
+
+</div>
+
+<footer>
+  📌 本简报来源：The Verge · TechCrunch · Wired · 36氪 · 界面新闻 · 新浪科技　|　共10条
+</footer>
+
+</div>
+</body>
+</html>

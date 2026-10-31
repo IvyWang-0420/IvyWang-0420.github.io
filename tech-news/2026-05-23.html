@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-23 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.date-line {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-policy { background: rgba(255,138,101,0.15); color: #ff8562; }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="date-line">2026.05.23 &nbsp;|&nbsp; Saturday</div>
+  <h1 class="main-title">科技行业新闻简报</h1>
+  <p class="sub-title">AI · 芯片 · 机器人 · 通信 · 商业</p>
+</header>
+
+<div class="news-grid">
+
+  <!-- 头条大卡片 - 新闻1 -->
+  <div class="news-card large">
+    <span class="tag tag-biz">🏛️ 宏观</span>
+    <span class="emoji">📉</span>
+    <div class="card-title">中概股美股盘前遭遇黑色星期四 富途控股跌超37%领跌</div>
+    <div class="card-content">美股盘前全线飘绿，热门中概股集体重挫。富途控股跌超37%领跌，老虎证券跌超36%，拼多多、爱奇艺、蔚来跌超5%，京东、理想汽车跌超4%，阿里巴巴跌超3%。分析师指出或与跨境监管政策收紧有关。</div>
+    <div class="card-source">📎 来源：36氪快讯</div>
+  </div>
+
+  <!-- 新闻2 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">🦊</span>
+    <div class="card-title">腾讯推出"Junny"AI助手：扎根电脑主打丝滑体验</div>
+    <div class="card-content">腾讯悄然上线全新AI产品Junny，主打智能化桌面助手概念，集成写作、搜索、数据分析等6大AI能力，已开放邀请码实测。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻3 -->
+  <div class="news-card">
+    <span class="tag tag-ai">💰 金融AI</span>
+    <span class="emoji">📊</span>
+    <div class="card-title">OpenAI推出ChatGPT个人财务管理工具</div>
+    <div class="card-content">OpenAI正式发布ChatGPT新功能——个人财务助理，支持连接银行账户、自动分析消费习惯、生成预算建议，Plus用户优先体验。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻4 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🎬 AI视频</span>
+    <span class="emoji">🎞️</span>
+    <div class="card-title">可灵AI生成棒球特效火爆全球 登顶42国App Store总榜</div>
+    <div class="card-content">国产AI视频生成工具可灵（Kling）推出"一键生成棒球现场特效"功能，火遍海外，一度登顶42个国家App Store娱乐类总榜。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻5 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🧠 大模型</span>
+    <span class="emoji">🐒</span>
+    <div class="card-title">悟空AI接入阿里Qwen3.7-Max旗舰模型</div>
+    <div class="card-content">悟空AI宣布已接入阿里最新旗舰模型Qwen3.7-Max，在推理能力、多模态理解等方面获显著提升，中文理解任务接近GPT-4o水平。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻6 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🔬 科学家</span>
+    <span class="emoji">🏅</span>
+    <div class="card-title">谷歌AI科学家司罗获评"世界金融论坛年度科学家"</div>
+    <div class="card-content">谷歌AI研究院资深科学家司罗在2026年世界金融论坛上获评年度科学家，表彰其在智能投研、风险预测等领域的技术贡献。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻7 -->
+  <div class="news-card">
+    <span class="tag tag-chip">🔧 芯片</span>
+    <span class="emoji">💾</span>
+    <div class="card-title">英特尔制程双线推进 Intel 18A良率稳步爬坡</div>
+    <div class="card-content">Intel 18A节点已进入风险量产阶段，Intel 14A节点预计2029年量产将采用High-NA EUV光刻技术。英特尔CEO称有信心2030年前重获制程领先。</div>
+    <div class="card-source">📎 来源：品玩</div>
+  </div>
+
+  <!-- 新闻8 -->
+  <div class="news-card">
+    <span class="tag tag-chip">📈 股市</span>
+    <span class="emoji">📈</span>
+    <div class="card-title">美股大型科技股盘前普涨 英特尔涨超1%</div>
+    <div class="card-content">英伟达涨0.58%，特斯拉涨0.8%，微软涨0.42%，苹果涨0.36%，谷歌涨0.21%，亚马逊涨0.16%，Meta涨0.07%。市场情绪有所回暖。</div>
+    <div class="card-source">📎 来源：36氪快讯</div>
+  </div>
+
+  <!-- 新闻9 -->
+  <div class="news-card">
+    <span class="tag tag-biz">🏢 企业</span>
+    <span class="emoji">📱</span>
+    <div class="card-title">荣耀回应IPO：上市没有终止 开放员工减持通道</div>
+    <div class="card-content">荣耀就IPO终止传闻正式回应"上市没有终止"，同时宣布开放员工减持退出通道，选择退股员工将获得分红补偿，正式退股方案三个月内完成。</div>
+    <div class="card-source">📎 来源：界面新闻</div>
+  </div>
+
+  <!-- 结尾大卡片 - 新闻10 -->
+  <div class="news-card large">
+    <span class="tag tag-policy">⚙️ 政策</span>
+    <span class="emoji">📋</span>
+    <div class="card-title">工信部发布116项通信行业标准征求意见 涵盖5G RedCap与量子通信</div>
+    <div class="card-content">工业和信息化部发布关于公开征求《无线终端空间射频辐射功率和接收机性能测量方法》等116项通信行业标准报批意见的通知，涵盖5G轻量化（RedCap）终端、量子通信、工业互联网知识计算等领域。</div>
+    <div class="card-source">📎 来源：工信部官网</div>
+  </div>
+
+</div>
+
+<footer>
+  📊 共收录10条新闻 | 涵盖AI人工智能、芯片半导体、企业动态、政策监管<br>
+  整理时间：2026年5月23日 08:30 · 科技行业新闻简报
+</footer>
+
+</div>
+</body>
+</html>

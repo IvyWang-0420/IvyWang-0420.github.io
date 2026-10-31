@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-13 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .date {
+    font-size: 12px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-space { background: rgba(255,152,0,0.15); color: #ff9800; }
+  .card-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .emoji-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+  }
+  .card-body {
+    flex: 1;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .card-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .card-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+  }
+  .large .card-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .large .card-title {
+    font-size: 22px;
+  }
+  .large .card-text {
+    text-align: left;
+  }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date">WED · 2026-05-13 · ASIA/SHANGHAI</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">📅 整理时间：08:30 · 🤖 Mochi AI 自动生成</p>
+  </header>
+
+  <div class="news-grid">
+    <!-- 头条大卡片 -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-space">🚀 航天</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🛰️</span>
+        <div class="card-body">
+          <h2 class="card-title">FCC批准EchoStar 400亿频谱出售给SpaceX和AT&T</h2>
+          <p class="card-text">FCC正式批准EchoStar以400亿美元将65MHz频谱出售给SpaceX，用于其直接对手机服务；同时AT&T以50亿美元收购50MHz频谱用于5G网络建设。SpaceX将利用该频谱构建"地面、太空和混合网络架构"，标志着卫星通信与地面5G加速融合。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 普通卡片 2-5 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🛡️</span>
+        <div class="card-body">
+          <h3 class="card-title">OpenAI安全委员会已两次正式延迟模型发布</h3>
+          <p class="card-text">OpenAI安全与安全委员会主席Jeremy Kolter证实，该委员会至今已"正式请求延迟模型发布"两次。目前安全团队约200人，涵盖安全系统、准备、对齐和模型政策团队。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">⚖️ 法律</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">📜</span>
+        <div class="card-body">
+          <h3 class="card-title">Anthropic为法律行业推出Claude深度集成</h3>
+          <p class="card-text">Claude AI现已能连接DocuSign、Box、Thomson Reuters、Harvey等法律常用应用，可审阅合同、搜索判例法并起草法律文件，标志AI在法律行业规模化落地。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-chip">💻 硬件</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">⌨️</span>
+        <div class="card-body">
+          <h3 class="card-title">Lenovo发布ThinkPad X13 Gen 7</h3>
+          <p class="card-text">ThinkPad X13 Gen 7发布，搭载Intel Panther Lake和AMD Gorgon Point芯片，起售价1499美元，重量仅0.93kg，iFixit可修复性评分9/10。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-space">🚀 航天</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🌐</span>
+        <div class="card-body">
+          <h3 class="card-title">Google可能与SpaceX合作将数据中心送入太空</h3>
+          <p class="card-text">Google探索与SpaceX合作将数据中心部署到太空以降低能耗并提升算力布局，同时发布Googlebook AI笔记本平台和新版Android Auto重大更新。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 普通卡片 6-9 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-comm">📱 系统</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🤖</span>
+        <div class="card-body">
+          <h3 class="card-title">Google Android 17即将发布：Gemini AI全面加持</h3>
+          <p class="card-text">Android 17重大更新预览：Gemini AI助手深度集成，被描述为"10年来Android Auto最大更新"，系统将能利用汽车前置摄像头预测换道时机。</p>
+          <p class="card-source">📎 来源：Wired</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-business">⚡ 数据中心</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">⚡</span>
+        <div class="card-body">
+          <h3 class="card-title">xAI无视诉讼新增19台燃气轮机扩建数据中心</h3>
+          <p class="card-text">xAI在面临ongoing lawsuit的情况下，已新增19台燃气涡轮机用于扩建数据中心，显示出对算力的迫切需求和快速扩张战略。</p>
+          <p class="card-source">📎 来源：Wired</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-robot">🎥 VR/AR</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🥽</span>
+        <div class="card-body">
+          <h3 class="card-title">Meta Connect 2026定档9月23-24日</h3>
+          <p class="card-text">Meta年度Connect大会将于9月23-24日举行，聚焦"下一代计算平台首次亮相"，涵盖VR、可穿戴设备、元宇宙和AI等领域最新进展。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">📊 AI研究</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">📊</span>
+        <div class="card-body">
+          <h3 class="card-title">Gallup与AI公司合作研究模拟人类回应可行性</h3>
+          <p class="card-text">著名民调机构Gallup与AI公司Simile合作，独立验证"模拟人类回应"技术可行性，目标是用AI深化而非替代对人类思维和行为的理解。</p>
+          <p class="card-source">📎 来源：The Verge</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部大卡片 - 汽车AI -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-business">🚗 汽车AI</span>
+      </div>
+      <div class="card-content">
+        <span class="emoji-icon">🏭</span>
+        <div class="card-body">
+          <h2 class="card-title">丰田宣布未来十年AI与数据中心投资1000亿美元</h2>
+          <p class="card-text">丰田宣布未来十年将在AI和数据中心领域投入1000亿美元，重点布局AI驱动的汽车制造、智能驾驶和企业AI应用。这是传统车企迄今为止在AI领域的最大单笔投资承诺，标志着全球汽车产业全面加速向AI转型。</p>
+          <p class="card-source">📎 来源：Wired</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>📋 共整理10条精选科技行业新闻 | 明日早报将于 2026-05-14 08:30 准时推送</p>
+  </footer>
+</div>
+</body>
+</html>

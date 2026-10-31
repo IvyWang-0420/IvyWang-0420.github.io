@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-09-13 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            color: #64ffda;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.6);
+            font-size: 16px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100,181,246,0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+        .tag-game { background: rgba(255,138,128,0.2); color: #ff8a80; }
+        .tag-security { background: rgba(255,205,210,0.2); color: #ff8a80; }
+        .card-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .card-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .card-source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.45);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026-09-13 · 08:30</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日科技资讯精选 · 共10条</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：通栏头条 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🔬 AI</span>
+                <div class="card-emoji">📱</div>
+                <h2 class="card-title">苹果发布首款折叠屏手机，三星连发暗讽</h2>
+                <p class="card-content">苹果正式推出旗下首款折叠屏手机，引发行业震动。三星随即在社交媒体连续发布多条内容，暗讽苹果"姗姗来迟"。此次苹果入局折叠屏市场，标志着其对这一形态的认可，也意味着与三星、小米、华为等品牌正面竞争。</p>
+                <p class="card-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💻 芯片</span>
+                <div class="card-emoji">⚖️</div>
+                <h2 class="card-title">英伟达遭美国司法部反垄断调查</h2>
+                <p class="card-content">美国司法部对英伟达展开反垄断调查，重点关注其在AI芯片市场的主导地位及是否存在不正当竞争行为。</p>
+                <p class="card-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-emoji">🚨</div>
+                <h2 class="card-title">OpenAI、Anthropic前研究员联合警告AI风险</h2>
+                <p class="card-content">多位前研究员联合发声，警告AI技术正以超出控制的速度发展，两大AI巨头正将全人类命运置于风险之中。</p>
+                <p class="card-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-game">🎮 游戏</span>
+                <div class="card-emoji">🎮</div>
+                <h2 class="card-title">暴雪确认Diablo V将于2029年春季发布</h2>
+                <p class="card-content">暴雪正式确认《暗黑破坏神V》将于2029年春季发布，同步宣布与Netflix合作的动画剧集即将上线。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🧠 AI</span>
+                <div class="card-emoji">📋</div>
+                <h2 class="card-title">Anthropic CEO提出AI发展"三步走"计划</h2>
+                <p class="card-content">Dario Amodei提出"pacing the frontier"计划，呼吁建立国际AI安全协议、限制超级AI计算资源分配。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">💡 AI</span>
+                <div class="card-emoji">📺</div>
+                <h2 class="card-title">Twitch测试AI"Stream Coach"功能</h2>
+                <p class="card-content">Twitch正在测试全新AI功能"Stream Coach"，能在主播结束直播后提供数据分析与改进建议。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💻 系统</span>
+                <div class="card-emoji">🪟</div>
+                <h2 class="card-title">Microsoft终于支持自定义Copilot键</h2>
+                <p class="card-content">Windows 11最新Insider版本加入Copilot键自定义功能，用户可将AI键重新映射为传统功能键。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="card-emoji">🌿</div>
+                <h2 class="card-title">Husqvarna获得FCC首个外国机器人禁令豁免</h2>
+                <p class="card-content">瑞典Husqvarna草坪机器人获得FCC首张豁免令，其IQ系列被认定不构成国家安全威胁。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔐 安全</span>
+                <div class="card-emoji">⚖️</div>
+                <h2 class="card-title">Meta因AI训练数据问题遭集体诉讼</h2>
+                <p class="card-content">Meta被指使用用户照片训练AI模型并开发人脸识别系统，原告集体诉讼指控其非法采集生物特征数据。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第10条：通栏重点 -->
+            <div class="news-card large">
+                <span class="tag tag-biz">🌟 商业</span>
+                <div class="card-emoji">🏆</div>
+                <h2 class="card-title">MiniMax M3"入籍"沙特，中国开源模型拿下国家级大客户</h2>
+                <p class="card-content">中国AI公司MiniMax宣布其M3开源模型正式获得沙特政府采用，成为首个"入籍"中东主权国家的中国大模型。此举标志着中国AI企业出海获得重要突破，在全球AI竞争中，中东地区正成为中国科技企业的重要战场。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>科技行业新闻简报 · 2026-09-13 · 共10条</p>
+        </footer>
+    </div>
+</body>
+</html>

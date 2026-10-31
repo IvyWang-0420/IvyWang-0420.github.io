@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-03 科技行业新闻简报</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header-date {
+    font-size: 14px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.header-title {
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+.header-subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+}
+.news-card.large {
+    grid-column: 1 / -1;
+}
+.tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.2); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+.news-emoji {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.news-content {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.news-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+}
+footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    color: rgba(255,255,255,0.4);
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-date">JUL 03, 2026</div>
+        <h1 class="header-title">科技行业新闻简报</h1>
+        <p class="header-subtitle">每日精选 · 行业动态 · 前沿技术</p>
+    </header>
+    
+    <div class="news-grid">
+        <!-- 第1条：通栏大卡片（头条） -->
+        <div class="news-card large">
+            <span class="tag tag-ai">🤖 AI</span>
+            <div class="news-emoji">🔮</div>
+            <h2 class="news-title">阿里巴巴发布全新AI框架：工具调用Token消耗降低99%</h2>
+            <p class="news-content">阿里巴巴发布了一款全新的AI代理框架，该框架能够跳过加载所有工具的步骤，直接进行智能路由选择，将代理的Token使用量降低99%。这一突破性进展解决了大模型在面对数千个工具时选择困难的瓶颈问题，大幅提升了AI代理的执行效率。</p>
+            <p class="news-source">📎 来源：VentureBeat</p>
+        </div>
+        
+        <!-- 第2条 -->
+        <div class="news-card">
+            <span class="tag tag-ai">🤖 AI</span>
+            <div class="news-emoji">🤖</div>
+            <h2 class="news-title">Z.ai推出ZCode：挑战Cursor、Claude Code</h2>
+            <p class="news-content">Z.ai公司正式发布ZCode，作为GLM-5.2模型的官方开发工具。ZCode支持macOS、Windows和Linux系统，支持第三方模型的自定义API配置，并为订阅用户提供1.5倍的使用额度优惠。</p>
+            <p class="news-source">📎 来源：VentureBeat</p>
+        </div>
+        
+        <!-- 第3条 -->
+        <div class="news-card">
+            <span class="tag tag-robot">🤖 机器人</span>
+            <div class="news-emoji">🏠</div>
+            <h2 class="news-title">8000美元洗衣折叠机器人开始预售</h2>
+            <p class="news-content">Weave Robotics公司推出Isaac 1家庭机器人，定价8000美元现已开放预订。该机器人能够自动收集脏衣服、折叠整理、铺床并清理杂物，预计今年年底发货。</p>
+            <p class="news-source">📎 来源：The Verge</p>
+        </div>
+        
+        <!-- 第4条 -->
+        <div class="news-card">
+            <span class="tag tag-comm">💻 操作系统</span>
+            <div class="news-emoji">📱</div>
+            <h2 class="news-title">微软泄露"Copilot OS"：轻量级AI系统曝光</h2>
+            <p class="news-content">泄露视频显示微软正在开发名为"Aion"的轻量级Windows系统，专门为AI代理应用设计。界面类似Chrome OS，以Edge浏览器和Web应用为核心。</p>
+            <p class="news-source">📎 来源：The Verge / Windows Central</p>
+        </div>
+        
+        <!-- 第5条 -->
+        <div class="news-card">
+            <span class="tag tag-comm">🌐 互联网</span>
+            <div class="news-emoji">🌐</div>
+            <h2 class="news-title">Google搜索框25年来首次重大改版</h2>
+            <p class="news-content">Google正式宣布对经典搜索框进行25年来首次重大重新设计。新版搜索将更加智能化，能够理解用户意图并提供更直观的交互体验。</p>
+            <p class="news-source">📎 来源：VentureBeat</p>
+        </div>
+        
+        <!-- 第6条 -->
+        <div class="news-card">
+            <span class="tag tag-biz">💳 商业</span>
+            <div class="news-emoji">💳</div>
+            <h2 class="news-title">Square推出ChatGPT/Claude直接下单功能</h2>
+            <p class="news-content">Square发布全新集成服务，用户现在可以直接通过ChatGPT和Claude进行餐厅点餐。该系统完全在后台运行，商家可管理菜单、库存和价格等信息。</p>
+            <p class="news-source">📎 来源：VentureBeat</p>
+        </div>
+        
+        <!-- 第7条 -->
+        <div class="news-card">
+            <span class="tag tag-chip">🛡️ 网络安全</span>
+            <div class="news-emoji">🛡️</div>
+            <h2 class="news-title">Cloudflare 9月起限制"多用途"爬虫</h2>
+            <p class="news-content">Cloudflare宣布从9月15日起，将屏蔽同时用于搜索索引和AI训练的网络爬虫。此举旨在让出版商更好地控制哪些爬虫可以访问其网站。</p>
+            <p class="news-source">📎 来源：The Verge</p>
+        </div>
+        
+        <!-- 第8条 -->
+        <div class="news-card">
+            <span class="tag tag-robot">🚗 自动驾驶</span>
+            <div class="news-emoji">🚗</div>
+            <h2 class="news-title">自动驾驶货运热潮回归：资本热潮再起</h2>
+            <p class="news-content">自动驾驶领域新一轮热潮来临，Travis Kalanick重返战场创立机器人公司，资本和人才争夺战再次升温。Humble Robotics等初创公司获投资。</p>
+            <p class="news-source">📎 来源：TechCrunch</p>
+        </div>
+        
+        <!-- 第9条 -->
+        <div class="news-card">
+            <span class="tag tag-ai">🤖 AI</span>
+            <div class="news-emoji">🎬</div>
+            <h2 class="news-title">Anthropic Claude Fable 5重返全球市场</h2>
+            <p class="news-content">在美国解除出口管制后，Anthropic正式宣布Claude Fable 5重新在全球范围内上线可用。这一旗舰模型此前因美国国家安全审查而暂时受限。</p>
+            <p class="news-source">📎 来源：VentureBeat</p>
+        </div>
+        
+        <!-- 第10条：通栏大卡片（重要新闻） -->
+        <div class="news-card large">
+            <span class="tag tag-biz">💊 医疗科技</span>
+            <div class="news-emoji">💊</div>
+            <h2 class="news-title">美国缉毒局宣布对"加油站海洛因"化合物实施管制</h2>
+            <p class="news-content">美国缉毒局（DEA）宣布将对7-OH（一种被称为"加油站海洛因"的卡痛提取物）实施临时管制，作为受控物质处理。此举获得了MAGA运动和主流卡痛行业支持。这一决定反映了科技与医疗监管交叉领域的最新动态。</p>
+            <p class="news-source">📎 来源：Wired</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>📊 共10条新闻 | 涵盖AI人工智能、机器人、操作系统、网络安全、自动驾驶等行业动态</p>
+    </footer>
+</div>
+</body>
+</html>

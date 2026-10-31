@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-09 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.date-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="date-label">2026 · 05 · 09</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <div class="subtitle">每日精选 · 10条行业动态</div>
+  </div>
+
+  <!-- News Grid -->
+  <div class="news-grid">
+
+    <!-- 1. Headline (large) -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🏛️ AI国标</span>
+      <span class="emoji">🤖</span>
+      <div class="card-title">AI终端国标正式出台！按"聪明"程度分级</div>
+      <div class="card-content">记者8日获悉，AI终端迎来国家级标准——按照智能化程度分级的新规正式落地，标准将与消费品"以旧换新"政策全面衔接。这意味着AI设备将拥有统一的智能等级评判体系，相关产业补贴政策也将进一步明确。</div>
+      <div class="card-source">📎 来源：上观新闻 / 东方财富网</div>
+    </div>
+
+    <!-- 2 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💾 芯片</span>
+      <span class="emoji">📈</span>
+      <div class="card-title">全球存储芯片短缺蔓延，美光科技股价本周狂飙</div>
+      <div class="card-content">受中东供应链紧张及AI服务器需求叠加影响，全球存储芯片供应持续吃紧。机构分析指出，CPU涨价趋势已成行业共同面临的成本压力。</div>
+      <div class="card-source">📎 来源：新浪财经 / 格隆汇 / 21财经</div>
+    </div>
+
+    <!-- 3 -->
+    <div class="news-card">
+      <span class="tag tag-ai">💰 AI商业</span>
+      <span class="emoji">🧠</span>
+      <div class="card-title">AI助手行业进入收费时代！豆包今起试水付费</div>
+      <div class="card-content">自5月9日起，字节跳动旗下"豆包"正式开启付费订阅模式，是国内主流AI助手首次大规模商业化尝试。行业关注DeepSeek是否会跟进。</div>
+      <div class="card-source">📎 来源：和讯网 / 新浪网</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="news-card">
+      <span class="tag tag-chip">📈 资本市场</span>
+      <span class="emoji">💹</span>
+      <div class="card-title">AMD股价单日暴涨近19%，AI芯片热潮持续</div>
+      <div class="card-content">5月7日AMD股价飙升近19%，带动AI芯片概念再度成为市场焦点。AI算力需求结构正在发生深刻变化，多家机构上调AMD目标价。</div>
+      <div class="card-source">📎 来源：央视财经 / 新浪财经</div>
+    </div>
+
+    <!-- 5 -->
+    <div class="news-card">
+      <span class="tag tag-ai">⚡ 算力</span>
+      <span class="emoji">🔥</span>
+      <div class="card-title">AI算力服务今起涨价5%，供需失衡持续</div>
+      <div class="card-content">自5月9日起AI算力相关服务价格统一上调5%。朗科科技、江波龙、澜起科技、德明利等多只存储个股同期涨停或涨超10%。</div>
+      <div class="card-source">📎 来源：21财经 / 格隆汇</div>
+    </div>
+
+    <!-- 6 -->
+    <div class="news-card">
+      <span class="tag tag-chip">🔌 芯片</span>
+      <span class="emoji">🏭</span>
+      <div class="card-title">字节跳动联手台积电自研5nm AI芯片，2026年量产</div>
+      <div class="card-content">字节跳动正与台积电合作开发5nm制程AI芯片，预计2026年量产。这是又一家重金押注自研AI芯片的互联网大厂。</div>
+      <div class="card-source">📎 来源：哔哩哔哩 / 行业媒体</div>
+    </div>
+
+    <!-- 7 -->
+    <div class="news-card">
+      <span class="tag tag-chip">🍎 苹果</span>
+      <span class="emoji">🖥️</span>
+      <div class="card-title">苹果携手博通研发Baltra AI芯片，2026年发布</div>
+      <div class="card-content">据The Information报道，苹果与博通合作研发"Baltra" AI服务器专用芯片，专为云计算及AI推理任务设计，将是苹果自研芯片的重大延伸。</div>
+      <div class="card-source">📎 来源：搜狐网 / The Information</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="news-card">
+      <span class="tag tag-biz">🇨🇳 国产</span>
+      <span class="emoji">🐉</span>
+      <div class="card-title">国产AI芯片快速崛起，华为等企业抢占市场份额</div>
+      <div class="card-content">中信证券最新研报指出，2026年中国AI芯片市场正经历结构性变革，国产替代进程加速，华为等企业市场份额快速提升。</div>
+      <div class="card-source">📎 来源：搜狐网 / 中信证券研报</div>
+    </div>
+
+    <!-- 9 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🌏 海外</span>
+      <span class="emoji">🇮🇳</span>
+      <div class="card-title">印度宣布2026年推出首款国产AI芯片</div>
+      <div class="card-content">印度科技部宣布该国首款自主研发AI芯片将于2026年推出，这是印度"数字印度"战略的核心组成部分，旨在降低对海外芯片的依赖。</div>
+      <div class="card-source">📎 来源：哔哩哔哩 / 行业媒体</div>
+    </div>
+
+    <!-- 10. Bottom headline (large) -->
+    <div class="news-card large">
+      <span class="tag tag-comms">🌐 全球治理</span>
+      <span class="emoji">⚖️</span>
+      <div class="card-title">欧盟《AI法案》2026年8月全面生效，全球监管加速落地</div>
+      <div class="card-content">欧盟2024年通过的全球首部全面监管AI的法律——《AI法案》，将于2026年8月全面生效实施。该法案对AI系统按风险等级分类，对高风险AI应用提出严格要求。全球AI治理进入实质落地阶段，各国监管框架也在加速推进。</div>
+      <div class="card-source">📎 来源：西藏自治区网信办 / 36氪（参考引述）</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>—— 共10条 · 2026-05-09 科技行业新闻简报 ——</p>
+  </div>
+
+</div>
+</body>
+</html>

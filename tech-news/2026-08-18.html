@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-18 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+h1 {
+  font-size: 42px;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.news-card.large {
+  grid-column: 1 / -1;
+}
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-sec { background: rgba(239,83,80,0.15); color: #ef5350; }
+.emoji { font-size: 32px; margin-bottom: 8px; display: block; }
+.news-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.news-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.news-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  color: rgba(255,255,255,0.35);
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date">AUG 18, 2026</div>
+    <h1>科技行业新闻简报</h1>
+    <div class="subtitle">Tech News Daily · 每日精选</div>
+  </header>
+
+  <div class="news-grid">
+    <!-- 第1条：头条大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">AI 人工智能</span>
+      <span class="emoji">🔥</span>
+      <div class="news-title">Nvidia 投资 15 亿美元支持 OpenAI 数据中心建设</div>
+      <div class="news-content">Nvidia 宣布为 OpenAI 提供最高 105 亿美元担保，支持其在俄亥俄州建设数据中心。OpenAI 将获得 8 吉瓦容量，首批 800 兆瓦 2028 年上线，Nvidia 另投资 SB Energy 15 亿美元。</div>
+      <div class="news-source">📎 来源：The Verge / SEC 文件</div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <span class="tag tag-robot">机器人</span>
+      <span class="emoji">🦾</span>
+      <div class="news-title">Unitree"超人"机器人速度超越博尔特</div>
+      <div class="news-content">中国宇树科技发布的"Superman"机器人奔跑速度已超越人类百米纪录，成为全球最快有腿机器人。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI 人工智能</span>
+      <span class="emoji">🤖</span>
+      <div class="news-title">Meta 发布 Glimmer 开源模型：AI 属于所有人</div>
+      <div class="news-content">Meta 发布开源权重模型 Glimmer，任何人可下载运行。扎克伯格称 AI 应"属于所有人"而非被少数实验室垄断。</div>
+      <div class="news-source">📎 来源：TechCrunch</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">💰</span>
+      <div class="news-title">a16z 遭司法部反垄断调查</div>
+      <div class="news-content">Andreessen Horowitz 正接受司法部调查，涉及其投资合伙人是否违规在相互竞争的 AI 公司董事会任职。</div>
+      <div class="news-source">📎 来源：The Verge / Bloomberg</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI 人工智能</span>
+      <span class="emoji">📊</span>
+      <div class="news-title">Similarweb 推出 AI 广告追踪服务</div>
+      <div class="news-content">Similarweb 推出 ChatGPT 和 Google AI Mode 广告追踪数据集，26% 的 ChatGPT 回复含赞助广告。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI 人工智能</span>
+      <span class="emoji">🐙</span>
+      <div class="news-title">DeepSeek Harness 发布挑战 Claude Code</div>
+      <div class="news-content">DeepSeek 推出 Harness 开源工具作为 Claude Code 替代品，同时发布 V4 Pro API，价格上调。</div>
+      <div class="news-source">📎 来源：VentureBeat</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <span class="tag tag-sec">安全</span>
+      <span class="emoji">🔒</span>
+      <div class="news-title">GitHub 数小时服务中断后恢复</div>
+      <div class="news-content">GitHub 遭遇服务中断，影响 Pull Requests、Copilot 等功能，美国东部时间下午 5 点左右恢复。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <span class="tag tag-sec">安全</span>
+      <span class="emoji">📚</span>
+      <div class="news-title">调查：亚马逊用稀有图书训练 AI</div>
+      <div class="news-content">404 Media 追踪发现亚马逊将稀有图书运往 AI 训练设施，工人撕掉封面扫描，印刷书籍被销毁。</div>
+      <div class="news-source">📎 来源：The Verge / 404 Media</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">🐜</span>
+      <div class="news-title">蚂蚁集团 CEO：智能体商业即将爆发</div>
+      <div class="news-content">蚂蚁集团 CEO 韩歆毅表示，AI 智能体商业化将在 6-12 个月内迎来爆发期，多个行业场景快速落地。</div>
+      <div class="news-source">📎 来源：PingWest 品玩</div>
+    </div>
+
+    <!-- 第10条：底部大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">🎮</span>
+      <div class="news-title">腾讯 Q2 财报：模型+产品双线突破，AI 投入再加码</div>
+      <div class="news-content">腾讯第二季度大模型研发和 AI 产品落地同时取得突破，持续加大 AI 投入，豆包大模型多个榜单创佳绩，收入显著增长。</div>
+      <div class="news-source">📎 来源：PingWest 品玩</div>
+    </div>
+  </div>
+
+  <footer>
+    <div>共 10 条新闻 · 2026-08-18 科技行业新闻简报</div>
+  </footer>
+</div>
+</body>
+</html>

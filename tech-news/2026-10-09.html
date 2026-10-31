@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-10-09 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .news-card .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .tag-hardware { background: rgba(128, 203, 196, 0.2); color: #80cbc4; }
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .news-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            font-style: italic;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+        }
+        footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026年10月9日 · 星期四</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选10条 · 每日早8点更新</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 头条 (大卡片通栏) -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🔥 头条</span>
+                <div class="emoji">🤖</div>
+                <h2 class="news-title">Trump向Nvidia与SpaceX高管颁发国家科技奖章，披露个人投资交易</h2>
+                <p class="news-content">美国总统Trump在10月8日向Nvidia CEO黄仁勋和SpaceX CEO马斯克颁发国家科学奖章。同时披露了高达160万美元的Nvidia股票买入和500万美元的SpaceX债务投资。此举引发外界对其与科技巨头关系的广泛讨论。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-hardware">🍎 硬件</span>
+                <div class="emoji">📱</div>
+                <h2 class="news-title">Apple据传将于10月底发布新款iPad Mini</h2>
+                <p class="news-content">据Bloomberg报道，Apple计划在10月底举办发布会，届时将推出新一代iPad Mini，持续更新其平板产品线。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">📉 产业</span>
+                <div class="emoji">💻</div>
+                <h2 class="news-title">三星因内存价格飙升拟削减智能手机产量30%</h2>
+                <p class="news-content">韩国媒体报道，三星计划Q4将手机产量削减最高30%。内存价格持续上涨导致利润承压。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🎬</div>
+                <h2 class="news-title">Anthropic Claude新增动画解释器功能</h2>
+                <p class="news-content">Claude AI助手新增动画视频生成能力，可将数据转化为30秒动画解说，支持MP4下载。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">⚡ AI</span>
+                <div class="emoji">⚡</div>
+                <h2 class="news-title">MiniMax推出M3.1 Flash Preview模型</h2>
+                <p class="news-content">MiniMax于9月28日发布M3.1 Flash Preview，在全球AI视频榜单以1150 Elo排名第二，输出速度稳定100 tokens/s。</p>
+                <p class="news-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎥 AI影视</span>
+                <div class="emoji">🎥</div>
+                <h2 class="news-title">Utopai Studios：全球最大AI影视公司的"皮克斯野心"</h2>
+                <p class="news-content">Utopai Studios以"AI时代皮克斯"为目标，建立从剧本到院线电影的完整AI制作系统，三部院线项目计划2027年上映。</p>
+                <p class="news-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎨 3D生成</span>
+                <div class="emoji">🎨</div>
+                <h2 class="news-title">Meshy ARR突破1亿美元</h2>
+                <p class="news-content">3D生成AI公司Meshy年度经常性收入突破1亿美元，不到两年增长100倍，全球前十科技公司一半是其客户。</p>
+                <p class="news-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="emoji">💰</div>
+                <h2 class="news-title">Mecka AI完成6000万美元B轮融资</h2>
+                <p class="news-content">机器人数据初创公司Mecka AI完成6000万美元B轮融资，Sequoia领投，Nvidia、微软M12基金参与，估值近5亿美元。</p>
+                <p class="news-source">📎 来源：PingWest品玩 / TechCrunch</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💻 商业</span>
+                <div class="emoji">💻</div>
+                <h2 class="news-title">联想首款RTX Spark芯片AI PC中国预售</h2>
+                <p class="news-content">联想YOGA Pro 15 RTX Spark正式在中国预售，搭载英伟达RTX Spark N1X芯片，配备128GB统一内存，支持千亿参数大模型本地运行。</p>
+                <p class="news-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第10条 (大卡片通栏) -->
+            <div class="news-card large">
+                <span class="tag tag-product">📱 应用</span>
+                <div class="emoji">📱</div>
+                <h2 class="news-title">Meta推出Muse助手iPad独立应用</h2>
+                <p class="news-content">Meta于10月8日宣布其AI助手Muse推出iPad独立应用，支持管理邮件、会议、账单、预订、购物等任务。新增Asana、Figma等企业级连接器，以及Best Buy、Walmart等零售合作伙伴。</p>
+                <p class="news-source">📎 来源：PingWest品玩</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 共10条新闻 | 新闻简报由AI自动整理生成</p>
+        </footer>
+    </div>
+</body>
+</html>

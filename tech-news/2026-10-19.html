@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-10-19 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .date {
+            color: #64ffda;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-business { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+
+        .card-content {
+            display: flex;
+            gap: 16px;
+        }
+
+        .emoji {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+
+        .card-text {
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-card.large {
+                grid-column: 1;
+            }
+            .main-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">MONDAY · OCTOBER 19, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">AI · 芯片 · 通信 · 商业 · 产品发布</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 大头条 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">AI 人工智能</span>
+                <div class="card-content">
+                    <span class="emoji">📱</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Apple首款折叠屏iPhone Duo预购需求惊人</h3>
+                        <p class="card-desc">苹果官方表示，iPhone Duo折叠屏手机的预购需求"前所未有的火爆"，公司正在加紧供货以满足市场需求。这款革命性的新产品将于10月23日正式上市开售。苹果零售店员工已准备好迎接顾客体验。</p>
+                        <p class="card-source">📎 来源：The Verge / PingWest品玩</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI 智能硬件</span>
+                <div class="card-content">
+                    <span class="emoji">🤖</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Apple发布AI智能显示屏HomeView</h3>
+                        <p class="card-desc">苹果推出全新AI智能显示屏Apple HomeView，售价299美元。搭载Siri AI功能，配备Liquid Retina智能显示屏、高保真音频系统及智能家居控制中心，11月13日发售。</p>
+                        <p class="card-source">📎 来源：PingWest品玩</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="news-card">
+                <span class="tag tag-robot">工业 AI</span>
+                <div class="card-content">
+                    <span class="emoji">🏭</span>
+                    <div class="card-text">
+                        <h3 class="card-title">蓝沃AI工博会首展开源沃土大模型2.0</h3>
+                        <p class="card-desc">蓝沃AI首次展示"订单履约工作台"，集成AI工艺、排产、视觉三大智能体。同期开源发布90亿参数机加工工艺大模型，可免费商用。</p>
+                        <p class="card-source">📎 来源：PingWest品玩</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="news-card">
+                <span class="tag tag-comm">社交媒体</span>
+                <div class="card-content">
+                    <span class="emoji">📺</span>
+                    <div class="card-text">
+                        <h3 class="card-title">微信上线"绿泡泡"短剧与红果正面对标</h3>
+                        <p class="card-desc">微信正式推出短剧联合发行产品"绿泡泡"，红果日活已达1.68亿超过爱优腾总和。绿泡泡依托微信5.08亿短剧用户基础，正面迎战。</p>
+                        <p class="card-source">📎 来源：虎嗅</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI 安全</span>
+                <div class="card-content">
+                    <span class="emoji">🌐</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Anthropic成立5%股份公共利益基金</h3>
+                        <p class="card-desc">Anthropic宣布将5%股份用于成立公共利益基金，支持受AI影响的劳动者等社会公益用途，此前已承诺2亿美元研究AI劳动力影响。</p>
+                        <p class="card-source">📎 来源：The Verge</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="news-card">
+                <span class="tag tag-chip">芯片</span>
+                <div class="card-content">
+                    <span class="emoji">💻</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Nvidia发布新Arm笔记本芯片</h3>
+                        <p class="card-desc">Nvidia推出全新Arm架构笔记本芯片，专为高性能AI计算设计，对苹果M系列芯片形成直接挑战，大幅提升能效比。</p>
+                        <p class="card-source">📎 来源：The Verge</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI 办公</span>
+                <div class="card-content">
+                    <span class="emoji">🤝</span>
+                    <div class="card-text">
+                        <h3 class="card-title">WorkBuddy与企业微信深度融合</h3>
+                        <p class="card-desc">腾讯WorkBuddy与企业微信实现五层原生级绑定，成为国内首批且唯一获得"智能体PIA二星+"最高级认证的产品。</p>
+                        <p class="card-source">📎 来源：PingWest品玩</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI 视频</span>
+                <div class="card-content">
+                    <span class="emoji">🎬</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Agnes开源287亿参数音视频生成模型</h3>
+                        <p class="card-desc">Agnes开源MoE架构音视频生成模型，单H200 GPU约30秒生成5秒视频，较Dense模型提速20%，已开源至Hugging Face。</p>
+                        <p class="card-source">📎 来源：PingWest品玩</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="news-card">
+                <span class="tag tag-chip">新品发布</span>
+                <div class="card-content">
+                    <span class="emoji">🍎</span>
+                    <div class="card-text">
+                        <h3 class="card-title">苹果新Mac或于11月6日发布</h3>
+                        <p class="card-desc">苹果零售店计划11月5日晚间至6日进行"重置"，预计上架M6 iMac、触摸屏MacBook Pro和OLED iPad mini等新品。</p>
+                        <p class="card-source">📎 来源：The Verge</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 大结尾 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">内容治理</span>
+                <div class="card-content">
+                    <span class="emoji">🎭</span>
+                    <div class="card-text">
+                        <h3 class="card-title">AI生成名人假图假视频泛滥社交媒体</h3>
+                        <p class="card-desc">社交媒体上AI生成的明星虚假图片和视频正在疯狂传播，获得数百万播放量。这些高度逼真的深度伪造内容引发隐私和版权担忧。AI公司、社交平台和监管机构正在商讨如何标注AI生成内容，但技术进步使得鉴别越来越困难。</p>
+                        <p class="card-source">📎 来源：The Verge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>📊 共10条精选新闻 | 涵盖AI人工智能、苹果产品、芯片技术、通信互联网等领域</p>
+            <p style="margin-top: 8px;">整理时间：2026-10-19 08:30 (Asia/Shanghai)</p>
+        </footer>
+    </div>
+</body>
+</html>

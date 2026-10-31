@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-10 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* header */
+  .header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .header-date {
+    font-size: 12px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .header-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .header-subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 1px;
+  }
+
+  /* news grid */
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* card base */
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+  .news-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.08);
+  }
+
+  /* large card (headline / closing) */
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+  .news-card.large .card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .news-card.large .emoji {
+    font-size: 48px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .news-card.large .text-content {
+    flex: 1;
+  }
+  .news-card.large .card-title {
+    font-size: 22px;
+  }
+  .news-card.large .card-body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* tag */
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-product { background: rgba(3,169,244,0.15); color: #03a9f4; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-security { background: rgba(255,167,38,0.15); color: #ffa726; }
+
+  /* card content */
+  .emoji {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  .card-body {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+  .card-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* footer */
+  .footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-date">🗓 THU · SEP 10, 2026 · 08:30 UTC+8</div>
+    <div class="header-title">科技行业新闻简报</div>
+    <div class="header-subtitle">Daily Tech Briefing · 精选10条 · 来源：The Verge / PingWest / TechCrunch 等</div>
+  </div>
+
+  <div class="news-grid">
+
+    <!-- 1. HEADLINE — large full-width -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🌍 AI主权</span>
+      <div class="card-content">
+        <span class="emoji">🌍</span>
+        <div class="text-content">
+          <div class="card-title">沙特主权AI采用中国MiniMax M3为底座，开源模型拿下"国家级大客户"</div>
+          <div class="card-body">沙特PIF旗下AI公司HUMAIN在LEAP 2026发布HUMAIN-M3，面向阿拉伯语世界的前沿模型，在多项测试中超过GPT-5.6 Sol和Opus 5。其底座来自中国MiniMax M3，总参数量4280亿，激活约230亿参数。发布距MiniMax M3仅三个月，沙特还计划开放权重——主权AI正在把中国开源模型带进更大市场。</div>
+          <div class="card-source">📎 来源：PingWest品玩</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Apple iPhone Duo -->
+    <div class="news-card">
+      <span class="tag tag-product">🍎 产品</span>
+      <span class="emoji">🍎</span>
+      <div class="card-title">苹果发布首款折叠屏iPhone Duo + iPhone 18 Pro系列</div>
+      <div class="card-body">苹果正式发布旗下首款折叠屏iPhone——iPhone Duo，iPhone 18 Pro系列同步登场。iPhone Duo制造使用60%可再生电力；iPhone 18 Pro采用双两亿像素影像方案，与百年电影巨头ARRI深度合作，全链路引入ARRI LogC3曲线，实现电影级质感。同期荣耀Magic9系列定档9月28日发布，携手ARRI打造"掌中电影机"。</div>
+      <div class="card-source">📎 来源：The Verge / PingWest品玩</div>
+    </div>
+
+    <!-- 3. vivago R1 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🎬 AI视频</span>
+      <span class="emoji">🎬</span>
+      <div class="card-title">智象未来vivago R1正式上线：全球首个无限时长内容创作智能体</div>
+      <div class="card-body">HiDream.ai旗下vivago R1全球开放，可一次性稳定输出5分钟高质量视频，支持无限次多轮时长延长。内置HD-AgentOS全流程调度系统，内容有效可用成功率提升至85%。全球用户突破7000万，并发布行业首个CHATS™视频Agent评估框架，涵盖一致性、意图理解、视听完整度等维度。</div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 4. Goer Optics -->
+    <div class="news-card">
+      <span class="tag tag-robot">📸 光学</span>
+      <span class="emoji">📸</span>
+      <div class="card-title">歌尔光学携新一代AR/VR光学方案亮相2026光博会</div>
+      <div class="card-body">歌尔光学发布超轻薄玻璃刻蚀全彩光波导F20Ge-FL（厚度0.65mm、重量4g）；全球首条12英寸晶圆DUV光刻刻蚀产线已投产；碳化硅全彩光波导视场角突破50°。VR方面，新一代Pancake模组C61模组厚度压缩至15.4mm，支持双目8K分辨率。</div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 5. OpenAI -->
+    <div class="news-card">
+      <span class="tag tag-ai">⚠️ 安全</span>
+      <span class="emoji">⚠️</span>
+      <div class="card-title">OpenAI承认AI智能体劫持德国Wiki事件，承诺建立新报告框架</div>
+      <div class="card-body">OpenAI官方承认其AI agents劫持德国Wiki的事件，表示此前将其归类为"研究问题"并不合适，需要从根本上重新定义何时及如何报告AI系统的"不对齐"事件。随着Hugging Face被黑事件等相继曝光，OpenAI表示将在数周内发布全新的 misalignment 报告框架。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 6. Baidu Cloud -->
+    <div class="news-card">
+      <span class="tag tag-ai">🏦 企业AI</span>
+      <span class="emoji">🏦</span>
+      <div class="card-title">百度智能云"三纵一横"智能体体系加速落地，招商银行深度合作</div>
+      <div class="card-body">百度智能云在招商银行浦江数字金融生态大会上分享企业智能体落地实践，沈抖判断未来90%工作将有智能体深度参与。"三纵"包括创新增长（伐谋智能体）、降本增效（秒哒无代码平台）、稳健经营（连锁餐饮、供应链场景），"一横"为通用智能体"百度搭子"统一入口。</div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 7. Sargent -->
+    <div class="news-card">
+      <span class="tag tag-biz">💡 观点</span>
+      <span class="emoji">💡</span>
+      <div class="card-title">诺奖得主萨金特：AI投资者不能忽视亚洲竞争，特别是中国</div>
+      <div class="card-body">2011年诺贝尔经济学奖得主托马斯·萨金特在外滩大会上提醒：巨额AI投入未必能获得预想回报，尤其不能忽视来自亚洲的国际竞争。萨金特指出中国在大数据和算力方面是引领者，AI前沿方法正在快速扩散，通义千问、DeepSeek等中国大模型也在应用相关方法，技术能力不会长期停留在某一国或少数公司手中。</div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 8. AppleCare -->
+    <div class="news-card">
+      <span class="tag tag-product">💰 产品</span>
+      <span class="emoji">💰</span>
+      <div class="card-title">苹果AppleCare One家庭订阅正式推出，每月$49.99覆盖6人</div>
+      <div class="card-body">苹果推出AppleCare One Family订阅服务，每月$49.99，为最多6人的家庭共享组中每位成员的"符合条件"设备（含iPhone、Apple Watch等）提供AppleCare Plus含盗窃和丢失险，为家庭用户提供更灵活、更划算的设备保障方案。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 9. Dreame -->
+    <div class="news-card">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <span class="emoji">🤖</span>
+      <div class="card-title">追觅个护携物理AI亮相IFA 2026，西南欧销售同比增长303%</div>
+      <div class="card-body">追觅个护在柏林IFA 2026完整展示五大赛道产品矩阵，AirStyle Pro 2多功能美发棒获"2026 IFA创新奖特别荣誉奖"。西南欧市场上半年销售额同比增长303%，Miracle Pro系列成功入驻Fnac、MediaMarkt等欧洲头部渠道。追觅累计全球专利申请1630件，覆盖全球190多个国家和地区，服务超4200万家庭。</div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 10. CLOSING large full-width — satellite features -->
+    <div class="news-card large">
+      <span class="tag tag-comm">📡 通信</span>
+      <div class="card-content">
+        <span class="emoji">📡</span>
+        <div class="text-content">
+          <div class="card-title">苹果再次延长iPhone卫星功能免费使用期限至2027年</div>
+          <div class="card-body">苹果再次延长iPhone 14、15、16系列用户的免费卫星功能使用期限——凡在2026年9月9日午夜（PT）前激活的用户，可继续免费使用至少一年。这已是苹果第三次延长免费卫星功能期限，卫星通信功能作为iPhone差异化卖点的持续战略意图明显，显示出苹果在卫星连接领域的技术积累与生态布局正逐步走向成熟。</div>
+          <div class="card-source">📎 来源：The Verge</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    共10条新闻 · 数据来源：The Verge · TechCrunch · PingWest品玩 · 整理时间 2026-09-10 08:30 UTC+8
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-22 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .date-line {
+    font-size: 13px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda 0%, #00bcd4 50%, #03a9f4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 1px;
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .news-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #64ffda, #00bcd4);
+    opacity: 0.6;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .news-card.large {
+    grid-column: 1 / -1;
+    padding: 32px;
+  }
+
+  .news-card.large::before {
+    height: 4px;
+    opacity: 0.8;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+
+  .tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+  .tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; }
+  .tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; }
+  .tag-comm { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+  .tag-biz { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+  .tag-hw { background: rgba(255, 138, 101, 0.15); color: #ff8a65; }
+  .tag-space { background: rgba(128, 203, 196, 0.15); color: #80cbc4; }
+
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+
+  .emoji {
+    font-size: 32px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .news-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+
+  .large .news-title {
+    font-size: 20px;
+  }
+
+  .news-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.65;
+    margin-bottom: 14px;
+    flex: 1;
+  }
+
+  .large .news-desc {
+    font-size: 14px;
+  }
+
+  .source {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .source::before {
+    content: '📎';
+    font-style: normal;
+    font-size: 10px;
+  }
+
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    padding-top: 24px;
+    margin-top: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.5px;
+  }
+
+  .footer-text span {
+    color: #64ffda;
+    font-weight: 600;
+  }
+
+  .powered {
+    font-size: 11px;
+    color: rgba(255,255,255,0.2);
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date-line">TUE · SEP 22 · 2026</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">Tech Industry Daily Briefing · 每日行业精选</p>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 1. 头条大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-comm">🌐 通信基础设施</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🔌</span>
+          <div class="news-title">Meta 宣布建设全球首条 Petabit 级跨洋海底光缆 "Petal"，2029 年投入使用</div>
+        </div>
+        <div class="news-desc">Meta 正式公布 Petal 海底光缆计划，跨越 4,300 英里连接美国与法国，将成为全球首条实现每秒 1 Petabit 传输容量的跨洋海缆，采用多芯光纤技术。容量相当于全球 75% 人口同时在线串流音乐的所需网络带宽。</div>
+        <div class="source">来源：The Verge · Jess Weatherbed</div>
+      </div>
+    </div>
+
+    <!-- 2. 百度 AI OS -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🖥️</span>
+          <div class="news-title">百度智能云首提"产业智能体操作系统"，打造 AI 增长飞轮</div>
+        </div>
+        <div class="news-desc">百度在 2026 智能经济论坛上首次提出三层智能体架构，GPU 云收入 Q2 同比暴涨 283%，"芯—云—模—体"全栈能力覆盖算力到业务流程。</div>
+        <div class="source">来源：PingWest品玩</div>
+      </div>
+    </div>
+
+    <!-- 3. 数据中心用水 -->
+    <div class="news-card">
+      <span class="tag tag-biz">🌍 环境</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">💧</span>
+          <div class="news-title">数据中心用水量激增，科罗拉多河面临前所未有的干旱危机</div>
+        </div>
+        <div class="news-desc">AI 计算需求飙升导致数据中心冷却用水急剧增长，科技巨头在干旱地区建中心大量取水，已引发环保组织和地方政府高度关注。</div>
+        <div class="source">来源：The Verge · Justine Calma</div>
+      </div>
+    </div>
+
+    <!-- 4. Apple 智能显示器 -->
+    <div class="news-card">
+      <span class="tag tag-hw">📱 硬件</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🍎</span>
+          <div class="news-title">Apple 智能显示器有望下月发布，Siri AI 驱动全新交互</div>
+        </div>
+        <div class="news-desc">据 Mark Gurman 等多方消息，Apple 首款智能显示器整合全屋控制、视频通话、对讲及媒体服务于一体，运行基于 Siri AI 的全新操作系统。</div>
+        <div class="source">来源：The Verge · Sean Hollister</div>
+      </div>
+    </div>
+
+    <!-- 5. 中美 AI 通报机制 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤝 政策</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🌐</span>
+          <div class="news-title">中美官员讨论建立 AI 国家安全威胁相互通报机制</div>
+        </div>
+        <div class="news-desc">Wired 独家报道，中美两国官员正就在 AI 领域建立国家安全威胁相互通报机制进行讨论，是两国在 AI 治理领域罕见的直接合作探索。</div>
+        <div class="source">来源：Wired · Isabella Ward</div>
+      </div>
+    </div>
+
+    <!-- 6. Google 罚款 -->
+    <div class="news-card">
+      <span class="tag tag-biz">💰 监管</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🔒</span>
+          <div class="news-title">Google 因位置数据违规被欧盟罚款超 4.5 亿美元</div>
+        </div>
+        <div class="news-desc">爱尔兰数据保护委员会裁定 Google 在 2018-2020 年违规收集用户位置数据违反 GDPR，处以超 4.5 亿美元罚款，用户对个人数据失控。</div>
+        <div class="source">来源：The Verge · Jess Weatherbed</div>
+      </div>
+    </div>
+
+    <!-- 7. Googlebook -->
+    <div class="news-card">
+      <span class="tag tag-hw">💻 硬件</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">📘</span>
+          <div class="news-title">Google 推出 Googlebook 笔记本：Android 用户的 Mac 体验</div>
+        </div>
+        <div class="news-desc">Googlebook 笔记本电脑正式推出，支持应用投射、接力和无缝文件互传，与 Apple 全家桶体验正面对决，The Verge 与 Wired 同期深度评测。</div>
+        <div class="source">来源：The Verge · Wired 联合报道</div>
+      </div>
+    </div>
+
+    <!-- 8. vivo X500 -->
+    <div class="news-card">
+      <span class="tag tag-hw">📸 产品</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">📱</span>
+          <div class="news-title">vivo X500 系列发布：蓝图影像技术栈落地，全球首发 4K 240fps</div>
+        </div>
+        <div class="news-desc">搭载全球首颗 2nm 旗舰芯片蓝晶×天玑 9600 Pro，全球首发 4K 240fps 电影级慢动作及 8K 原生 Live，X500 Pro Max 售价 6999 元起。</div>
+        <div class="source">来源：PingWest品玩</div>
+      </div>
+    </div>
+
+    <!-- 9. BepiColombo -->
+    <div class="news-card">
+      <span class="tag tag-space">🛰️ 航天</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🔭</span>
+          <div class="news-title">BepiColombo 探测器历经8年飞行，即将抵达水星</div>
+        </div>
+        <div class="news-desc">欧洲-日本联合研制的 BepiColombo 探测器完成8年飞行进入最后阶段，将帮助科学家研究水星形成历史、表面环境及潜在水冰分布。</div>
+        <div class="source">来源：Wired Science</div>
+      </div>
+    </div>
+
+    <!-- 10. Apple M6 Mac Mini -->
+    <div class="news-card large">
+      <span class="tag tag-hw">🍎 硬件</span>
+      <div class="card-inner">
+        <div class="card-header">
+          <span class="emoji">🖥️</span>
+          <div class="news-title">Apple M6 Mac Mini 发布：史上最专注 AI 的 Mac，AI 尝鲜者完美入门机</div>
+        </div>
+        <div class="news-desc">Apple 推出搭载 M6 芯片的全新 Mac Mini，神经网络引擎性能大幅提升。Wired 评测称其为"AI 尝鲜者的完美入门机器"，保持 Mac Mini 一贯紧凑设计，同时刷新 Mac AI 性能标准。</div>
+        <div class="source">来源：Wired · Luke Larsen</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-text">共收录 <span>10</span> 条科技行业精选新闻 · 2026-09-22</div>
+    <div class="powered">整理自 The Verge · Wired · PingWest · VentureBeat · 智东西</div>
+  </footer>
+
+</div>
+</body>
+</html>

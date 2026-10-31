@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-01 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            color: #64ffda;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .news-card .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        
+        .tag-ai {
+            background: rgba(100, 255, 218, 0.2);
+            color: #64ffda;
+        }
+        
+        .tag-chip {
+            background: rgba(255, 167, 38, 0.2);
+            color: #ffa726;
+        }
+        
+        .tag-robot {
+            background: rgba(206, 147, 216, 0.2);
+            color: #ce93d8;
+        }
+        
+        .tag-comm {
+            background: rgba(100, 181, 246, 0.2);
+            color: #64b5f6;
+        }
+        
+        .tag-business {
+            background: rgba(129, 199, 132, 0.2);
+            color: #81c784;
+        }
+        
+        .tag-space {
+            background: rgba(255, 138, 101, 0.2);
+            color: #ff8a65;
+        }
+        
+        .tag-ar {
+            background: rgba(255, 205, 210, 0.2);
+            color: #ffcdd2;
+        }
+        
+        .news-card .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .news-card .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .news-card .content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .news-card .source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">Wednesday, July 1st, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选10条 · 每日8:30更新 · 数据来源：36氪、机器之心、Wired、TechCrunch等</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 头条 - 通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🔥</div>
+                <h2 class="title">AI大模型三足鼎立：GPT-6、Claude Mythos与DeepSeek V4格局形成</h2>
+                <p class="content">2026年4月，AI大模型市场正式形成三足鼎立格局。Anthropic完成对OpenAI的两个重大超越：一是年化收入达到里程碑，二是率先发布新一代旗舰模型Claude Mythos。DeepSeek V4也同期发布，形成三大头部模型竞争态势。</p>
+                <p class="source">📎 来源：与非网、机器之心</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💾 芯片</span>
+                <div class="emoji">📈</div>
+                <h2 class="title">半导体行业爆发：2026年销售额预计突破1万亿美元</h2>
+                <p class="content">美银预测2026年半导体行业销售额将同比增长30%，首次突破万亿美元大关。AI芯片需求成为核心驱动力，英伟达年利润预计达2370亿美元。</p>
+                <p class="source">📎 来源：东方财富、TechCrunch</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💾 芯片</span>
+                <div class="emoji">💾</div>
+                <h2 class="title">芯片涨价潮：7月起近20家半导体企业调价</h2>
+                <p class="content">全球近20家模拟及功率半导体企业宣布7月1日起调价。德州仪器年内已进行三轮调价，AI服务器专用电源管理芯片涨幅15%至25%。</p>
+                <p class="source">📎 来源：新浪财经</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="emoji">🚙</div>
+                <h2 class="title">比亚迪发起攻势：七款新车覆盖全价位</h2>
+                <p class="content">比亚迪2026年目标销量提升至500-600万台，计划推出覆盖10万至百万价位区间的七款新车。特斯拉2026年预期交付量降至180万辆。</p>
+                <p class="source">📎 来源：新浪汽车</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-business">⚡ 商业</span>
+                <div class="emoji">⚡</div>
+                <h2 class="title">新能源汽车下乡：155款车型入选目录</h2>
+                <p class="content">2026年新能源汽车下乡车型目录发布，小米SU7、特斯拉Model 3、方程豹钛7、岚图知音等热门车型入选，推动新能源汽车渗透下沉市场。</p>
+                <p class="source">📎 来源：工信部、中国电池网</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">📱</div>
+                <h2 class="title">苹果联手谷歌英伟达：云端AI基础设施合作深化</h2>
+                <p class="content">苹果确认采用英伟达GPU，将私有云计算基础设施扩展到谷歌云。谷歌CEO皮查伊证实，谷歌已成为苹果的首选云端服务供应商。</p>
+                <p class="source">📎 来源：网易科技</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🌍</div>
+                <h2 class="title">世界人工智能大会7月上海开幕</h2>
+                <p class="content">2026世界人工智能大会将于7月17日至20日在上海举行，以"智能伙伴，共创未来"为主题，聚焦AI全球治理，汇聚全球顶尖专家与企业。</p>
+                <p class="source">📎 来源：经济观察报、新浪新闻</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">💬</div>
+                <h2 class="title">智能终端变革：AI加速渗透智能手机</h2>
+                <p class="content">AI技术不断迭代，行业发展已从概念验证阶段跨越到规模化落地阶段。智能手机用户体验正在发生根本性变化。</p>
+                <p class="source">📎 来源：新浪人工智能</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-space">🛰️ 航天</span>
+                <div class="emoji">🚀</div>
+                <h2 class="title">SpaceX完成2026全球首发：星链部署持续推进</h2>
+                <p class="content">SpaceX于2026年1月完成全球航天2026年度第一次任务，将意大利遥感卫星送入轨道。今年已发射541颗星链卫星。</p>
+                <p class="source">📎 来源：腾讯新闻、网易</p>
+            </div>
+            
+            <!-- 第10条 - 底部通栏 -->
+            <div class="news-card large">
+                <span class="tag tag-ar">🥽 前沿</span>
+                <div class="emoji">🥽</div>
+                <h2 class="title">苹果AR战略转向：放弃Vision Pro，押注AI眼镜</h2>
+                <p class="content">苹果正进行AR/VR市场的根本性战略调整，暂停Vision Pro轻量版开发，计划2026年底推出AI眼镜（预计WWDC 2026首发，2027年量产上市），与Meta Ray-Ban智能眼镜展开竞争。</p>
+                <p class="source">📎 来源：新浪科技、PingWest</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>共10条新闻 · 数据来源：36氪、机器之心、Wired、TechCrunch、Ars Technica、新华社等</p>
+        </footer>
+    </div>
+</body>
+</html>

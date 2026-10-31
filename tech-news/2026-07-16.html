@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-16 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .date {
+    color: #64ffda;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+  }
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+  .news-card.large .news-title {
+    font-size: 22px;
+  }
+  .news-card.large .news-content {
+    font-size: 15px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-med { background: rgba(255,138,128,0.15); color: #ff8a65; }
+  .tag-oss { background: rgba(128,203,196,0.15); color: #80cbc4; }
+  .tag-sec { background: rgba(239,154,154,0.15); color: #ef9a9a; }
+  .tag-game { background: rgba(159,168,218,0.15); color: #9fa8da; }
+  .tag-headline { background: rgba(100,255,218,0.2); color: #64ffda; }
+  .emoji {
+    font-size: 32px;
+    line-height: 1;
+  }
+  .news-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .news-content {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .news-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    color: rgba(255,255,255,0.35);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date">Thursday · July 16, 2026</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <div class="subtitle">Tech Daily Brief · 整理于 Asia/Shanghai</div>
+  </header>
+
+  <div class="news-grid">
+    <!-- Card 1: Headline (large, full-width) -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-headline">🔬 头条</span>
+      </div>
+      <div class="emoji">💊</div>
+      <div class="news-title">AI制药正迎来关键一跃，资本巨头竞逐新赛道</div>
+      <div class="news-content">Anthropic发布Claude Science并启动自主药物研发项目，国内AI制药企业英矽智能与日本武田制药达成全球战略合作，交易总金额最高可达6亿美元。AI制药正从"概念"走向"兑现价值"。</div>
+      <div class="news-source">📎 来源：36氪 / The Verge</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="emoji">🍎</div>
+      <div class="news-title">Apple Intelligence正式获批在中国落地</div>
+      <div class="news-content">苹果设备端生成式AI已在中国网信办完成注册登记，扫清落地障碍。苹果集成阿里云通义千问（Qwen）和百度文心一言为中国用户提供服务。</div>
+      <div class="news-source">📎 来源：The Verge / 36氪</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-med">🧠 医疗</span>
+      </div>
+      <div class="emoji">🧠</div>
+      <div class="news-title">全球首例植入式脑机接口手术在上海完成</div>
+      <div class="news-content">植入式脑机接口系统（NEO）首张处方于7月13日在上海开出，全球首例植入手术在华山医院完成。A股脑机接口概念股当日走强。</div>
+      <div class="news-source">📎 来源：中证网 / 36氪</div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-oss">💻 开源</span>
+      </div>
+      <div class="emoji">🐧</div>
+      <div class="news-title">Linus Torvalds发声：Linux不反AI，不满者可Fork</div>
+      <div class="news-content">Linux之父明确表示愿意绝对坚持作为顶级维护者的立场，明确"Linux不反AI"，对不满者他建议："他们可以做开源的事——Fork它。"</div>
+      <div class="news-source">📎 来源：The Register via The Verge</div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="emoji">🧠</div>
+      <div class="news-title">Mira Murati新公司发布首个模型Inkling</div>
+      <div class="news-content">OpenAI前CTO Mira Murati创立的Thinking Machines Lab发布首个AI模型"Inkling"，从零开始训练的开放权重模型，具备全面扎实能力，将作为未来模型训练基础。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-sec">🔒 安全</span>
+      </div>
+      <div class="emoji">🛡️</div>
+      <div class="news-title">OpenAI推出GPT-Red红队模型，可攻破几乎所有对标AI</div>
+      <div class="news-content">OpenAI发布专门用于AI红队测试的GPT-Red模型，官方称其"几乎能攻破所有与之对标的模型"，已被用于发现GPT-5.6 Sol的漏洞。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-biz">📱 商业</span>
+      </div>
+      <div class="emoji">📱</div>
+      <div class="news-title">OnePlus将退出美国和欧洲市场</div>
+      <div class="news-content">据Bloomberg报道，Oppo子品牌OnePlus将退出美国和欧洲市场，决策最早将于本周生效，与Oppo母公司战略调整有关。</div>
+      <div class="news-source">📎 来源：The Verge / Bloomberg</div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-biz">🐦 商业</span>
+      </div>
+      <div class="emoji">🐦</div>
+      <div class="news-title">马斯克宣布将开源X平台整个代码库</div>
+      <div class="news-content">埃隆·马斯克发推文称完成安全漏洞审查后将把X整个代码库开源，无一例外。同时他还提及X平台算法"因几个点赞就向用户推送相似内容"的故障问题。</div>
+      <div class="news-source">📎 来源：The Verge / X.com</div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-chip">💾 芯片</span>
+      </div>
+      <div class="emoji">💾</div>
+      <div class="news-title">韩美半导体拟投建第八座工厂，预计AI半导体设备明年供应短缺</div>
+      <div class="news-content">韩美半导体正考虑投建第八座生产工厂，建成后将成为公司规模最大的厂区。董事长预计自2027年起半导体设备需求将超过供给。</div>
+      <div class="news-source">📎 来源：36氪 / 新浪财经</div>
+    </div>
+
+    <!-- Card 10: Headline 2 (large, full-width) -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-headline">🎮 游戏</span>
+      </div>
+      <div class="emoji">🎮</div>
+      <div class="news-title">Steam Deck LCD不会停产，Valve回应社区关切</div>
+      <div class="news-content">The Verge报道Steam Deck LCD将持续生产。Valve的Sean Hollister在Vergecast节目中回应了社区关于Steam Machine的讨论，针对外界关于Valve客厅游戏主机战略的质疑进行了说明。</div>
+      <div class="news-source">📎 来源：The Verge</div>
+    </div>
+  </div>
+
+  <footer>
+    <div>共 10 条新闻 · 简报自动生成 · 2026-07-16</div>
+  </footer>
+</div>
+</body>
+</html>

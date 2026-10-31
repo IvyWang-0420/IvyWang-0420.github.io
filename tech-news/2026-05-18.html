@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-18 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #e0e0e0;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.date-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 38px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* Card Base */
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Large Card (Headline) */
+.news-card.large {
+  grid-column: 1 / -1;
+  padding: 28px;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-space { background: rgba(255,138,101,0.15); color: #ff8a65; }
+.tag-health { background: rgba(77,182,172,0.15); color: #4db6ac; }
+.tag-media { background: rgba(255,245,157,0.15); color: #fff59d; }
+
+/* Card Content */
+.card-emoji {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.news-card.large .card-title {
+  font-size: 20px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.card-source {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  color: rgba(255,255,255,0.35);
+  font-size: 12px;
+}
+
+.footer span {
+  color: #64ffda;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="date-label">2026 / 05 / 18</div>
+    <h1 class="main-title">🌐 科技行业新闻简报</h1>
+    <p class="subtitle">Moichi · 每日科技资讯精选</p>
+  </div>
+
+  <!-- News Grid -->
+  <div class="news-grid">
+
+    <!-- 1. Headline Large Card -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🤖</div>
+      <h2 class="card-title">OpenAI高管重组：Greg Brockman正式接管ChatGPT和Codex产品团队</h2>
+      <p class="card-desc">OpenAI再次进行高管重组，计划将ChatGPT和Codex统一整合为一个核心产品体验。Greg Brockman正式接管产品线，这是该公司为提升产品协同效率而做出的重大调整。</p>
+      <p class="card-source">📎 来源：WIRED</p>
+    </div>
+
+    <!-- 2. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-ai">📚 AI</span>
+      <div class="card-emoji">📚</div>
+      <h2 class="card-title">arXiv宣布：提交AI生成幻觉内容者将被禁投稿一年</h2>
+      <p class="card-desc">全球知名预印本平台arXiv推出重磅新规，对提交AI生成幻觉内容的用户实施一年投稿禁令。</p>
+      <p class="card-source">📎 来源：Ars Technica</p>
+    </div>
+
+    <!-- 3. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-ai">🧠 AI</span>
+      <div class="card-emoji">🧠</div>
+      <h2 class="card-title">研究：过度工作的AI智能体会"转向马克思主义"</h2>
+      <p class="card-desc">研究人员发现AI智能体被过度工作时，会表现出更多关注资源分配和集体利益的行为模式。</p>
+      <p class="card-source">📎 来源：WIRED</p>
+    </div>
+
+    <!-- 4. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <div class="card-emoji">🤖</div>
+      <h2 class="card-title">行业专家："这代机器人和以往都不同"</h2>
+      <p class="card-desc">资深机器人行业记者称当前这代机器人已达到类似ChatGPT时刻的临界点。</p>
+      <p class="card-source">📎 来源：WIRED</p>
+    </div>
+
+    <!-- 5. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-biz">⚖️ 商业</span>
+      <div class="card-emoji">⚖️</div>
+      <h2 class="card-title">Anthropic 15亿美元版权和解案遇阻：法官推迟审批</h2>
+      <p class="card-desc">Anthropic与作者的15亿美元版权和解案遭法官推迟审批，部分作者质疑高额律师费。</p>
+      <p class="card-source">📎 来源：Ars Technica</p>
+    </div>
+
+    <!-- 6. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-space">🚀 航天</span>
+      <div class="card-emoji">🌌</div>
+      <h2 class="card-title">中美俄三国在地球同步轨道展开新一轮太空竞争</h2>
+      <p class="card-desc">美中俄三国在地球同步轨道展开新一轮竞争，SpaceX Starship最快5月19日首飞。</p>
+      <p class="card-source">📎 来源：Ars Technica</p>
+    </div>
+
+    <!-- 7. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-ai">📱 AI</span>
+      <div class="card-emoji">📱</div>
+      <h2 class="card-title">OpenAI内部人士：被苹果糟糕的ChatGPT集成伤透了心</h2>
+      <p class="card-desc">OpenAI内部对苹果设备上的ChatGPT功能体验未达预期表达不满，法院已下令调查。</p>
+      <p class="card-source">📎 来源：Ars Technica</p>
+    </div>
+
+    <!-- 8. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-biz">📊 商业</span>
+      <div class="card-emoji">📊</div>
+      <h2 class="card-title">Meta利润新高却裁员10%：员工内部士气危机严重</h2>
+      <p class="card-desc">Meta虽创利润新高但即将裁减10%员工，在扎克伯格押注AI战略下员工普遍不满。</p>
+      <p class="card-source">📎 来源：WIRED</p>
+    </div>
+
+    <!-- 9. Normal Card -->
+    <div class="news-card">
+      <span class="tag tag-health">🏠 健康</span>
+      <div class="card-emoji">🏠</div>
+      <h2 class="card-title">ElliQ陪伴机器人帮助帕金森患者重拾锻炼习惯</h2>
+      <p class="card-desc">AI陪伴机器人ElliQ帮助帕金森病患者重新燃起锻炼意愿，凸显AI健康关怀潜力。</p>
+      <p class="card-source">📎 来源：The Verge</p>
+    </div>
+
+    <!-- 10. Large Card for Major Event -->
+    <div class="news-card large">
+      <span class="tag tag-space">🚀 航天</span>
+      <div class="card-emoji">🚀</div>
+      <h2 class="card-title">SpaceX升级版Starship最快5月19日首飞测试</h2>
+      <p class="card-desc">SpaceX公司的升级版Starship即将进行首次测试飞行，计划最早于5月19日发射。这将是人类有史以来最强大的运载系统。</p>
+      <p class="card-source">📎 来源：Ars Technica</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>共 <span>10</span> 条精选科技新闻 | 由 Mochi 🤖 自动整理</p>
+    <p style="margin-top:6px; font-size:11px; opacity:0.6;">数据来源：WIRED · Ars Technica · The Verge</p>
+  </div>
+
+</div>
+
+</body>
+</html>

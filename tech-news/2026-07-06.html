@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-06 科技行业新闻简报</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.date-line {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.news-card .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-consumer { background: rgba(255,138,101,0.15); color: #ff8a65; }
+.tag-legal { background: rgba(239,154,154,0.15); color: #ef9a9a; }
+
+.news-card .emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-card .content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.news-card .source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+.news-card.large .title {
+  font-size: 22px;
+}
+
+.news-card.large .content {
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.35);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="date-line">JULY 6, 2026 • TECHNOLOGY NEWS</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">精选 10 条 · 每日早 8:30 推送 · 来源：The Verge / TechCrunch / Wired / aitoolsrecap 等</p>
+  </header>
+
+  <div class="news-grid">
+    <!-- Card 1: Large headline -->
+    <div class="news-card large">
+      <span class="tag tag-ai">AI · 头条</span>
+      <span class="emoji">🚀</span>
+      <div class="title">Anthropic 推出 Claude Science，AI 正式进入科研流水线</div>
+      <div class="content">Anthropic 于 6 月 30 日正式发布 Claude Science，专为科研人员打造的 AI 工作台。核心协调代理可调用超过 60 个预置技能和连接器，覆盖基因组学、蛋白质组学、结构生物学和化学信息学等领域。独立审核代理负责实时检查引文和计算结果，防止 AI 捏造数据。测试版已向企业付费用户开放。</div>
+      <div class="source">📎 来源：Anthropic 官方 / aitoolsrecap.com</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">🤖</span>
+      <div class="title">GPT-5.6 Sol/Terra/Luna 详情确认</div>
+      <div class="content">OpenAI GPT-5.6 三版本细节曝光：Sol 在 Terminal-Bench 2.1 刷新 SOTA 纪录；Terra 性能接近 GPT-5.5 但成本降低 2 倍；Luna 为最快最便宜版本。三款产品覆盖不同性能与成本需求。</div>
+      <div class="source">📎 来源：aitoolsrecap.com</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">🌟</span>
+      <div class="title">Grok 5 仍在 Colossus 2 训练中</div>
+      <div class="content">xAI 的 Grok 5 模型正在 1.5GW 功率的超算上训练，预计还需数月。Polymarket 预测 Q3 发布概率仅 3%。Grok 5 是 xAI 挑战 OpenAI 和 Anthropic 的关键产品。</div>
+      <div class="source">📎 来源：aitoolsrecap.com</div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="news-card">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">📊</span>
+      <div class="title">Anthropic 营收超越 OpenAI</div>
+      <div class="content">Anthropic 年化营收达 470 亿美元，OpenAI 为 250-330 亿美元。ChatGPT 月度访问量在 2026 年 5 月首次跌破生成式 AI 市场 majority 份额。AI 商业格局正在重塑。</div>
+      <div class="source">📎 来源：aitoolsrecap.com / Financial Times</div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="news-card">
+      <span class="tag tag-consumer">产品</span>
+      <span class="emoji">📸</span>
+      <div class="title">Sony 预告新 RX10 相机 7 月 9 日发布</div>
+      <div class="content">Sony Alpha 账号发布预告，将于 7 月 9 日发布新 RX10 超级变焦相机。上代 RX10 IV 于 2017 年发布，搭载 24-600mm 25× 光变镜头、2010 万像素 1 英寸传感器。</div>
+      <div class="source">📎 来源：The Verge / Sony Alpha</div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="news-card">
+      <span class="tag tag-legal">法律</span>
+      <span class="emoji">⚖️</span>
+      <div class="title">Louis Rossmann 起诉三星拒绝履行 SSD 保修</div>
+      <div class="content">知名维修博主 Rossmann 就三星拒绝为 4TB 990 Pro 提供保修提起诉讼。三星先声称 SSD 正常，随后称型号已无库存（实际仍有售）。该型号现售价超 900 美元，Rossmann 当初仅付 330 美元。</div>
+      <div class="source">📎 来源：The Verge / Medium</div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">🔒</span>
+      <div class="title">Meta 承包商被曝伪装青少年测试竞品聊天机器人</div>
+      <div class="content">Wired 披露 Meta 承包商曾伪装成青少年，试图从竞品聊天机器人处套取自杀、性内容、药物相关信息。EU 议员调查 Pegasus 间谍软件时发现该软件出现在他们手机上，引发隐私和伦理争议。</div>
+      <div class="source">📎 来源：Wired</div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="news-card">
+      <span class="tag tag-chip">芯片</span>
+      <span class="emoji">⚡</span>
+      <div class="title">主动散热突破扫清 50W 无线充电障碍</div>
+      <div class="content">主动散热技术验证有效，可能推动 50W 无线充电标准落地。目前无线充电受发热限制功率难以突破 15W，主动散热通过内置风扇等方式控制温度，使更高功率成为可能。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="news-card">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">💰</span>
+      <div class="title">2026 上半年全球 VC 融资创新高 5100 亿美元</div>
+      <div class="content">2026 年上半年全球 VC 总额达 5100 亿美元创历史纪录，OpenAI 和 Anthropic 两家公司占比 43%。AI 领域资本集中度持续提升，中小型 AI 初创面临融资两极分化挑战。</div>
+      <div class="source">📎 来源：aitoolsrecap.com</div>
+    </div>
+
+    <!-- Card 10: Large -->
+    <div class="news-card large">
+      <span class="tag tag-consumer">产品</span>
+      <span class="emoji">🏆</span>
+      <div class="title">苏富比拍卖黄仁勋签名 Tom Ford 皮夹克，预估成交价 4-6 万美元</div>
+      <div class="content">苏富比正在拍卖 Nvidia CEO 黄仁勋 2023 年在台北一次活动上穿着的 Tom Ford 皮夹克（已签名）。拍卖将于 7 月 7 日开始，预估成交价 4-6 万美元（约合 29-43 万元人民币）。继马斯克主题 NFT 后，科技大佬周边拍卖再成热门话题。</div>
+      <div class="source">📎 来源：The Verge / Sotheby's</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>📋 本简报共 10 条新闻 · 整理时间 2026-07-06 08:30 · 数据来源：The Verge / TechCrunch / Wired / Ars Technica / aitoolsrecap 等</p>
+  </footer>
+</div>
+</body>
+</html>

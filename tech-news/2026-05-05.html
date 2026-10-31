@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-05 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .header-date {
+    font-size: 13px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .header-title {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .header-subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 1px;
+  }
+
+  /* News Grid */
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+  }
+
+  .news-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(100, 255, 218, 0.3);
+  }
+
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+
+  /* Tags */
+  .tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; border: 1px solid rgba(100,255,218,0.3); }
+  .tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; border: 1px solid rgba(255,167,38,0.3); }
+  .tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; border: 1px solid rgba(206,147,216,0.3); }
+  .tag-comm { background: rgba(100, 181, 246, 0.15); color: #64b5f6; border: 1px solid rgba(100,181,246,0.3); }
+  .tag-biz { background: rgba(129, 199, 132, 0.15); color: #81c784; border: 1px solid rgba(129,199,132,0.3); }
+  .tag-policy { background: rgba(255, 202, 138, 0.15); color: #ffcc80; border: 1px solid rgba(255,202,138,0.3); }
+
+  /* Card Content */
+  .card-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+  .card-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .card-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    font-style: italic;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.4);
+    font-size: 13px;
+  }
+
+  /* Large card hero styling */
+  .news-card.large .card-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .news-card.large .card-icon-wrap {
+    flex-shrink: 0;
+  }
+
+  .news-card.large .card-body {
+    flex: 1;
+  }
+
+  .news-card.large .card-icon {
+    font-size: 48px;
+  }
+
+  .news-card.large .card-title {
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-date">Tuesday, May 5, 2026</div>
+    <h1 class="header-title">科技行业新闻简报</h1>
+    <p class="header-subtitle">精选 10 条 · 每日 08:30 更新 · 来源：工信部 / 36氪 / 新浪科技</p>
+  </div>
+
+  <!-- News Grid -->
+  <div class="news-grid">
+
+    <!-- #1 Large: AI Standards - 头条 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-content">
+        <div class="card-icon-wrap">
+          <span class="card-icon">📋</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">工信部批准690项行业标准：AI深度合成图像系统技术规范正式落地</div>
+          <p class="card-text">工业和信息化部批准《人工智能 深度合成图像系统技术规范》等690项行业标准，涵盖电子行业35项、通信行业109项等，标志着我国AI生成内容标准体系进一步完善，对规范深度合成技术应用具有重要指导意义。</p>
+          <span class="card-source">📎 来源：工信部公告2026年第9号</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- #2 Small: Metaverse Cases -->
+    <div class="news-card">
+      <span class="tag tag-policy">🌐 政策</span>
+      <span class="card-icon">🏢</span>
+      <div class="card-title">四部门联合公布2025年元宇宙典型案例193项</div>
+      <p class="card-text">工信部、教育部、文旅部、广电总局联合公布2025年元宇宙典型案例名单，共计193项入选，覆盖技术创新、应用落地、政府服务等方向，推动优秀成果规模化应用。</p>
+      <span class="card-source">📎 来源：工信部官网</span>
+    </div>
+
+    <!-- #3 Small: Industrial Data -->
+    <div class="news-card">
+      <span class="tag tag-ai">📊 AI</span>
+      <span class="card-icon">🏭</span>
+      <div class="card-title">工信部印发《工业场景数据要素应用参考指引》</div>
+      <p class="card-text">引导企业以场景应用为牵引，探索工业数据"采""集""用"有效路径，加快推进工业数据开发利用，赋能新型工业化发展，助力制造业数字化转型升级。</p>
+      <span class="card-source">📎 来源：工信部信息技术发展司</span>
+    </div>
+
+    <!-- #4 Small: Electronics Manufacturing -->
+    <div class="news-card">
+      <span class="tag tag-chip">💾 芯片</span>
+      <span class="card-icon">📈</span>
+      <div class="card-title">一季度电子信息制造业：增加值同比增长13.6%，集成电路产量激增24.3%</div>
+      <p class="card-text">一季度规模以上电子信息制造业增加值同比增长13.6%，集成电路产量1272亿块，同比增长24.3%。手机产量3.45亿台，智能手机同比增长6.9%。</p>
+      <span class="card-source">📎 来源：工信部运行监测协调局</span>
+    </div>
+
+    <!-- #5 Small: Software Industry -->
+    <div class="news-card">
+      <span class="tag tag-biz">💻 软件</span>
+      <span class="card-icon">☁️</span>
+      <div class="card-title">一季度软件业收入34920亿元，云计算大数据服务增长13.1%</div>
+      <p class="card-text">软件业务收入34920亿元，同比增长11.6%。云计算、大数据服务共收入4073亿元，同比增长13.1%。软件业务出口156亿美元，同比增长12.7%。</p>
+      <span class="card-source">📎 来源：工信部运行监测协调局</span>
+    </div>
+
+    <!-- #6 Small: 5G Base Stations -->
+    <div class="news-card">
+      <span class="tag tag-comm">📡 通信</span>
+      <span class="card-icon">📶</span>
+      <div class="card-title">我国5G基站达495.8万个，5G用户规模持续扩大</div>
+      <p class="card-text">截至3月末，5G基站总数达495.8万个，比上年末净增12万个。5G移动电话用户达12.54亿户，占移动电话用户的68.3%。千兆宽带用户达2.49亿。</p>
+      <span class="card-source">📎 来源：工信部运行监测协调局</span>
+    </div>
+
+    <!-- #7 Small: Telecom Operations -->
+    <div class="news-card">
+      <span class="tag tag-comm">📱 通信</span>
+      <span class="card-icon">🌏</span>
+      <div class="card-title">一季度通信业运行平稳：电信业务总量同比增长8.3%</div>
+      <p class="card-text">电信业务收入4394亿元，电信业务总量同比增长8.3%。移动互联网流量1044亿GB，同比增长19.1%。移动物联网终端用户29.48亿户。</p>
+      <span class="card-source">📎 来源：工信部运行监测协调局</span>
+    </div>
+
+    <!-- #8 Small: Battery Recycling -->
+    <div class="news-card">
+      <span class="tag tag-policy">🔋 政策</span>
+      <span class="card-icon">♻️</span>
+      <div class="card-title">工信部启动废旧动力电池回收利用联合执法专项行动</div>
+      <p class="card-text">工信部联合发布《关于开展规范废旧动力电池回收利用联合执法专项行动的通知》，规范废旧动力电池回收市场，打击非法处置，推动动力电池全生命周期管理。</p>
+      <span class="card-source">📎 来源：工信部官网</span>
+    </div>
+
+    <!-- #9 Small: Energy Saving -->
+    <div class="news-card">
+      <span class="tag tag-policy">🏭 政策</span>
+      <span class="card-icon">⚡</span>
+      <div class="card-title">工信部启动2026年度工业节能降碳诊断服务工作</div>
+      <p class="card-text">遴选重点用水企业、园区水效领跑者，推动工业企业降低能耗、减少碳排放，加快制造业绿色低碳转型升级。</p>
+      <span class="card-source">📎 来源：工信部官网</span>
+    </div>
+
+    <!-- #10 Large: 十五五 Plan -->
+    <div class="news-card large">
+      <span class="tag tag-biz">🌏 战略</span>
+      <div class="card-content">
+        <div class="card-icon-wrap">
+          <span class="card-icon">🚀</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title">2026年"十五五"规划开局：新型工业化与科技创新并重</div>
+          <p class="card-text">2026年是"十五五"规划开局之年，工信部明确新型工业化发展方向，加快推动人工智能、量子计算、6G等前沿技术布局。工信部明确新型工业化发展方向，加快推动人工智能、量子计算、6G等前沿技术布局，全国研究与试验发展经费投入有望继续增长，科技自立自强成为核心战略。</p>
+          <span class="card-source">📎 来源：新华网 / 工信部</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    共 10 条精选新闻 · 整理时间：2026-05-05 08:30 (Asia/Shanghai)
+  </div>
+
+</div>
+</body>
+</html>

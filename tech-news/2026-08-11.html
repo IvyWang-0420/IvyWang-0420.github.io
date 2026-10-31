@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-11 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .date {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #64ffda;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+  }
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+  .news-card .tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; border: 1px solid rgba(100,255,218,0.3); }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; border: 1px solid rgba(255,167,38,0.3); }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; border: 1px solid rgba(206,147,216,0.3); }
+  .tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; border: 1px solid rgba(100,181,246,0.3); }
+  .tag-business { background: rgba(129,199,132,0.15); color: #81c784; border: 1px solid rgba(129,199,132,0.3); }
+  .tag-product { background: rgba(255,138,101,0.15); color: #ff8a65; border: 1px solid rgba(255,138,101,0.3); }
+  .news-card .emoji {
+    font-size: 32px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .news-card .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .news-card.large .title {
+    font-size: 22px;
+  }
+  .news-card .content {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+  .news-card .source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    margin-top: 10px;
+    color: rgba(255,255,255,0.35);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  footer .footer-note {
+    margin-top: 6px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.2);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">AUG 11, 2026 — TECH DAILY BRIEF</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">每日精选 · 2026年8月11日 08:30 BJT</p>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 头条通栏 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🔥 头条</span>
+      <span class="emoji">🚀</span>
+      <div class="title">Epic Games 出售 ArtStation 和 Sketchfab，专注 Unreal Engine 6</div>
+      <div class="content">Epic Games 宣布将艺术家作品集平台 ArtStation 和 3D 资产平台 Sketchfab 出售给 Kitbash3D，全面聚焦 Unreal Engine 6、Fortnite 及 Epic Games Store 构建。此举标志着 Epic 从多元化平台向核心游戏引擎业务的战略收缩。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">🤖</span>
+      <div class="title">xAI 借力 Cursor 实现 Grok 4.5 强势回归</div>
+      <div class="content">SpaceX 以约 600 亿美元收购 Cursor，Cursor 投入数据集、产品文档与开发代码，联合训练 Grok 4.5。编程 Agent 得分与 GPT-5.5 Codex 持平，成本仅一半，三个月内完成从"推倒重建"到重返第一梯队的惊人逆转。</div>
+      <div class="source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">💡</span>
+      <div class="title">Qwen3.8-Max 发布：国产模型走向"能交付任务"</div>
+      <div class="content">阿里通义千问 Qwen3.8-Max（2.4万亿参数，1M上下文）发布，在 Text Arena 榜单仅次于 Claude 系列。实测能完成项目骨架搭建、登录鉴权等工程化工作，标志着国产模型从"会写代码"到"可交付任务"的关键跨越。</div>
+      <div class="source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <span class="tag tag-comms">通信</span>
+      <span class="emoji">📡</span>
+      <div class="title">字节跳动明确拒绝模型蒸馏：坚守自研路线</div>
+      <div class="content">张一鸣在 Seed 全体会上明确禁止模型蒸馏，称"我们可以接受暂时的落后，但不要蒸馏"。早于 2023 年即禁止将外部模型数据加入训练，在算力差距加剧背景下仍坚持自研路线，TikTok 合规并非主要考量。</div>
+      <div class="source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <span class="tag tag-robot">机器人</span>
+      <span class="emoji">🗓️</span>
+      <div class="title">AICon 深圳 2026 开幕，聚焦 Agent 工程化</div>
+      <div class="content">AICon 全球人工智能大会将于 8 月 21-22 日在深圳举办，核心议题：Agent 工程化可靠性、具身智能、工业机器人物理 AI 闭环。群青智能、清华、阿里云、腾讯等一线专家主题演讲，探索 AI 从能力突破走向系统构建。</div>
+      <div class="source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <span class="tag tag-product">产品</span>
+      <span class="emoji">📱</span>
+      <div class="title">Fairphone 6 Plus 规格曝光：骁龙 7s Gen 4，€649</div>
+      <div class="content">可维修手机 Fairphone 6 Plus 规格泄露：搭载骁龙 7s Gen 4，12GB+256GB，黑/蓝/绿三色，售价 €649。保持高可修复性和模块化设计，较上代 €549 有所上调。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <span class="emoji">💻</span>
+      <div class="title">联想天禧AI 4.2 发布：定义"随身携带的个人宇宙"</div>
+      <div class="content">联想天禧AI 4.2 个人超级智能体正式亮相，内嵌于 AI PC、手机、平板等终端，支持"端、边、云"一体化架构。42款联想终端通过工信部最高 L3 级 AI 智能化认证，"智键"支持全终端一键唤醒全域 AI 能力。</div>
+      <div class="source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <span class="tag tag-business">商业</span>
+      <span class="emoji">⚖️</span>
+      <div class="title">Meta / Google / TikTok / Snap 面临数千起社媒成瘾诉讼</div>
+      <div class="content">美国多州总检察长对 Meta 等社交媒体平台提起的成瘾诉讼案即将开庭，法官已驳回 Meta 要求推迟审判的申请。Google、TikTok、Snap 也将面临数千起相关诉讼，成为社交媒体行业史上最大规模法律挑战之一。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <span class="tag tag-business">商业</span>
+      <span class="emoji">📦</span>
+      <div class="title">纽约市长支持快递保护法案，挑战亚马逊 DSP 模式</div>
+      <div class="content">纽约市长 Zohran Mamdani 表态支持"快递保护法案"（Intro 518），强制亚马逊等公司雇用穿着品牌制服的快递员为正式员工，而非当前 DSP 独立承包商模式。支持者称 DSP 是规避责任的"烟雾弹"。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第10条通栏 -->
+    <div class="news-card large">
+      <span class="tag tag-comms">应用</span>
+      <span class="emoji">🍽️</span>
+      <div class="title">ChatGPT 联合 OpenTable / Yelp 推出餐厅预订功能</div>
+      <div class="content">OpenAI 宣布 ChatGPT 正式支持餐厅预订功能，用户可通过对话直接完成 OpenTable、Resy 订座或加入等候名单，无需离开聊天界面。Yelp 已全面接入合作，ChatGPT 持续向"AI 个人助理"方向演进，打通信息推荐到服务闭环的最后一环。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>📊 2026-08-11 科技行业新闻简报 · 共 10 条</div>
+    <div class="footer-note">精选自 The Verge / PingWest品玩 等媒体 · 仅供参考</div>
+  </footer>
+
+</div>
+</body>
+</html>

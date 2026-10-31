@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-15 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+            letter-spacing: 2px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+        .tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+        .tag-com { background: rgba(100,181,246,0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+        .tag-car { background: rgba(255,138,101,0.2); color: #ff8a65; }
+        .tag-headline { background: linear-gradient(90deg, #64ffda, #00bcd4); color: #1a1a2e; }
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .card-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+        .card-source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.45);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">JUN 15, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">TECH INDUSTRY DAILY BRIEF</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-headline">🔴 头条</span>
+                <div class="emoji">🍎</div>
+                <h2 class="card-title">苹果WWDC26召开：库克深情告别，Siri AI重生引领智能新时代</h2>
+                <p class="card-content">苹果CEO库克在WWDC26上发表告别演讲，"库克时代"即将落幕。大会最大亮点是苹果与谷歌联手打造的新一代Siri AI，具备个人上下文理解、App操作、屏幕感知、图像理解和世界知识五大核心能力。苹果发布第二代端侧模型，系统级AI全面融入各操作系统。但中国大陆暂不提供Siri AI新功能，需配合监管推进。</p>
+                <p class="card-source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🔒</div>
+                <h2 class="card-title">Anthropic应美国政府要求下架Claude Fable 5</h2>
+                <p class="card-content">AI安全公司Anthropic宣布将按美国政府指令下线Claude Fable 5模型。官方表示政府已告知该模型存在可绕过安全措施的"越狱"方法。这是美国政府对AI模型出口管制收紧的最新动向。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">⚖️</div>
+                <h2 class="card-title">OpenAI前高管警告：AI正在被用来购买"民主"</h2>
+                <p class="card-content">前a16z合伙人John O'Donnell在《纽约时报》发表评论，警告硅谷同僚正利用巨额财富压制AI监管辩论。AI既可能带来生产力飞跃，也可能造成大规模就业替代；既可能治愈癌症，也可能加速生物风险。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🏛️</div>
+                <h2 class="card-title">白宫怀疑中国关联组织获取Anthropic先进AI权限</h2>
+                <p class="card-content">据报道，美国白宫怀疑一个中国关联组织已获取Anthropic强大AI系统的访问权限。这进一步加剧了中美之间在AI领域的技术竞争和安全担忧。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💾 芯片</span>
+                <div class="emoji">🖥️</div>
+                <h2 class="card-title">SpaceX租用Colossus 1 AI数据中心给Anthropic和Google</h2>
+                <p class="card-content">SpaceX在开发Grok AI过程中遭遇延迟问题，将Colossus 1数据中心出租给Anthropic（年租金150亿美元）和Google（每月9200万美元）。问题源于该中心与另外两个数据中心连接时的延迟问题。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🎬</div>
+                <h2 class="card-title">京东开源JoyAI-Echo：5分钟长视频生成，角色一致性全球领先</h2>
+                <p class="card-content">京东首次开源长音视频生成框架JoyAI-Echo，直击角色一致性、声音稳定性、生成速度三大难题。推理速度提升7.5倍，代码与模型权重全部开源，全球开发者可自由使用。</p>
+                <p class="card-source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🧠</div>
+                <h2 class="card-title">云知声发布U2原生Agent大模型：跻身国产第一梯队</h2>
+                <p class="card-content">"港股AGI第一股"云知声发布U2大模型，基于MoE范式构建，实现"小参数强能力、少Token高产出、低算力低成本"突破。在长上下文、知识推理等基准测试中均位列国产前列。</p>
+                <p class="card-source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💼 商业</span>
+                <div class="emoji">📢</div>
+                <h2 class="card-title">斯坦福毕业生在毕业典礼上对谷歌CEO发出嘘声</h2>
+                <p class="card-content">约150名斯坦福毕业生在谷歌CEO皮查伊发表毕业演讲时集体退场，以"Free Palestine"口号抗议谷歌的巴以政策立场。皮查伊演讲中并未提及AI话题。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">💔</div>
+                <h2 class="card-title">Meta员工强烈反对扎克伯格全员AI黑客马拉松计划</h2>
+                <p class="card-content">Meta员工对扎克伯格提出的公司级AI黑客马拉松计划表示强烈不满。员工在公司内部论坛发帖称"我不确定这家公司还支持黑客马拉松文化"。Meta新成立的AI部门内部混乱。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第10条：底部大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-biz">🌍 商业</span>
+                <div class="emoji">🇪🇺</div>
+                <h2 class="card-title">欧洲加速"去美国科技化"：全面转向本土技术供应商</h2>
+                <p class="card-content">Wired深度报道了欧洲各国政府和企业在技术采购上加速"去美国化"的趋势。从云计算、AI到网络安全，欧洲正在系统性转向本土或非美国供应商，以应对数据主权和安全顾虑。这一趋势将对美国科技巨头的全球业务产生深远影响。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+        </div>
+        
+        <footer>
+            📊 共10条新闻 | 整理自2026-06-15 08:30 | 科技行业新闻简报
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-14 科技行业新闻简报</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Card Base */
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.08);
+}
+
+/* Large Card (Headline) */
+.news-card.large {
+  grid-column: 1 / -1;
+  padding: 32px;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-hot { background: rgba(239,83,80,0.15); color: #ef5350; }
+
+/* Card Content */
+.card-emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-large .card-title {
+  font-size: 22px;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+
+/* Source icon */
+.source-icon {
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-date">JUL 14, 2026 • TECH DAILY BRIEF</div>
+    <h1 class="header-title">🌐 科技行业新闻简报</h1>
+    <p class="header-subtitle">精选10条 • 每日早8:30更新 • 来源：TechCrunch / 36氪 / 新华社 / 钛媒体 等</p>
+  </div>
+
+  <!-- News Grid -->
+  <div class="news-grid">
+
+    <!-- Card 1: Large Headline -->
+    <div class="news-card large">
+      <span class="tag tag-hot">🔥 头条</span>
+      <div class="card-emoji">🌍</div>
+      <h2 class="card-title">习近平将出席2026世界人工智能大会，AI全球治理迎高规格对话</h2>
+      <p class="card-desc">国家主席习近平将于7月17日出席在上海举行的WAIC 2026开幕式。本届大会以"智能伙伴，共创未来"为主题，聚焦世界模型、开源智能体、AI Coding等议题，汇聚全球AI顶尖学者与企业领袖，设置世博、张江、西岸三地四馆。</p>
+      <p class="card-source">📎 来源：新华社、解放日报</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">📱</div>
+      <h3 class="card-title">阶跃星辰发布智能体原生品牌STEPX，搭载自研Step AOS系统</h3>
+      <p class="card-desc">STEPX Neo智能手机内置阶跃智能体Amoo，实现"模型+软件+硬件"三位一体AI原生体验，标志国产大模型厂商正式进军AI终端硬件领域。</p>
+      <p class="card-source">📎 来源：每日经济新闻、36氪</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🍎</div>
+      <h3 class="card-title">苹果与PrismML接洽：270亿参数大模型有望本地运行于iPhone</h3>
+      <p class="card-desc">PrismML用原生1-bit压缩技术将270亿参数模型压缩至iPhone可用，体积降为1/14，内存占用降90%，推理速度提升8倍，能耗降低75%。</p>
+      <p class="card-source">📎 来源：TechCrunch、IT之家</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🚀</div>
+      <h3 class="card-title">OpenAI全量发布GPT-5.6系列，Atlas浏览器8月9日关停</h3>
+      <p class="card-desc">GPT-5.6系列（Sol/Terra/Luna三档）正式开放，旗舰Sol支持4个AI子代理并行。运营不足一年的Atlas浏览器宣告关停，AI入口之争重新洗牌。</p>
+      <p class="card-source">📎 来源：TechCrunch、钛媒体</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">⚡</div>
+      <h3 class="card-title">SpaceXAI联手Cursor发布Grok 4.5，对标Claude Opus 4.8</h3>
+      <p class="card-desc">依托数万台NVIDIA GB300 GPU训练，运行速度达80 TPS，定价2/6美元/百万Token（不到同类一半），已在SpaceXAI控制台与Cursor上线。</p>
+      <p class="card-source">📎 来源：TechCrunch、钛媒体</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="news-card">
+      <span class="tag tag-biz">💼 商业</span>
+      <div class="card-emoji">💰</div>
+      <h3 class="card-title">Ollama完成6500万美元B轮融资，月活开发者逼近900万</h3>
+      <p class="card-desc">开源AI模型运行工具Ollama获Theory Ventures领投6500万美元，平台月活开发者近890万，团队仅14人，已成为本地与开源AI生态关键基础设施。</p>
+      <p class="card-source">📎 来源：TechCrunch、财联社</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🦾 机器人</span>
+      <div class="card-emoji">🦾</div>
+      <h3 class="card-title">工信部：2026年中国人形机器人整机产量有望突破10万台</h3>
+      <p class="card-desc">2025年中国AI核心产业规模超1.2万亿元，大模型下载量全球第一。预计2026年人形机器人产量突破10万台，相较2025年约1.8万台实现关键跨越。</p>
+      <p class="card-source">📎 来源：新华社、钛媒体</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💾 芯片</span>
+      <div class="card-emoji">🏢</div>
+      <h3 class="card-title">华为Atlas 950 SuperPoD将在WAIC 2026真机首展</h3>
+      <p class="card-desc">华为Atlas 950支持8192张NPU卡互联，互联带宽16.3 PB/s，面向万亿参数大模型训练。同期还将亮相MiniMax M3多模态大模型及全球首款AI智能体手机。</p>
+      <p class="card-source">📎 来源：华为中国、钛媒体</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💾 芯片</span>
+      <div class="card-emoji">📊</div>
+      <h3 class="card-title">2026年全球半导体市场预计达1.51万亿美元，同比增90%</h3>
+      <p class="card-desc">WSTS数据显示内存芯片成为最大增长引擎，部分品类同比狂飙250%。AI数据中心算力需求爆发是主要驱动力，半导体行业景气度持续攀升。</p>
+      <p class="card-source">📎 来源：WSTS、科创板日报</p>
+    </div>
+
+    <!-- Card 10: Large -->
+    <div class="news-card large">
+      <span class="tag tag-robot">🦾 机器人</span>
+      <div class="card-emoji">🚗</div>
+      <h2 class="card-title">德银报告：2026年将成为自动驾驶与人形机器人商业化元年</h2>
+      <p class="card-desc">特斯拉Cybercab已于2026年4月量产（无方向盘/踏板），文远知行、小马智行、滴滴等在多城开展全无人载客测试，L4 RoboTaxi规模化进程加速。德银预测2026年是自动驾驶从测试验证迈向规模化商业部署的关键一年，人形机器人也将从实验室转向小规模实际应用。</p>
+      <p class="card-source">📎 来源：36氪、DoNews</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="footer-text">共10条新闻 • 整理时间：2026-07-14 08:30 • 数据来源：The Verge / TechCrunch / 36氪 / 新华社 / 钛媒体 等</p>
+  </div>
+
+</div>
+</body>
+</html>

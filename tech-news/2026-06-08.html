@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-08 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            color: #64ffda;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comms { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-business { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-space { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .tag-game { background: rgba(255, 205, 210, 0.2); color: #ff8a80; }
+        .tag-film { background: rgba(179, 229, 252, 0.2); color: #81d4fa; }
+        .news-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .news-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026年6月8日 · 星期一</div>
+            <h1 class="main-title">🚀 科技行业新闻简报</h1>
+            <p class="subtitle">精选每日科技行业最新动态</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="news-emoji">🌟</div>
+                <h2 class="news-title">SpaceX 完成星舰第12次试飞，成功实现筷子捕获助推器</h2>
+                <p class="news-content">SpaceX于6月7日成功完成星舰第12次综合测试飞行任务，首次使用发射塔机械臂"筷子"成功捕获回传的超级重型助推器，标志着SpaceX在完全可复用火箭技术上取得重大突破。星舰上级飞船也成功在印度洋预定区域软着陆溅落，为2026年载人登月任务奠定基础。</p>
+                <p class="news-source">📎 来源：The Verge / Space.com</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-game">🎮 游戏</span>
+                <div class="news-emoji">🕹️</div>
+                <h2 class="news-title">Xbox Games Showcase 2026：Gears of War: E-Day 成独占大作</h2>
+                <p class="news-content">微软重磅宣布Gears of War: E-Day和Clockwork Revolution两款游戏将为Xbox主机独占发售，这是微软近年来首次回归主机独占策略。Xbox Wire主编强调"这不是限时独占，是真正的独占游戏"。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="news-emoji">⚡</div>
+                <h2 class="news-title">英伟达与斗山集团扩大合作：覆盖物理AI与机器人</h2>
+                <p class="news-content">英伟达与韩国斗山集团宣布扩展战略合作，斗山机器人将整合英伟达Isaac Sim、Cosmos及Jetson Thor等技术，升级"智能体机器人操作系统"，目标转型为全栈AI机器人解决方案企业，并探索人形机器人新形态。</p>
+                <p class="news-source">📎 来源：36氪 / 财联社</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-space">🌌 太空</span>
+                <div class="news-emoji">☀️</div>
+                <h2 class="news-title">2026年太空光伏商业化元年开启：万亿赛道加速</h2>
+                <p class="news-content">协鑫集团、天合光能、晶澳科技等光伏龙头集体跨界航天领域，两大太空能源联盟成立。太空光伏从概念验证加速迈向在轨实测与商用阶段，万亿级新赛道轮廓愈发清晰。</p>
+                <p class="news-source">📎 来源：36氪 / 中证报</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-film">🎬 影视</span>
+                <div class="news-emoji">🎥</div>
+                <h2 class="news-title">《死亡搁浅》电影导演谈改编：讲述自己的故事</h2>
+                <p class="news-content">导演Michael Sarnoski透露电影将"讲述自己的故事"而非简单改编游戏剧情，目前正与小岛秀夫和A24修改剧本。他表示小岛秀夫非常慷慨，让他讲述属于自己的角色和故事角落。</p>
+                <p class="news-source">📎 来源：The Verge / IGN</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-game">🎮 游戏</span>
+                <div class="news-emoji">💻</div>
+                <h2 class="news-title">PC Gaming Show 2026 震撼开幕，众多新作亮相</h2>
+                <p class="news-content">PC Gaming Show 2026于6月7日正式开幕，众多PC平台独占和首发游戏作品登场，作为夏季游戏盛会的重头戏之一，聚焦PC平台独占内容。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-film">🎬 影视</span>
+                <div class="news-emoji">🍄</div>
+                <h2 class="news-title">《超级马里奥银河电影》票房破10亿美元</h2>
+                <p class="news-content">《超级马里奥银河电影》成为2026年首部票房突破10亿美元的影片，制作成本仅1.1亿美元。分析师预测《玩具总动员5》等多部影片有望达到这一里程碑。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="news-emoji">🏢</div>
+                <h2 class="news-title">科技巨头签署白宫数据中心承诺：象征意义大于实质</h2>
+                <p class="news-content">谷歌、微软、亚马逊等大型科技公司签署白宫数据中心承诺，评论认为"良好的形象工程，实际内容有限"，Wired深入分析了这份承诺对数据中心行业的实际影响。</p>
+                <p class="news-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">👩‍💻 职场</span>
+                <div class="news-emoji">💼</div>
+                <h2 class="news-title">女性重返编程岗位：AI重塑后的职场新貌</h2>
+                <p class="news-content">Wired发表深度报道，探讨AI如何彻底改变编程工作，以及产后回归科技行业的女性如何适应AI工具普及后的技术岗位新常态。</p>
+                <p class="news-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第10条：大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-business">📊 市场</span>
+                <div class="news-emoji">📈</div>
+                <h2 class="news-title">沪市并购重组持续活跃：今年新增290余单超1300亿元</h2>
+                <p class="news-content">今年以来沪市新增并购重组290余单，包括重大资产重组24单，合计金额超过1300亿元。传统制造业升级和前沿科技布局的多元化并购案例不断涌现，"向优向新"态势明显。韩国交易所同日召开紧急会议应对市场波动。</p>
+                <p class="news-source">📎 来源：36氪 / 上证报</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📋 共10条新闻 | 数据来源：The Verge, Wired, 36氪, 财联社, 中证报, 上证报</p>
+            <p>整理时间：2026年6月8日 08:30</p>
+        </footer>
+    </div>
+</body>
+</html>

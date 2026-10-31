@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技行业新闻简报 2026-07-20</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100,255,218,0.3);
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; border: 1px solid rgba(100,255,218,0.3); }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; border: 1px solid rgba(255,167,38,0.3); }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; border: 1px solid rgba(206,147,216,0.3); }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; border: 1px solid rgba(100,181,246,0.3); }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; border: 1px solid rgba(129,199,132,0.3); }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.news-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.news-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  margin-top: 10px;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="header-date">JUL 20 · 2026</div>
+  <h1 class="header-title">科技行业新闻简报</h1>
+  <p class="header-subtitle">每日精选 · AI · 半导体 · 机器人 · 商业动态</p>
+</header>
+
+<div class="news-grid">
+
+  <!-- 头条大卡片 -->
+  <div class="news-card large">
+    <div class="card-header">
+      <span class="tag tag-biz">🔥 头条</span>
+    </div>
+    <span class="emoji">🍎</span>
+    <h2 class="news-title">Apple 对 OpenAI 提起商业秘密诉讼，或影响后者 IPO 计划</h2>
+    <p class="news-content">苹果公司上周五对 OpenAI 提起商业秘密诉讼，指控后者存在系统性不当行为，涉案人员延伸至 OpenAI 首席硬件官，并称超过400名前苹果员工现已加入该公司。诉讼时机正值 OpenAI 据悉正寻求最快于今年年底前 IPO 之际。</p>
+    <p class="news-source">📎 来源：TechCrunch · 2026年7月17日</p>
+  </div>
+
+  <!-- 第2条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-ai">AI</span>
+    </div>
+    <span class="emoji">🤖</span>
+    <h2 class="news-title">Meta 考虑向 Anthropic 出租算力，估值100亿美元</h2>
+    <p class="news-content">据《纽约时报》报道，Meta 考虑向 Anthropic 出租计算力的交易估值两年内可能达到100亿美元。Anthropic 已与 SpaceX、TeraWulf 签署数十亿美元算力协议。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月17日</p>
+  </div>
+
+  <!-- 第3条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-ai">AI</span>
+    </div>
+    <span class="emoji">🌐</span>
+    <h2 class="news-title">Google Gemini 3.5 Pro 发布时间再次推迟</h2>
+    <p class="news-content">Google 正在强化该模型的编程能力，但内部目标仍未达成。该模型原定6月发布，至今仍未面世，Google 在 I/O 大会上的承诺再度落空。</p>
+    <p class="news-source">📎 来源：The Verge / Bloomberg · 2026年7月16日</p>
+  </div>
+
+  <!-- 第4条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-biz">商业</span>
+    </div>
+    <span class="emoji">👨‍💼</span>
+    <h2 class="news-title">Netflix 近6亿美元收购本·阿弗莱克 AI 创业公司</h2>
+    <p class="news-content">Netflix 宣布收购本·阿弗莱克（Ben Affleck）创立的 AI 创业公司，交易金额近6亿美元。这是娱乐巨头在 AI 内容创作领域的一次重要布局。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月17日</p>
+  </div>
+
+  <!-- 第5条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-ai">AI</span>
+    </div>
+    <span class="emoji">🎬</span>
+    <h2 class="news-title">Google Vids 新增 AI 数字分身，一键生成虚拟形象</h2>
+    <p class="news-content">用户仅需上传一张自拍和一段语音，即可生成自己的数字形象来朗读输入脚本。该功能基于 Gemini Omni 模型驱动。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月16日</p>
+  </div>
+
+  <!-- 第6条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-biz">安全</span>
+    </div>
+    <span class="emoji">📱</span>
+    <h2 class="news-title">Apple 下架 AI"换脸"应用，旧金山市检察官要求整改</h2>
+    <p class="news-content">苹果确认已下架多款可生成非自愿裸体图像的 AI 应用。苹果发言人表示已删除三款涉事应用，并正在终止其开发者账户。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月18日</p>
+  </div>
+
+  <!-- 第7条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-chip">芯片</span>
+    </div>
+    <span class="emoji">☁️</span>
+    <h2 class="news-title">AWS 计费系统故障，部分用户被多收数十亿美元</h2>
+    <p class="news-content">亚马逊云服务（AWS）出现计费系统故障，部分用户账单比平时多数十亿美元。AWS 将问题归因于"估算计费子系统中的单位定价问题"。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月17日</p>
+  </div>
+
+  <!-- 第8条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-ai">AI</span>
+    </div>
+    <span class="emoji">📊</span>
+    <h2 class="news-title">一级市场 AI 投资逻辑重塑：从"炼模型"到"拼落地"</h2>
+    <p class="news-content">2026世界人工智能大会上，一级市场投资人谈论的关键词已从模型参数转向推理成本、量产交付与上市时间表。应用与落地取代模型参数，成为项目定价核心。</p>
+    <p class="news-source">📎 来源：36氪 / 上证报 · 2026年7月20日</p>
+  </div>
+
+  <!-- 第9条 -->
+  <div class="news-card">
+    <div class="card-header">
+      <span class="tag tag-comm">通信</span>
+    </div>
+    <span class="emoji">⚖️</span>
+    <h2 class="news-title">美国 DOJ：联邦雇员可重新在政府设备下载 TikTok</h2>
+    <p class="news-content">在 ByteDance 出售股份协议落地且美国用户数据安全存储后，司法部允许行政部门机构员工在官方设备上下载 TikTok。</p>
+    <p class="news-source">📎 来源：The Verge / Reuters · 2026年7月17日</p>
+  </div>
+
+  <!-- 底部大卡片 -->
+  <div class="news-card large">
+    <div class="card-header">
+      <span class="tag tag-robot">🚀 航天</span>
+    </div>
+    <span class="emoji">🚀</span>
+    <h2 class="news-title">SpaceX Starship 第13次飞行因发动机故障中止，马斯克称将尽快重试</h2>
+    <p class="news-content">SpaceX 第13次（也是 IPO 后首次）Starship 飞行测试在倒计时归零后因"部分发动机未能启动，触发自动中止程序"而取消。这是 SpaceX IPO 后的首次重大发射受挫，分析师认为对投资者信心有一定影响。马斯克表示将"在未来几天内"再次尝试。</p>
+    <p class="news-source">📎 来源：The Verge · 2026年7月16日</p>
+  </div>
+
+</div>
+
+<footer>
+  <p class="footer-text">共 10 条新闻 · 整理自 The Verge / TechCrunch / 36氪 · 2026年7月20日</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-22 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .date-line {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #64ffda;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .news-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(100,255,218,0.3);
+  }
+
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-policy { background: rgba(255,138,101,0.15); color: #ff8a65; }
+  .tag-product { background: rgba(128,203,196,0.15); color: #80cbc4; }
+
+  .emoji-icon {
+    font-size: 32px;
+    line-height: 1;
+    margin-right: 14px;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .news-card.large .card-title {
+    font-size: 20px;
+  }
+
+  .card-content {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  .news-card.large .card-content {
+    font-size: 15px;
+  }
+
+  .card-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-source::before {
+    content: '📎';
+    font-style: normal;
+    font-size: 11px;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 24px;
+    margin-top: 20px;
+  }
+
+  footer p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date-line">WED · JUL 22 · 2026</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">每日 08:30 更新 · 精选全球科技资讯</p>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 头条大卡片 -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="emoji-icon">🤖</span>
+        <span class="tag tag-ai">AI · 头条</span>
+      </div>
+      <div class="card-title">Apple 就商业秘密盗窃起诉 OpenAI，或将扰乱其 IPO 计划</div>
+      <div class="card-content">
+        Apple 于上周五正式对 OpenAI 提起商业秘密盗窃诉讼，指控公司首席硬件官参与不当行为，并声称超过 400 名 Apple 前员工已转投 OpenAI。诉讼时机正值 OpenAI 传出最快将于今年年底 IPO 之际，业界普遍认为这起案件将对其上市进程产生重大影响。OpenAI 回应措辞谨慎，表示将积极应诉。
+      </div>
+      <div class="card-source">来源：TechCrunch</div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">📡</span>
+        <span class="tag tag-ai">AI</span>
+      </div>
+      <div class="card-title">DeepSeek R2 发布：开源最强 AI 模型挑战 GPT-4</div>
+      <div class="card-content">
+        中国 AI 公司 DeepSeek 正式发布 R2 模型，延续开源策略，被认为是目前最强的开源大语言模型，性能直逼 GPT-4 和 Claude 3.5。DeepSeek 凭借高效率训练路线再度震撼 AI 行业，开源社区迅速掀起应用热潮。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">⚖️</span>
+        <span class="tag tag-policy">政策</span>
+      </div>
+      <div class="card-title">Anthropic 侵犯版权案达成 15 亿美元和解协议</div>
+      <div class="card-content">
+        美国联邦法官最终批准 Anthropic 价值 15 亿美元的集体诉讼和解，这是有史以来最大规模的版权追偿案。2024 年多位作家起诉 Anthropic 在训练 Claude 时使用受版权保护作品，作家们将尽快获得赔偿。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">🎬</span>
+        <span class="tag tag-biz">商业</span>
+      </div>
+      <div class="card-title">Netflix 近 6 亿美元收购 Ben Affleck 的 AI 创业公司</div>
+      <div class="card-content">
+        Netflix 宣布以近 6 亿美元收购 Ben Affleck 创立的 AI 创业公司，这是流媒体巨头在 AI 内容创作领域的最新布局。外界分析 Netflix 正加速 AI 在影视制作中的渗透。
+      </div>
+      <div class="card-source">来源：TechCrunch</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">🌐</span>
+        <span class="tag tag-policy">政策</span>
+      </div>
+      <div class="card-title">法国新法案：15 岁以下未成年人禁止使用社交媒体</div>
+      <div class="card-content">
+        法国议会两院投票通过新法案，最快于 9 月 1 日起禁止 15 岁以下未成年人使用社交媒体，同时禁止在高中使用手机。此举紧随澳大利亚对 16 岁以下用户实施社交媒体禁令之后。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">🎮</span>
+        <span class="tag tag-product">产品</span>
+      </div>
+      <div class="card-title">Meta Horizon Plus 新增 Xbox Game Pass 入门版</div>
+      <div class="card-content">
+        Meta 宣布 Quest 订阅服务 Horizon Plus 将包含 Xbox Game Pass 入门版，Quest 用户可直接访问大量 Xbox 游戏。Meta 还透露未来 Touch 手柄将能模拟 Xbox 手柄操作。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">🚀</span>
+        <span class="tag tag-biz">商业</span>
+      </div>
+      <div class="card-title">SpaceX 洽谈五角大楼，或成又一大型计算客户</div>
+      <div class="card-content">
+        据《华尔街日报》报道，SpaceX 正在与美国国防部洽谈扩大云计算业务。SpaceX 已为 Google 和 Anthropic 提供算力，若与五角大楼达成合作，云计算市场竞争将进一步加剧。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">🎵</span>
+        <span class="tag tag-ai">AI</span>
+      </div>
+      <div class="card-title">Deezer：AI 生成音乐已占平台每日新增曲目的 50%</div>
+      <div class="card-content">
+        音乐流媒体平台 Deezer 表示每天收到约 90,000 首 AI 生成曲目，占每日新增歌曲一半以上。Deezer 宣布将下架用于欺诈性播放的 AI 曲目及长期无人播放的曲目。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="emoji-icon">📱</span>
+        <span class="tag tag-product">产品</span>
+      </div>
+      <div class="card-title">iPhone 20 周年纪念版屏幕或达 7 英寸，创历史最大</div>
+      <div class="card-content">
+        据可靠爆料人 Digital Chat Station 透露，2027 年 iPhone 20 周年纪念版屏幕将从现款最大 6.9 英寸升级至 7 英寸。若消息属实，这将是 iPhone 历史上最大屏幕尺寸。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+    <!-- 第10条 底部大卡片 -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="emoji-icon">💻</span>
+        <span class="tag tag-product">产品</span>
+      </div>
+      <div class="card-title">macOS 27 "Golden Gate" 测试版隐藏 Siri AI 写作工具曝光</div>
+      <div class="card-content">
+        macOS 27 "Golden Gate" 测试版中被发现隐藏的 AI 写作界面，用户选中文字后会弹出 AI 驱动操作菜单，包含"重写"、"校对"和"用 Siri 编辑"等功能。Beta 测试用户已可通过特定步骤激活该功能，Apple 的端侧 AI 功能正在 macOS 层面加速落地。
+      </div>
+      <div class="card-source">来源：The Verge</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>📋 共 10 条新闻 · 整理时间 2026-07-22 08:30 · Sources: The Verge / TechCrunch / VentureBeat / Wired / Ars Technica / 36氪 / 机器之心 / 量子位 / 虎嗅 / 少数派</p>
+  </footer>
+
+</div>
+</body>
+</html>

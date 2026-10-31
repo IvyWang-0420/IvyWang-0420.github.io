@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>科技新闻简报 2026-06-14</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e0e0e0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header-date {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.header-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.news-card.large {
+  grid-column: 1 / -1;
+}
+.news-card .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-space { background: rgba(255,138,101,0.15); color: #ff8a65; }
+.tag-product { background: rgba(128,203,196,0.15); color: #80cbc4; }
+
+.news-card .emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+.news-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.news-card .content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.news-card .source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-date">SUN  •  JUNE 14  •  2026</div>
+    <h1 class="header-title">科技行业新闻简报</h1>
+    <div class="header-subtitle">Tech Industry Daily Briefing  •  Mochi 🤖 整理</div>
+  </header>
+
+  <div class="news-grid">
+    <!-- 头条大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">AI · 政策</span>
+      <span class="emoji">🌍</span>
+      <div class="title">Anthropic服从美国政府命令，下线Claude Fable 5和Mythos 5</div>
+      <div class="content">美国政府以国家安全为由下达出口管制指令，Anthropic宣布将本周刚发布的Claude Fable 5和Mythos 5模型全面下线，暂停所有外国国民访问权限。这是Anthropic与美国政府之间矛盾的最新升级，此前美国国防部已将Anthropic列为"供应链风险"并提起诉讼。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 双栏新闻 2-5 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🍎 WWDC</span>
+      <span class="emoji">🍎</span>
+      <div class="title">苹果WWDC26：库克告别演讲，Siri全面AI化</div>
+      <div class="content">库克主持最后一场发布会，Siri升级为"Siri AI"，引入谷歌Gemini技术打造新一代基础模型，具备个人情境理解、屏幕感知等五大核心能力，全面融入苹果全系统。国行暂不提供新功能。</div>
+      <div class="source">📎 来源：智东西</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-biz">商业</span>
+      <span class="emoji">💰</span>
+      <div class="title">马斯克成为全球首位万亿富翁</div>
+      <div class="content">SpaceX在纳斯达克上市，市值达2.2万亿美元。马斯克凭借SpaceX、Tesla等多公司持股，个人净资产突破1万亿美元，不到两年增长近3倍。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-ai">AI · 企业</span>
+      <span class="emoji">🔧</span>
+      <div class="title">Meta AI团队内部动荡，6500名工程师不满</div>
+      <div class="content">Applied AI团队员工形容工作环境为" literal gulag"，工作单调如"灵魂粉碎机"。此前Meta裁员8%（8000人）并推出监控员工鼠标点击的措施，引发超1600人联名抗议。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-chip">芯片 · AI</span>
+      <span class="emoji">🏢</span>
+      <div class="title">SpaceX Colossus数据中心遇延迟，已出租给Anthropic和Google</div>
+      <div class="content">Colossus 1 AI数据中心因连接其他园区时遇到延迟问题，决定将部分算力出租给Anthropic（年150亿美元）和Google（月9.2亿美元）。原计划用于训练Grok AI模型。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-product">🎬 影视</span>
+      <span class="emoji">🎬</span>
+      <div class="title">导演维尔宾斯基：AI电影需要"评级系统"</div>
+      <div class="content">《加勒比海盗》导演维尔宾斯基呼吁建立AI内容"评级制度"——用AI写剧本标F级。他支持年轻电影人使用AI辅助，但最担心的是缺乏透明度，观众无法分辨真实与虚构。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-product">产品</span>
+      <span class="emoji">📓</span>
+      <div class="title">WIRED评测：2026年最佳电子笔记本</div>
+      <div class="content">WIRED发布评测，推荐ReMarkable Paper Pro（综合最佳）、Kindle Scribe（编辑最爱）、Kobo Libra Colour等产品，采用E Ink技术兼顾手写与数字化管理体验。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-robot">🦾 机器人</span>
+      <span class="emoji">🦾</span>
+      <div class="title">DJI与Insta360互相起诉专利纠纷</div>
+      <div class="content">DJI起诉Insta360产品视觉相似性和操控方式抄袭；Insta360反诉DJI侵犯其稳定算法和位置共享专利。两大云台相机厂商展开激烈专利战。</div>
+      <div class="source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 底部大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-biz">🌐 IPO</span>
+      <span class="emoji">⚡</span>
+      <div class="title">IPO热潮：SpaceX、Anthropic、OpenAI引领"MANGOS"时代</div>
+      <div class="content">TechCrunch报道，IPO市场强势回归，科技行业正被"MANGOS"——Microsoft/Meta、Anthropic、Nvidia、Google、OpenAI、SpaceX——主导。SpaceX已率先上市，OpenAI和Anthropic的IPO蓄势待发，AI算力需求正重塑资本市场格局。</div>
+      <div class="source">📎 来源：TechCrunch</div>
+    </div>
+  </div>
+
+  <footer>
+    共10条新闻 &nbsp;|&nbsp; 整理时间：2026-06-14 08:30 &nbsp;|&nbsp; Mochi 🤖
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-03 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .tag-security { background: rgba(239, 154, 154, 0.2); color: #ef9a9a; }
+        .tag-game { background: rgba(128, 203, 196, 0.2); color: #80cbc4; }
+        .card-content {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .card-emoji {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+        .card-text {
+            flex: 1;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .card-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            margin-top: 20px;
+        }
+        footer p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="date">Tuesday, June 3, 2026</p>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">Tech Industry Daily Briefing</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 头条 - 通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🚀 头条</span>
+                <div class="card-content">
+                    <span class="card-emoji">🚀</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Microsoft Build 2026 全面拥抱 AI：Majorana 2 量子芯片 + Scout 个人助手</h3>
+                        <p class="card-desc">微软在 Build 2026 发布 Majorana 2 量子计算芯片（新型材料堆栈，加速量子计算商用）、Scout"首个真正的个人 AI 助手"、Surface Laptop Ultra 搭载 Nvidia RTX Spark 芯片，以及 Microsoft Execution Containers 大幅提升 Windows 上运行 AI Agent 的安全性——企业终于可以放心部署 OpenClaw 等 AI Agent。</p>
+                        <p class="card-source">📎 来源：The Verge — Emma Roth, Tom Warren</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-content">
+                    <span class="card-emoji">🧠</span>
+                    <div class="card-text">
+                        <h3 class="card-title">MiniMax M3 发布——性能超 GPT-5.5，成本仅 5-10%</h3>
+                        <p class="card-desc">中国 AI 公司 MiniMax 发布 M3 模型，在多项关键基准测试中超越 GPT-5.5 和 Gemini 3.1 Pro，训练和推理成本仅为竞品的 5-10%，对大模型成本竞争格局产生重大冲击。</p>
+                        <p class="card-source">📎 来源：VentureBeat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💻 芯片</span>
+                <div class="card-content">
+                    <span class="card-emoji">🧠</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Nvidia RTX Spark "超级芯片"发布——直击苹果 M 系列</h3>
+                        <p class="card-desc">Nvidia 推出 RTX Spark 芯片与微软 Surface Laptop Ultra 深度定制，首度直接挑战苹果 M 系列芯片在 PC 领域的霸主地位，目标成为下一代 AI 计算机核心处理器。</p>
+                        <p class="card-source">📎 来源：The Verge — Sean Hollister</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-content">
+                    <span class="card-emoji">🤝</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Anthropic 扩展 Glasswing——Claude 登陆电力、水务、医疗行业</h3>
+                        <p class="card-desc">Anthropic 将 Claude Mythos Preview 通过 Project Glasswing 扩展至约 150 家新组织，新增覆盖电力、水务、医疗等关键基础设施行业，帮助发现安全漏洞。</p>
+                        <p class="card-source">📎 来源：The Verge — Richard Lawler</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-content">
+                    <span class="card-emoji">🌐</span>
+                    <div class="card-text">
+                        <h3 class="card-title">OpenAI Codex 登陆 Windows——AI 可操控你的电脑</h3>
+                        <p class="card-desc">OpenAI Codex 电脑控制功能登陆 Windows，AI 可以"看见"屏幕并执行桌面任务。目前每周已有 500 万用户，并非只面向程序员。</p>
+                        <p class="card-source">📎 来源：The Verge — Jay Peters</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-product">📱 产品</span>
+                <div class="card-content">
+                    <span class="card-emoji">📱</span>
+                    <div class="card-text">
+                        <h3 class="card-title">Google Photos 推出 AI "数字衣橱"——虚拟试衣功能</h3>
+                        <p class="card-desc">Google Photos 基于 AI 根据用户照片创建虚拟穿搭组合，支持虚拟试穿并分享。在美国、印度、巴西上线，需至少 1000 张个人照片（无订阅情况）。</p>
+                        <p class="card-source">📎 来源：The Verge — David Pierce</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔒 安全</span>
+                <div class="card-content">
+                    <span class="card-emoji">🔒</span>
+                    <div class="card-text">
+                        <h3 class="card-title">佛罗里达州起诉 OpenAI——指控 ChatGPT 危害用户安全</h3>
+                        <p class="card-desc">佛罗里达州总检察长 James Uthmeier 对 OpenAI 及 CEO Sam Altman 提起诉讼，指控 ChatGPT 可导致"自我伤害、认知衰退和行为成瘾"，相关刑事调查也在进行中。</p>
+                        <p class="card-source">📎 来源：The Verge — Emma Roth</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">🛡️ 商业</span>
+                <div class="card-content">
+                    <span class="card-emoji">🛡️</span>
+                    <div class="card-text">
+                        <h3 class="card-title">SwitchBot 4000 万美元收购 Nanoleaf——智能家居整合加速</h3>
+                        <p class="card-desc">智能家居公司 SwitchBot 宣布以 4000 万美元收购智能照明公司 Nanoleaf，后者以模块化智能灯板闻名，此次收购将大幅扩大 SwitchBot 智能家居产品线。</p>
+                        <p class="card-source">📎 来源：The Verge — Jennifer Pattison Tuohy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💬 商业</span>
+                <div class="card-content">
+                    <span class="card-emoji">💬</span>
+                    <div class="card-text">
+                        <h3 class="card-title">微软开发 AI 超级应用——整合 GitHub Copilot + Copilot Cowork</h3>
+                        <p class="card-desc">据 Fortune 报道，微软正在开发 AI"超级应用"，整合 GitHub Copilot、Copilot 聊天机器人、Copilot Cowork 及内部 Autopilot 代理工作流功能。</p>
+                        <p class="card-source">📎 来源：TechCrunch / The Verge</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第十条 - 通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🌐 AI</span>
+                <div class="card-content">
+                    <span class="card-emoji">🌐</span>
+                    <div class="card-text">
+                        <h3 class="card-title">AI 企业应用进入"重建时代"——可靠性成核心挑战，Gartner 预测 40% 企业应用将在 2026 年底集成 AI Agent</h3>
+                        <p class="card-desc">VentureBeat 分析指出，AI Agent 正从概念验证进入大规模生产阶段，企业核心问题已从"模型性能"转向"可靠性"。长时运行 AI 工作流必须解决崩溃恢复、状态保留、故障管理、推理成本控制等工程难题。Gartner 预测到 2026 年底，40% 的企业应用将包含任务专用 AI Agent（目前不足 5%）。</p>
+                        <p class="card-source">📎 来源：VentureBeat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>📰 科技行业新闻简报 | 共 10 条 | 整理时间：2026-06-03 08:30 (Asia/Shanghai)</p>
+        </footer>
+    </div>
+</body>
+</html>

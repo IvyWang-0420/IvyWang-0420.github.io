@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-29 科技行业新闻简报</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #8892b0;
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(100, 255, 218, 0.1);
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+  padding: 32px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+.tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; }
+.tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; }
+.tag-com { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+
+.card-emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-card.large .card-title {
+  font-size: 22px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #b0b8c8;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.card-source::before {
+  content: "📎 来源：";
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <p class="date">2026.06.29 · 星期一</p>
+    <h1 class="title">科技行业新闻简报</h1>
+    <p class="subtitle">Daily Tech News Briefing · 整理于 08:30 CST</p>
+  </header>
+
+  <div class="news-grid">
+    <!-- 头条：通栏大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🔥 头条</span>
+      <div class="card-emoji">🚀</div>
+      <h2 class="card-title">Google限制Meta使用Gemini算力，AI基础设施瓶颈凸显</h2>
+      <p class="card-content">Google已通知Meta及其他大客户，由于数据中心容量紧张，将限制其Gemini AI模型的使用额度。这一罕见决定揭示了AI行业基础设施压力的冰山一角。尽管投入了数百亿美元购买芯片和建设数据中心，连最大型科技公司都在为满足先进AI模型的算力需求而苦苦挣扎。</p>
+      <p class="card-source">The Verge / Financial Times</p>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💻 芯片</span>
+      <div class="card-emoji">💻</div>
+      <h2 class="card-title">LineShine打破美国超级计算机TOP500排名第一位置</h2>
+      <p class="card-content">中国LineShine公司研发的新型超级计算机已超越美国Frontier，登上全球TOP500超算榜首。这标志着全球超级计算机竞争格局的重大变化，也反映了中美在高性能计算领域持续激烈的角逐。</p>
+      <p class="card-source">The Verge</p>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🐛</div>
+      <h2 class="card-title">GLM-5.2编程能力大幅提升，接近Anthropic和OpenAI水平</h2>
+      <p class="card-content">国产GLM-5.2模型在通用任务上仍不及Anthropic或OpenAI，但在代码Bug发现能力上差距已显著缩小。作为中国AI能力的代表，GLM系列正在快速追赶国际头部玩家。</p>
+      <p class="card-source">The Verge</p>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <div class="card-emoji">📸</div>
+      <h2 class="card-title">F1世界最快摄像无人机首秀：时速超350公里</h2>
+      <p class="card-content">F1世界锦标赛在奥地利大奖赛首次启用世界最快摄像无人机，最高时速超过350公里，4秒内可从0加速至300公里。技术团队花费两年时间测试，挑战在于如何让无人机整圈飞行不「爆炸」。</p>
+      <p class="card-source">The Verge / Formula 1</p>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💻 芯片</span>
+      <div class="card-emoji">🇨🇳</div>
+      <h2 class="card-title">中国无视美国限制建成全球最快超级计算机</h2>
+      <p class="card-content">Wired深度报道指出，中国工程师突破了美国芯片出口管制限制，成功构建了全球性能最强的超级计算机。这一里程碑式成就展示了在外部压力下中国科技自主创新的能力。</p>
+      <p class="card-source">Wired</p>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🇺🇸</div>
+      <h2 class="card-title">特朗普政府允许Anthropic向特定美国机构开放Mythos模型</h2>
+      <p class="card-content">经过数周谈判，白宫批准Anthropic向部分美国公司和政府机构开放其最先进AI模型Mythos的使用权限。这标志着AI安全与国家利益之间达成的最新平衡。</p>
+      <p class="card-source">Wired</p>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🔒</div>
+      <h2 class="card-title">OpenAI启动大规模开源安全漏洞修复计划</h2>
+      <p class="card-content">OpenAI宣布全面投入开源安全漏洞修复工作，以应对Anthropic等竞争对手在安全领域的挑战。此举被视为AI行业安全实践竞争的重要信号。</p>
+      <p class="card-source">Wired</p>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <span class="tag tag-com">📡 通信</span>
+      <div class="card-emoji">🇪🇺</div>
+      <h2 class="card-title">欧盟AI法案合规最后冲刺：科技巨头加速调整</h2>
+      <p class="card-content">距离欧盟AI法案合规截止日期临近，OpenAI、Google、Meta等科技巨头正紧急调整产品以满足监管要求。业界普遍认为这将重塑AI产品的开发方式。</p>
+      <p class="card-source">The Verge</p>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <span class="tag tag-biz">📻 商业</span>
+      <div class="card-emoji">📻</div>
+      <h2 class="card-title">BBC正式关闭长波广播服务，Radio 4 Long Wave成历史</h2>
+      <p class="card-content">拥有近百年历史的BBC Radio 4长波广播服务于6月27日正式停播。维护老旧设备成本过高，而如今流媒体已广泛普及，这是传统广播媒体式微的又一标志性事件。</p>
+      <p class="card-source">The Verge / The Economist</p>
+    </div>
+
+    <!-- 第10条：通栏大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-biz">🚗 汽车</span>
+      <div class="card-emoji">🚗</div>
+      <h2 class="card-title">小米汽车获欧盟自动驾驶认证，欧洲市场准入在望</h2>
+      <p class="card-content">小米汽车SU7系列近日获得欧盟自动驾驶功能认证，这意味着其产品有望进入欧洲市场。作为中国新能源智能汽车的代表企业，小米汽车正加速国际化布局。这也是今日重要商业动态之一，展示了中国智能汽车产业的全球化野心。</p>
+      <p class="card-source">36氪 / 新华社</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>📋 本简报精选自 The Verge、Wired、TechCrunch、36氪、新华社 等权威媒体 | 共10条新闻</p>
+  </footer>
+</div>
+</body>
+</html>

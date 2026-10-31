@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-27 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100,181,246,0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+        .tag-social { background: rgba(255,138,128,0.2); color: #ff8a65; }
+        .tag-security { background: rgba(239,83,80,0.2); color: #ef5350; }
+        .tag-space { background: rgba(255,238,88,0.2); color: #ffee58; }
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .card-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">JUNE 27, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">Tech Industry Daily Briefing</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 头条：通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🔬</div>
+                <h2 class="card-title">Anthropic 恢复 Mythos AI 模型访问权限</h2>
+                <p class="card-content">在数周谈判后，白宫允许 Anthropic 向部分美国公司和政府机构恢复其最先进 AI 模型 Mythos 的访问权限。此次决定结束了此前因安全考量而实施的访问限制。</p>
+                <p class="source">📎 来源：Wired</p>
+            </div>
+
+            <!-- 普通卡片 2-5 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💼 商业</span>
+                <div class="emoji">💰</div>
+                <h2 class="card-title">Meta 开发预测市场应用</h2>
+                <p class="card-content">Meta CEO 扎克伯格要求团队开发预测市场应用，目标 1 亿月活用户，并探讨与 Kalshi 和 Polymarket 的合作，面向 18-34 岁用户群体。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🇨🇳</div>
+                <h2 class="card-title">中国用户持续绕过 AI 地理限制</h2>
+                <p class="card-content">尽管 Anthropic 加强对 Claude 在中国访问的限制，用户仍通过代理服务、Telegram 购买虚假身份等方式持续绕过限制。</p>
+                <p class="source">📎 来源：Wired</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">⏸️</div>
+                <h2 class="card-title">白宫要求 OpenAI 推迟发布 GPT-5.6</h2>
+                <p class="card-content">在 Anthropic 被迫下架最先进 AI 模型两周后，白宫要求 OpenAI 推迟其 GPT-5.6 AI 模型的发布，具体原因尚不明确。</p>
+                <p class="source">📎 来源：Wired</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-social">📱 社交</span>
+                <div class="emoji">📸</div>
+                <h2 class="card-title">Instagram 算法将允许用户自定义</h2>
+                <p class="card-content">Instagram 负责人 Adam Mosseri 展示新概念设计，让用户能更主动控制推荐算法，"让算法成为你可以对话的对象，而非被动接受的东西"。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 普通卡片 6-9 -->
+            <div class="news-card">
+                <span class="tag tag-chip">📱 芯片</span>
+                <div class="emoji">🍎</div>
+                <h2 class="card-title">iPhone 18 普通版或升级至 9GB RAM</h2>
+                <p class="card-content">供应链分析师郭明錤透露，将于 2027 年上半年发布的 iPhone 18 普通版将配备 A20 芯片，RAM 从 8GB 升级至 9GB，以更好支持 AI 负载。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-biz">🎮 游戏</span>
+                <div class="emoji">🎲</div>
+                <h2 class="card-title">Dbrand Steam 配件突然下架</h2>
+                <p class="card-content">Dbrand 开放 Steam Machine Companion Cube 预购后不久，产品从官网消失，YouTube 预告片也被设为私密，具体原因不明。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-security">🔐 安全</span>
+                <div class="emoji">🛡️</div>
+                <h2 class="card-title">五角大楼调查 Dialog 数据泄露</h2>
+                <p class="card-content">五角大楼正在调查 Dialog 数据泄露事件，该事件涉及暴露美国国家安全官员身份的数据，调查尚在进行中。</p>
+                <p class="source">📎 来源：Wired</p>
+            </div>
+
+            <div class="news-card">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="emoji">💹</div>
+                <h2 class="card-title">SpaceX 债券持续亏损引担忧</h2>
+                <p class="card-content">SpaceX 新发行债券持续给投资者造成损失，债券交易员对该公司能否维持投资级信用评级表示怀疑，股票目前低于 IPO 发行价。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+
+            <!-- 底部通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="emoji">🌍</div>
+                <h2 class="card-title">SpaceX 运营扩张与市场信心博弈</h2>
+                <p class="card-content">尽管 SpaceX 在火箭发射和星链业务上持续扩张，但其财务健康度和估值正面临市场质疑。债券市场反映出的悲观情绪与公司公开的乐观表态形成鲜明对比，分析师正在密切关注其 IPO 后续表现。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>共 10 条新闻 | 数据来源：The Verge, Wired, TechCrunch 等权威媒体</p>
+            <p style="margin-top: 8px;">整理时间：2026-06-27 08:30 (Asia/Shanghai)</p>
+        </footer>
+    </div>
+</body>
+</html>

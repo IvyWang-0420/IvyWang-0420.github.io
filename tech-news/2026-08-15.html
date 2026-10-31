@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-08-15 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+        .tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+        .tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+        .tag-product { background: rgba(255,138,101,0.15); color: #ff8565; }
+        
+        .card-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .card-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .card-source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.4);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026-08-15 · SAT</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">AI · 大模型 · 产品发布 · 行业动态</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🧠 AI大模型</span>
+                <div class="card-emoji">🔬</div>
+                <h2 class="card-title">GLM-5.3重磅发布：网络攻防能力飞跃，已发现Cursor安全漏洞</h2>
+                <p class="card-content">中国AI公司Z.ai发布GLM-5.3，在长程编码和网络安全方面实现重大突破。模型已在SpaceX收购的Cursor编程工具中发现严重安全漏洞。Terminal-Bench 3.0从4.6跃升至28.3，性能提升517%。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI应用</span>
+                <div class="card-emoji">✨</div>
+                <h2 class="card-title">Google Gemini 3.7 Flash：聚焦编码与Agent，API五折促销</h2>
+                <p class="card-content">Gemini 3.7 Flash专为编码和Agent工作流优化，限时价格输入$0.75/百万Token、输出$3.75/百万Token（原价五折）。模型"思考更勤勉"，减少重试与人工干预。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🚀 AI大模型</span>
+                <div class="card-emoji">⚡</div>
+                <h2 class="card-title">SpaceXAI Grok 4.6发布：跃升至全球第四大模型</h2>
+                <p class="card-content">Grok 4.6在Artificial Analysis指数得分61，超越Kimi K3，与GPT-5.6 Sol并列第四。API定价$2输入/$6输出每百万Token，专注长程Agent与编码能力。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🔧 开发者工具</span>
+                <div class="card-emoji">🛠️</div>
+                <h2 class="card-title">DeepSeek发布Harness：开源Agent框架挑战Claude Code</h2>
+                <p class="card-content">DeepSeek推出开源Agent harness框架，采用"一切皆插件"模块化设计，同时发布V4-Pro模型。API价格将大幅上调，新定价16日起生效。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-product">💬 产品发布</span>
+                <div class="card-emoji">🤖</div>
+                <h2 class="card-title">Grok Bot内测：月费$120的持久性AI数字同事</h2>
+                <p class="card-content">SpaceXAI发布Grok Bot，可将Agent变为持久同事，关闭电脑后继续工作。团队版$120/席位/月，个人版$200/月，可操控用户应用程序完成实际任务。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🎬 视频AI</span>
+                <div class="card-emoji">🎥</div>
+                <h2 class="card-title">LibTV发布Seedance 2.5工作流：两天完成功能适配</h2>
+                <p class="card-content">LibTV推出智能引用、片段重拍、超长视频等功能。30秒视频可延长至5分钟，支持50个参考素材。从获测试权到上线仅用两天，API涨价但维持用户价格不变。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-business">🏦 企业AI</span>
+                <div class="card-emoji">🏛️</div>
+                <h2 class="card-title">Capital One基于开源模型构建多Agent AI平台</h2>
+                <p class="card-content">Capital One在VB Transform 2026分享经验：使用自有数据深度定制开源模型，构建企业级AI平台。其反欺诈工作流每年处理数百万通电话，AI全程介入。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-business">💰 企业AI</span>
+                <div class="card-emoji">📉</div>
+                <h2 class="card-title">Writer Palmyra X6：企业Agent成本降低52%</h2>
+                <p class="card-content">Writer发布Palmyra X6（基于GLM-5.2微调），搭配全新编排框架。官方数据：成本降52%、速度升48%、质量升10%。同步推出治理工具控制Token消耗。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🔓 开源AI</span>
+                <div class="card-emoji">🌐</div>
+                <h2 class="card-title">Meta Glimmer：开源权重模型让AI"为所有人服务"</h2>
+                <p class="card-content">Meta发布Glimmer开源权重模型，任何人可下载在自有硬件运行。扎克伯格发文称AI应"为所有人服务"，与仅通过API访问的Muse Spark形成对比。</p>
+                <p class="card-source">📎 来源：TechCrunch</p>
+            </div>
+            
+            <!-- 第10条：重要事件大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-robot">📱 硬件新品</span>
+                <div class="card-emoji">🤖</div>
+                <h2 class="card-title">荣耀Robot Phone：具身AI手机新物种</h2>
+                <p class="card-content">荣耀发布Robot Phone，这是全球首款具身AI概念手机，可视为"长了腿的手机"。配合AI硬件生态布局，联想IDG业务竞争优势持续扩大，刘军透露未来两大布局方向。少数派报道称其开启AI硬件新赛道。</p>
+                <p class="card-source">📎 来源：少数派 · PingWest品玩</p>
+            </div>
+        </div>
+        
+        <footer>
+            共10条新闻 · 涵盖AI大模型 · Agent应用 · 产品发布 · 行业动态<br>
+            整理时间：2026-08-15 08:30
+        </footer>
+    </div>
+</body>
+</html>

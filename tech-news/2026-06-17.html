@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-06-17 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(100, 255, 218, 0.1);
+        }
+
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comms { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-business { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 138, 101, 0.2); color: #ff8565; }
+
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 13px;
+        }
+
+        .footer-note {
+            margin-top: 8px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">📅 2026年6月17日 · 周三</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选10条 · 每日8:30更新</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 头条新闻 (通栏) -->
+            <article class="news-card large">
+                <span class="tag tag-ai">🔥 头条</span>
+                <div class="emoji">🍎</div>
+                <h2 class="news-title">苹果WWDC26：库克告别演讲，Siri重生为「Siri AI」</h2>
+                <p class="news-content">苹果CEO库克主持其任内最后一场WWDC大会，Siri全面升级为「Siri AI」，接入谷歌Gemini系列模型技术打造的新一代苹果基础模型。新Siri支持个人情境理解、屏幕感知、视觉智能、多轮对话等能力，系统级AI覆盖Safari、信息、邮件等应用。国行暂不支持，需配合监管推进。</p>
+                <p class="news-source">📎 来源：智东西</p>
+            </article>
+
+            <!-- 第2条 -->
+            <article class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🧠</div>
+                <h2 class="news-title">科大讯飞SpaceMind：全球首个智慧空间Agent平台</h2>
+                <p class="news-content">采用双路由架构解决"AI降智"问题，控制指令端到端响应仅700毫秒。配合毫米波雷达实现空间感知，支持记忆学习与主动智能服务。</p>
+                <p class="news-source">📎 来源：智东西</p>
+            </article>
+
+            <!-- 第3条 -->
+            <article class="news-card">
+                <span class="tag tag-ai">🎨 AI</span>
+                <div class="emoji">🖼️</div>
+                <h2 class="news-title">智象未来HiDream图像模型跃居全球第三</h2>
+                <p class="news-content">HiDream-O1-Image-1.5在全球AI模型评测平台拿下总榜第三、国内第一，超越Google Nano Banana 2和字节Seedream 4.0，采用"原生全模态"架构。</p>
+                <p class="news-source">📎 来源：智东西</p>
+            </article>
+
+            <!-- 第4条 -->
+            <article class="news-card">
+                <span class="tag tag-business">💰 商业</span>
+                <div class="emoji">💸</div>
+                <h2 class="news-title">DeepSeek完成超70亿美元融资</h2>
+                <p class="news-content">国产AI独角兽DeepSeek完成新一轮巨额融资，估值大幅攀升，显示资本市场对中国AI技术的持续看好。</p>
+                <p class="news-source">📎 来源：量子位/腾讯新闻</p>
+            </article>
+
+            <!-- 第5条 -->
+            <article class="news-card">
+                <span class="tag tag-product">🚗 产品</span>
+                <div class="emoji">🚘</div>
+                <h2 class="news-title">Rivian发布R2后裁员，艰难盈利路</h2>
+                <p class="news-content">Rivian在发布R2 SUV仅数天后宣布裁员，这是该公司2022年以来的第五次裁员，电动车初创企业盈利压力持续。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </article>
+
+            <!-- 第6条 -->
+            <article class="news-card">
+                <span class="tag tag-ai">📱 AI</span>
+                <div class="emoji">✨</div>
+                <h2 class="news-title">Google Gemini Intelligence登陆Android/Wear OS</h2>
+                <p class="news-content">Gemini AI功能将于今年登陆Android手机、平板和Wear OS，Pixel手表将首发获得AI生成小组件等特性。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </article>
+
+            <!-- 第7条 -->
+            <article class="news-card">
+                <span class="tag tag-product">🎮 产品</span>
+                <div class="emoji">🕹️</div>
+                <h2 class="news-title">Android折叠屏新增原生手柄控制</h2>
+                <p class="news-content">谷歌在Android 17中为Pixel折叠屏添加原生游戏手柄控制支持，包括控制器重映射功能，深度集成到手柄支持。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </article>
+
+            <!-- 第8条 -->
+            <article class="news-card">
+                <span class="tag tag-product">🔊 产品</span>
+                <div class="emoji">🔈</div>
+                <h2 class="news-title">Sonos发布App重大更新</h2>
+                <p class="news-content">Sonos推出Beta版应用更新，带来全新Tab式导航、更易用的音量控制界面及更灵活的播放器组织功能。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </article>
+
+            <!-- 第9条 -->
+            <article class="news-card">
+                <span class="tag tag-business">🛒 商业</span>
+                <div class="emoji">🛍️</div>
+                <h2 class="news-title">618购物节：AI工具抢占"购物前的入口"</h2>
+                <p class="news-content">2026年618期间，AI购物助手、智能推荐、比价机器人成为新战场，国产AI芯片企业也在资本市场活跃。</p>
+                <p class="news-source">📎 来源：上观新闻</p>
+            </article>
+
+            <!-- 第10条 (通栏) -->
+            <article class="news-card large">
+                <span class="tag tag-business">🌟 观点</span>
+                <div class="emoji">🚀</div>
+                <h2 class="news-title">SpaceX、Anthropic、OpenAI：科技IPO大年到来</h2>
+                <p class="news-content">2026年成为科技公司IPO大年，MANGOS正在取代传统FAANG成为资本市场新宠。Anthropic估值已达9650亿美元，SpaceX持续推进AI基础设施布局，Cursor以600亿美元估值引发关注。国产AI赛道同样火热，DeepSeek等独角兽获大额融资，全球AI竞争进入新阶段。</p>
+                <p class="news-source">📎 来源：TechCrunch</p>
+            </article>
+        </div>
+
+        <footer>
+            <p>📊 共10条新闻 · 整理时间 2026-06-17 08:30</p>
+            <p class="footer-note">精选自 The Verge · TechCrunch · 智东西 · 量子位 · 上观新闻 等可靠媒体</p>
+        </footer>
+    </div>
+</body>
+</html>

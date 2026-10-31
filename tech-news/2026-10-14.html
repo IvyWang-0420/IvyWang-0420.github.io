@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-10-14 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .tag-security { background: rgba(239, 83, 80, 0.2); color: #ef5350; }
+        
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .emoji {
+            font-size: 32px;
+            line-height: 1;
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            flex: 1;
+            line-height: 1.4;
+        }
+        
+        .card-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026 · 10 · 14</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日精选 · 洞察科技前沿</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-security">🔐 安全</span>
+                <div class="card-header">
+                    <span class="emoji">🚀</span>
+                    <h2 class="card-title">Meta GitHub 遭黑客入侵：1500人个人数据泄露</h2>
+                </div>
+                <p class="card-content">Meta 官方确认，其 GitHub 仓库遭到黑客攻击，约 1500 人的个人数据被曝光。Meta 表示，被盗数据中 99% 为商业软件代码相关产品数据，剩余 1% 为个人数据，其中大部分是美国地区 Meta 员工的资料。</p>
+                <p class="card-source">📎 来源：The Verge / SecurityWeek</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-header">
+                    <span class="emoji">🛠️</span>
+                    <h2 class="card-title">TRAE IDE 合并 Code 与 Work：AI 开发工具整合升级</h2>
+                </div>
+                <p class="card-content">国内 AI 原生 IDE 厂商 TRAE 宣布将 TraeWork 与 TraeCode 合并，推出统一客户端。新版本支持 Agent 工作台模式，可跨项目分配任务、调度多个 Agent 并行工作。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💰 商业</span>
+                <div class="card-header">
+                    <span class="emoji">💵</span>
+                    <h2 class="card-title">Manus 获 5 亿美元破纪录融资</h2>
+                </div>
+                <p class="card-content">AI 应用公司 Manus 宣布完成 5 亿美元巨额融资，刷新行业纪录。此轮融资表明资本市场对 AI 应用落地前景持续看好，AI 正在从概念验证走向规模化商业部署。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-header">
+                    <span class="emoji">🧠</span>
+                    <h2 class="card-title">PaperBenchX 测试：10 个 AI 模型论文复现"翻车"</h2>
+                </div>
+                <p class="card-content">最新 PaperBenchX 测试显示，当前主流大模型在论文复现任务中表现不佳，10 个模型均未通过完整复现测试，揭示了 AI 科研领域的关键卡点。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-header">
+                    <span class="emoji">⚖️</span>
+                    <h2 class="card-title">OpenAI 与 Anthropic 敦促英国立法监管 AI</h2>
+                </div>
+                <p class="card-content">OpenAI 和 Anthropic 高管联合出席英国议会听证会，呼吁政府加强对 AI 行业的监管。英国情报部门负责人同时警告 AI 可能被用于制造新型生物武器。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🏠 产品</span>
+                <div class="card-header">
+                    <span class="emoji">📺</span>
+                    <h2 class="card-title">苹果 HomeHub 智能家居屏幕真机曝光</h2>
+                </div>
+                <p class="card-content">苹果 HomeHub 智能家居显示屏真机视频流出，采用类似 Apple Watch 的圆形 UI 设计理念，可控制灯光、摄像头、家庭中枢等设备，预计年底正式发布。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">🎮 芯片</span>
+                <div class="card-header">
+                    <span class="emoji">⚡</span>
+                    <h2 class="card-title">英伟达 RTX Remix 将支持 DLSS 5</h2>
+                </div>
+                <p class="card-content">英伟达宣布将于 10 月 23 日为 RTX Remix 工具添加 DLSS 5 支持，《霍格沃茨之遗》等经典 DX8/DX9 游戏将获得 AI 超分辨率升级，画质和性能均有显著提升。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🎵 产品</span>
+                <div class="card-header">
+                    <span class="emoji">🎧</span>
+                    <h2 class="card-title">Deezer 推出 AI 音乐过滤开关</h2>
+                </div>
+                <p class="card-content">音乐平台 Deezer 宣布将于年底前上线 AI 音乐过滤功能，用户可一键排除 AI 生成的曲目、专辑及相关艺术家，回应平台 AI 歌曲上传量激增问题。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💼 商业</span>
+                <div class="card-header">
+                    <span class="emoji">📊</span>
+                    <h2 class="card-title">Anthropic 估值逼近 2 万亿美元</h2>
+                </div>
+                <p class="card-content">以 AI 安全为核心卖点的 Anthropic 公司估值已逼近 2 万亿美元。市场对 AI 潜在风险的担忧反而成为估值上涨的重要驱动力，投资者看好其先发优势。</p>
+                <p class="card-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第10条：大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-biz">🎮 商业</span>
+                <div class="card-header">
+                    <span class="emoji">⚔️</span>
+                    <h2 class="card-title">游戏掌机市场洗牌：ESA 指控 Anbernic 盗版侵权</h2>
+                </div>
+                <p class="card-content">美国娱乐软件协会（ESA）向美国贸易代表办公室提交报告，将 Anbernic 等国产游戏掌机列为"臭名昭著市场"，指控其产品"通过精致消费产品形式将盗版目录正常化"。此举可能影响国产掌机在海外市场的销售。</p>
+                <p class="card-source">📎 来源：The Verge / TorrentFreak</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📌 共 10 条新闻 | 编译自 The Verge、Wired、PingWest品玩、虎嗅等媒体</p>
+        </footer>
+    </div>
+</body>
+</html>

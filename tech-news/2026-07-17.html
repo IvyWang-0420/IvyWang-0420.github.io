@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-17 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            color: #ffffff;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            font-size: 12px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-space { background: rgba(255, 138, 128, 0.2); color: #ff8a65; }
+        .tag-security { background: rgba(255, 171, 145, 0.2); color: #ffab91; }
+        
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+        
+        .news-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .news-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+        
+        .footer-note {
+            margin-top: 8px;
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">JUL 17, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日精选 · 行业动态 · 技术趋势</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="emoji">🔴</div>
+                <h2 class="news-title">SpaceX Starship Flight 13 发射中止，马斯克称数日内再试</h2>
+                <p class="news-content">第13次星舰飞行测试在倒计时归零时部分发动机未启动，触发自动中止程序。这是SpaceX IPO后的首次飞行测试，发射中止可能影响投资者信心（SpaceX股票已跌破$135 IPO价格）。Elon Musk表示将"hopefully"在数日内再次尝试发射。</p>
+                <p class="news-source">📎 来源：The Verge | Gaby Del Valle</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🤖</div>
+                <h2 class="news-title">Google Gemini 3.5 Pro 推迟发布，编程能力成重点</h2>
+                <p class="news-content">原定6月发布的Gemini 3.5 Pro至今仍未面世，Google正在加强模型的编程能力。在5月I/O大会上，Google曾表示该模型"已在内部使用"并承诺"下个月推出"。</p>
+                <p class="news-source">📎 来源：The Verge / Bloomberg</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💻 软件</span>
+                <div class="emoji">💻</div>
+                <h2 class="news-title">Microsoft 开源 1996 年经典 Comic Chat IRC 客户端</h2>
+                <p class="news-content">微软将1996年发布的经典客户端 Comic Chat 开源并在 GitHub 上公开源代码。该软件能将文字聊天转化为漫画风格界面，生成面板和插图，至今仍与纯文本客户端兼容。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎨 AI</span>
+                <div class="emoji">🎨</div>
+                <h2 class="news-title">Google Vids 新增个人AI头像功能：自拍即可生成</h2>
+                <p class="news-content">用户只需提供一张自拍和一段语音clip，即可生成"personal avatars"个人AI头像——一个会说话的数字形象。Vids还获得Gemini Omni模型支持，可用自然语言生成和编辑视频。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🛡️ 安全</span>
+                <div class="emoji">🛡️</div>
+                <h2 class="news-title">ChatGPT 将向青少年显示休息提醒</h2>
+                <p class="news-content">OpenAI宣布，当青少年用户"长时间"使用ChatGPT时将收到更频繁的休息提醒。若青少年轻账号因"暴力威胁或网络暴力行为"被封禁，OpenAI将通知其家长。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-comm">🔗 搜索</span>
+                <div class="emoji">🔗</div>
+                <h2 class="news-title">Google Search AI Mode 新增第三方应用连接功能</h2>
+                <p class="news-content">Google在美国推出AI Mode应用连接功能，用户可直接调用链接的第三方应用（Instacart、Canva、YouTube Music等）。这是Google将搜索引擎打造为"能完成一切任务的搜索框"的又一举措。</p>
+                <p class="news-source">📎 来源：The Verge | Emma Roth</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🚨 安全</span>
+                <div class="emoji">🚨</div>
+                <h2 class="news-title">调研警告：54% 企业已发生 AI Agent 安全事件</h2>
+                <p class="news-content">VentureBeat调研（107家企业）显示，超过半数已发生AI Agent安全事件或险情，但大多数仍允许Agent共享凭证。仅有约三分之一为每个Agent配置独立身份，超过七成最高风险Agent未实现隔离。</p>
+                <p class="news-source">📎 来源：VentureBeat | 2026.7.16</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-biz">💰 商业</span>
+                <div class="emoji">💰</div>
+                <h2 class="news-title">调研警告：企业 AI 基础设施支出增速远超成本可见度</h2>
+                <p class="news-content">调研显示，多数企业GPU利用率不足一半，少于一半企业会严格追踪实际计算成本。多数企业计划在一年内切换或新增供应商，以集成和总拥有成本而非标称token价格作为决策依据。</p>
+                <p class="news-source">📎 来源：VentureBeat | 2026.7.16</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤝 AI</span>
+                <div class="emoji">🤝</div>
+                <h2 class="news-title">调研警告：企业 AI 面临"信任危机"而非检索问题</h2>
+                <p class="news-content">调研（101家企业）揭示，大多数企业已目睹AI Agent产生"自信但错误"的答案，原因指向上下文缺失或不一致。混合检索正在成为主流，但受治理的语义层仍是未来方向。</p>
+                <p class="news-source">📎 来源：VentureBeat | 2026.7.16</p>
+            </div>
+            
+            <!-- 第10条：重要大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🧠 开源</span>
+                <div class="emoji">🧠</div>
+                <h2 class="news-title">Thinking Machines 发布首个开源多模态语言模型 Inkling</h2>
+                <p class="news-content">Thinking Machines 发布首个专注于低成本和抗审查的多模态语言模型 Inkling。该模型支持多种模态，旨在降低AI使用门槛并提供更中立的内容处理能力。这是开源AI领域的重要进展，为开发者和小型组织提供了新的选择。</p>
+                <p class="news-source">📎 来源：VentureBeat</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 本简报由 Mochi AI 整理 | 数据来源：The Verge, VentureBeat 等主流科技媒体</p>
+            <p class="footer-note">共 10 条新闻 · 2026年7月17日</p>
+        </footer>
+    </div>
+</body>
+</html>

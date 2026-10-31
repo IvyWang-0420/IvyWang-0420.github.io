@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-20 科技行业新闻简报</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 2px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-security { background: rgba(255,138,128,0.15); color: #ff8a80; }
+.tag-science { background: rgba(128,203,196,0.15); color: #80cbc4; }
+.tag-hardware { background: rgba(159,168,218,0.15); color: #9fa8da; }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.news-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="date">JUN 20 · 2026</div>
+  <h1 class="main-title">科技行业新闻简报</h1>
+  <div class="subtitle">DAILY TECH BRIEFING</div>
+</header>
+
+<div class="news-grid">
+
+<!-- 头条大卡片 -->
+<div class="news-card large">
+  <span class="tag tag-ai">🤖 AI</span>
+  <div class="emoji">🔒</div>
+  <div class="news-title">美国政府封禁Anthropic反而助长品牌热度？</div>
+  <div class="news-content">美国政府迫使Anthropic下架Fable 5和Mythos 5两款模型，以国家安全为由。但网络安全研究人员随后发表公开信称这一举动危险，Anthropic本身也指出相同越狱漏洞存在于其他模型中。这究竟是保护还是免费炒作？</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第2条 -->
+<div class="news-card">
+  <span class="tag tag-ai">🤖 AI</span>
+  <div class="emoji">🛡️</div>
+  <div class="news-title">Anthropic承诺加强与美国政府沟通</div>
+  <div class="news-content">Anthropic高管向商务部长提交方案，承诺与白宫展开更深度合作，力求尽快消除各类安全隐患。高性能AI模型Mythos与Fable遭监管整治后，Anthropic承诺未来更快处置安全风险。</div>
+  <div class="news-source">📎 来源：36氪 / 新浪财经</div>
+</div>
+
+<!-- 第3条 -->
+<div class="news-card">
+  <span class="tag tag-robot">🚗 交通</span>
+  <div class="emoji">🚗</div>
+  <div class="news-title">日本最大IPO后Go布局Robotaxi扩张</div>
+  <div class="news-content">Go的IPO是日本今年以来最大规模上市，获约886亿日元资金。Go计划利用这笔资本应对日本司机严重短缺问题，并布局自动驾驶出租车Robotaxi及开展收购。</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第4条 -->
+<div class="news-card">
+  <span class="tag tag-security">🔒 安全</span>
+  <div class="emoji">🛡️</div>
+  <div class="news-title">网络安全出口管制30年历史证明无效</div>
+  <div class="news-content">过去30年，阻止网络安全相关软件流通的做法已被证明效果不佳。Anthropic的网络安全模型Mythos也面临同样困境。批评者认为出口管制只会适得其反。</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第5条 -->
+<div class="news-card">
+  <span class="tag tag-ai">🤖 AI</span>
+  <div class="emoji">📱</div>
+  <div class="news-title">印度首富安巴尼要在每通电话和App中部署AI</div>
+  <div class="news-content">Reliance Jio Platforms将AI嵌入超过5亿用户使用的电信服务中。穆克什·安巴尼的AI普及计划覆盖日常通信层面，标志着AI在新兴市场大规模落地的里程碑。</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第6条 -->
+<div class="news-card">
+  <span class="tag tag-hardware">💻 硬件</span>
+  <div class="emoji">🏠</div>
+  <div class="news-title">Aura E-ink电子相框：看起来完全不像数码</div>
+  <div class="news-content">Aura推出全新Aura Ink电子相框，使用E-ink技术创造出完全不像数码产品的显示效果。彻底刷新传统电子相框这一老套产品类别。</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第7条 -->
+<div class="news-card">
+  <span class="tag tag-ai">🤖 AI</span>
+  <div class="emoji">⚡</div>
+  <div class="news-title">挪威对中小学AI使用近乎全面禁止</div>
+  <div class="news-content">挪威政府宣布新规：1-7年级学生（6-13岁）原则上不应使用AI；低年级初中生可在教师监督下谨慎使用；高年级学生应学会适当使用AI。新规将于今年8月生效。</div>
+  <div class="news-source">📎 来源：The Verge / Reuters</div>
+</div>
+
+<!-- 第8条 -->
+<div class="news-card">
+  <span class="tag tag-science">🔬 科学</span>
+  <div class="emoji">☀️</div>
+  <div class="news-title">核聚变创业公司融资超71亿美元</div>
+  <div class="news-content">TechCrunch梳理融资超过1亿美元的核聚变公司名单，包括Commonwealth Fusion Systems、Helion Energy等头部玩家。清洁能源赛道持续吸引大量资本涌入。</div>
+  <div class="news-source">📎 来源：TechCrunch</div>
+</div>
+
+<!-- 第9条 -->
+<div class="news-card">
+  <span class="tag tag-hardware">💻 硬件</span>
+  <div class="emoji">🍎</div>
+  <div class="news-title">macOS 27隐藏功能：Shortcuts Playground</div>
+  <div class="news-content">苹果今秋发布的macOS 27将允许用户通过自然语言输入构建Shortcuts。Claude Code和Codex用户现已可提前体验，让AI助手直接创建自动化工作流程。</div>
+  <div class="news-source">📎 来源：Wired</div>
+</div>
+
+<!-- 底部大卡片 -->
+<div class="news-card large">
+  <span class="tag tag-science">🔬 科学</span>
+  <div class="emoji">💊</div>
+  <div class="news-title">最具前景埃博拉疫苗：在架上等了15年</div>
+  <div class="news-content">一款2011年研发的埃博拉疫苗至今未能广泛应用。研究人员正争分夺秒地测试它是否能帮助对抗刚果的布迪布德型埃博拉疫情。从实验室到实际应用的漫长之路，凸显疫苗研发与全球分发的系统性挑战。</div>
+  <div class="news-source">📎 来源：Wired</div>
+</div>
+
+</div>
+
+<footer>
+  — 共10条 · 精选自 The Verge · TechCrunch · Wired · 36氪 等权威媒体 —
+</footer>
+
+</div>
+</body>
+</html>

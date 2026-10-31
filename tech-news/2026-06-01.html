@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-01 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.date-line {
+  font-size: 12px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.sub-title {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.2); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+
+.emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.news-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.news-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <div class="date-line">2026-06-01 · 08:30</div>
+  <h1 class="main-title">科技行业新闻简报</h1>
+  <p class="sub-title">Daily Tech News Briefing</p>
+</header>
+
+<div class="news-grid">
+
+  <!-- 头条：第1条 -->
+  <div class="news-card large">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">🔬</span>
+    <div class="news-title">中信证券：AI与科技交易极致化，尚未到极端</div>
+    <div class="news-content">中信证券研报认为，当前AI和科技板块交易趋于极致，但尚未到极端。投资、生产、盈利三个维度上国内新动能和旧动能明显此消彼长。美国是AI震中，韩国通过硬件盈利，AI全球扩张浪潮强力带动中国AI相关产品景气走高。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 第2条 -->
+  <div class="news-card">
+    <span class="tag tag-biz">🏢 商业</span>
+    <span class="emoji">🚢</span>
+    <div class="news-title">大金重工签署3亿美元船舶建造合同</div>
+    <div class="news-content">大金重工与希腊、挪威船东签署散货船建造合同，将建造4艘211,000DWT散货船，总金额约3亿美元（折合人民币约20.5亿元），2029年分批交付。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 第3条 -->
+  <div class="news-card">
+    <span class="tag tag-chip">⚡ 芯片</span>
+    <span class="emoji">⛏️</span>
+    <div class="news-title">中金：钨价战略属性日益增强</div>
+    <div class="news-content">2025年钨价累计上涨221%至45.6万元/吨，今年3月一度突破100万元/吨。受中东冲突引发滞胀恐慌影响，5月下探至40.6万元/吨年内低点，钨价有望企稳回升。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 第4条 -->
+  <div class="news-card">
+    <span class="tag tag-biz">📊 金融</span>
+    <span class="emoji">📈</span>
+    <div class="news-title">招商证券：6月A股仍处盈利驱动上行阶段</div>
+    <div class="news-content">招商证券判断6月A股仍处盈利驱动的上行第三阶段，一季报盈利增速触底呈K型分化。AI已从算力军备叙事转向商业化落地，DeepSeek V4适配国产算力等信号支撑主线景气。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 第5条 -->
+  <div class="news-card">
+    <span class="tag tag-biz">📊 金融</span>
+    <span class="emoji">📊</span>
+    <div class="news-title">公募量化基金持续走热</div>
+    <div class="news-content">上周公募量化基金热度持续发酵，多只产品开启首发或宣告发行档期，2只新成立基金首发规模均超20亿元，认购户数均超万户。今年前五个月发行规模已超去年全年。</div>
+    <div class="news-source">📎 来源：中证网</div>
+  </div>
+
+  <!-- 第6条 -->
+  <div class="news-card">
+    <span class="tag tag-robot">🤖 机器人</span>
+    <span class="emoji">🏭</span>
+    <div class="news-title">首届装备强国论坛召开，智能制造按下加速键</div>
+    <div class="news-content">5月30日，首届装备强国论坛聚焦"扎实推进新型工业化 加快建设装备强国"主题。新一代AI与先进制造技术深度融合，智能装备发展已成为推进新型工业化的关键。</div>
+    <div class="news-source">📎 来源：中证报</div>
+  </div>
+
+  <!-- 第7条 -->
+  <div class="news-card">
+    <span class="tag tag-biz">🏢 商业</span>
+    <span class="emoji">🏠</span>
+    <div class="news-title">中金：2028年前后房企或迎来全面回暖</div>
+    <div class="news-content">中金公司指出，尽管一季度二手房市场基本面有所改观，但资本市场仍存质疑。未来6-12个月，三季度末、四季度初或是下一次主要趋势确认关口，2028年前后房企或迎来全面回暖。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+  <!-- 第8条 -->
+  <div class="news-card">
+    <span class="tag tag-chip">⚡ 芯片</span>
+    <span class="emoji">🤖</span>
+    <div class="news-title">PCB上市公司密集扩产，AI算力需求强劲</div>
+    <div class="news-content">在AI算力需求强劲驱动下，多家PCB上市公司发布扩产计划，PCB产业链在2026年一季度展现高景气度。机构密集调研产能利用率及未来布局情况。</div>
+    <div class="news-source">📎 来源：中证报</div>
+  </div>
+
+  <!-- 第9条 -->
+  <div class="news-card">
+    <span class="tag tag-comm">🌐 通信</span>
+    <span class="emoji">🌐</span>
+    <div class="news-title">南向资金密集扫货港股科技股</div>
+    <div class="news-content">今年以来南向资金持续加码港股科技板块，云知声、蓝思科技、均胜电子等多只个股获增持超过100%。基本面企稳、流动性改善及估值折价等因素支撑港股科技资产配置价值。</div>
+    <div class="news-source">📎 来源：上证报</div>
+  </div>
+
+  <!-- 重点新闻：第10条 -->
+  <div class="news-card large">
+    <span class="tag tag-comm">🚀 航天</span>
+    <span class="emoji">🚀</span>
+    <div class="news-title">中信建投：持续看好卫星互联网及可复用火箭方向</div>
+    <div class="news-content">中信建投研报指出，海外商业航天短期扰动（蓝色起源新格伦火箭回收失利）属技术必经波折，SpaceX估值调整更多反映流动性变化而非产业方向逆转。2026年我国多款液体火箭将密集首飞及回收试验，有望大幅降低发射成本，加速星座建设。</div>
+    <div class="news-source">📎 来源：36氪</div>
+  </div>
+
+</div>
+
+<footer>
+  共10条新闻 · 2026-06-01 科技行业新闻简报 · AI自动整理
+</footer>
+
+</div>
+
+</body>
+</html>

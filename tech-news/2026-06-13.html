@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-13 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .date {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #64ffda;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .main-title {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: #8899aa;
+    letter-spacing: 1px;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .news-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  .news-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(100, 255, 218, 0.3);
+  }
+  .news-card.large {
+    grid-column: 1 / -1;
+    padding: 32px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; border: 1px solid rgba(100, 255, 218, 0.3); }
+  .tag-chip { background: rgba(255, 167, 38, 0.15); color: #ffa726; border: 1px solid rgba(255, 167, 38, 0.3); }
+  .tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; border: 1px solid rgba(206, 147, 216, 0.3); }
+  .tag-comm { background: rgba(100, 181, 246, 0.15); color: #64b5f6; border: 1px solid rgba(100, 181, 246, 0.3); }
+  .tag-biz { background: rgba(129, 199, 132, 0.15); color: #81c784; border: 1px solid rgba(129, 199, 132, 0.3); }
+  .tag-space { background: rgba(255, 138, 101, 0.15); color: #ff8a65; border: 1px solid rgba(255, 138, 101, 0.3); }
+  .tag-product { background: rgba(128, 203, 196, 0.15); color: #80cbc4; border: 1px solid rgba(128, 203, 196, 0.3); }
+  .tag-legal { background: rgba(159, 168, 218, 0.15); color: #9fa8da; border: 1px solid rgba(159, 168, 218, 0.3); }
+  .tag-ev { background: rgba(255, 213, 79, 0.15); color: #ffd54f; border: 1px solid rgba(255, 213, 79, 0.3); }
+  .tag-music { background: rgba(255, 138, 196, 0.15); color: #ff8ac4; border: 1px solid rgba(255, 138, 196, 0.3); }
+
+  .card-emoji {
+    font-size: 32px;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  .large .card-emoji {
+    font-size: 40px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .large .card-title {
+    font-size: 22px;
+  }
+  .card-body {
+    font-size: 14px;
+    color: #b0bec5;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+  .large .card-body {
+    font-size: 15px;
+  }
+  .card-source {
+    font-size: 12px;
+    color: #607d8b;
+    font-style: italic;
+  }
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    margin-top: 10px;
+    color: #546e7a;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .headline-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6b6b, #ee5a24);
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">📅 2026 / 06 / 13 &nbsp;·&nbsp; SATURDAY</div>
+    <h1 class="main-title">�TECH DAILY</h1>
+    <p class="subtitle">科技行业新闻简报 · 每日早 8:30 更新</p>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 头条大卡片 -->
+    <div class="news-card large">
+      <span class="headline-badge">🔥 今日头条</span>
+      <span class="tag tag-space">航天 & 商业</span>
+      <div class="card-emoji">🚀</div>
+      <div class="card-title">SpaceX 成功 IPO 登陆纳斯达克，马斯克成为全球首位万亿富翁</div>
+      <div class="card-body">SpaceX 于 6 月 12 日正式上市（代码 SPCX），开盘价 $150（较 IPO 定价 $135 溢价 11%），盘中最高 $167，市值突破 2.2 万亿美元，成为美国第六大上市企业。马斯克个人净资产突破 1 万亿美元，成为人类历史上首位 trillionaire。其与 Anthropic（年交易额 $150 亿）、Google（月交易额 $9.2 亿）均签有算力供应协议。</div>
+      <div class="card-source">📎 来源：The Verge / WIRED / CNBC</div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI 大模型</span>
+      <div class="card-emoji">🤖</div>
+      <div class="card-title">云知声发布 U2 原生智能体大模型，跻身国产第一梯队</div>
+      <div class="card-body">港股"AGI 第一股"云知声发布 U2 大模型，基于 MoE 架构、3000 亿参数。在长上下文（AA-LCR 70分）、知识推理（87.9分）中领先，混合思考机制节省约 25% Token 消耗，专注真实工作流交付。2025 年大模型相关收入同比暴涨 1076%。</div>
+      <div class="card-source">📎 来源：智东西（zhidx.com）</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI 视频</span>
+      <div class="card-emoji">🎬</div>
+      <div class="card-title">京东开源 JoyAI-Echo：5分钟长视频角色不崩，推理提速 7.5 倍</div>
+      <div class="card-body">京东首次开源长视频生成框架 JoyAI-Echo，攻克角色一致性、音色稳定性、生成速度三大难题。用户盲测音频质量偏好 81.7%，支持 5 分钟实时生成，推理速度提升 7.5 倍。代码与权重全部开源，全球开发者可免费使用。</div>
+      <div class="card-source">📎 来源：智东西（zhidx.com）</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <span class="tag tag-biz">商业动态</span>
+      <div class="card-emoji">😤</div>
+      <div class="card-title">Meta 员工强烈抵触 Zuckerberg 全公司 AI 黑客松计划</div>
+      <div class="card-body">据 WIRED 独家报道，扎克伯格计划在 Meta 内部举办大规模 AI 黑客松，引发员工广泛不满。多位员工在公司论坛公开批评 AI 战略混乱、决策频繁变动，团队士气低落。"我不确定这家公司还支持黑客松文化"，一位员工写道。</div>
+      <div class="card-source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <span class="tag tag-product">公益科技</span>
+      <div class="card-emoji">👓</div>
+      <div class="card-title">Meta 向美国 13 万盲人退伍军人捐赠 AI 眼镜</div>
+      <div class="card-body">Meta 宣布向美国超过 13 万名视障退伍军人免费捐赠 Meta Ray-Ban Smart Glasses，搭载 AI 语音助手可识别物体、读取文字、描述环境，帮助视障人士独立生活。这是 Meta 迄今规模最大的公益技术捐赠项目。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <span class="tag tag-legal">安全诉讼</span>
+      <div class="card-emoji">🔍</div>
+      <div class="card-title">Google 起诉"Outsider Enterprise"钓鱼网络：超 100 万欺诈 URL</div>
+      <div class="card-body">Google 正式起诉"Outsider Enterprise"钓鱼工具包运营组织，其相关欺诈 URL 超过 100 万个，两周内向 Android 用户发送 250 万条诈骗消息。Google 请求法院永久关闭该网络，这是 Google 近年来针对网络犯罪最大规模的法律行动。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <span class="tag tag-ev">新能源车</span>
+      <div class="card-emoji">🚙</div>
+      <div class="card-title">Ford $30,000 入门电动皮卡曝光：体型比 Maverick 更小</div>
+      <div class="card-body">The Autopian 在长滩拍到 Ford 全新入门级电动皮卡重度伪装测试车，估算车高约 64 英寸、车长约 195 英寸，体型甚至小于现有 Maverick 紧凑皮卡。基于通用 EV 平台打造，售价锚定 $30,000 区间，目标让更多消费者买得起电动皮卡。</div>
+      <div class="card-source">📎 来源：The Verge / The Autopian</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <span class="tag tag-product">硬件产品</span>
+      <div class="card-emoji">📱</div>
+      <div class="card-title">Nothing Phone 4A Pro 等产品正式进入 500+ 家 Best Buy 门店</div>
+      <div class="card-body">Nothing 与美国最大消费电子零售商 Best Buy 达成合作，Phone 4A Pro、Phone 3、Headphone A、Ear 3 等产品登陆全美 500+ 家 Best Buy 实体店。Nothing 创始人 Carl Pei 同时预警：RAM 成本上涨，今年假日购物季折扣力度可能不如往年。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <span class="tag tag-legal">专利诉讼</span>
+      <div class="card-emoji">⚖️</div>
+      <div class="card-title">DJI 与 Insta360 互诉：运动相机云台专利战开打</div>
+      <div class="card-body">大疆（DJI）与影石（Insta360）互相提起专利诉讼。DJI 起诉 Insta360 婴儿稳拍器外观与操控方式侵权；Insta360 反诉 DJI 在防抖技术与设备定位分享功能上侵犯其专利。来自中国的两家头部运动相机厂商的法律战引发行业广泛关注。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 第10条 底部大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-music">流媒体</span>
+      <div class="card-emoji">🎧</div>
+      <div class="card-title">Spotify 推出编辑精选视频 New Music Friday，AI 时代音乐发现再升级</div>
+      <div class="card-body">Spotify 正式为 New Music Friday 播放列表引入视频编辑评论功能，用户可听到编辑对 Olivia Rodrigo、Ayra Starr、ANOTR 等本周重点新歌的亲自解读。这是 Spotify 从纯音频向多媒体内容生态扩张的重要一步，标志着音乐流媒体平台内容形态的再次进化。</div>
+      <div class="card-source">📎 来源：The Verge / Spotify Newsroom</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>共 10 条新闻 · 数据来源：The Verge · WIRED · 智东西 · The Verge · The Verge · The Verge · The Verge · The Verge · The Verge · The Verge</div>
+    <div style="margin-top:6px;">📡 Tech Daily 自动采集 · 2026-06-13 08:30</div>
+  </footer>
+
+</div>
+</body>
+</html>

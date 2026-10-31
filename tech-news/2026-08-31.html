@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-31 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .date {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #64ffda;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: #8899aa;
+    letter-spacing: 1px;
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .news-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(100,255,218,0.2);
+  }
+
+  .news-card.large {
+    grid-column: 1 / -1;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-auto { background: rgba(255,138,101,0.15); color: #ff8a65; }
+  .tag-security { background: rgba(239,83,80,0.15); color: #ef5350; }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .emoji {
+    font-size: 32px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+
+  .card-content {
+    font-size: 14px;
+    color: #b0bec5;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .card-source {
+    font-size: 12px;
+    color: #607d8b;
+    font-style: italic;
+  }
+
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    color: #546e7a;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">AUG 31, 2026 &nbsp;|&nbsp; 08:30 BEIJING</div>
+    <h1 class="main-title">🚀 科技行业新闻简报</h1>
+    <div class="subtitle">每日精选 · 前沿技术 · 行业动态 · 产品发布</div>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 1. 头条大卡片：Meta Glimmer 开源模型 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-header">
+        <span class="emoji">🔬</span>
+        <div class="card-title">Meta 发布 Glimmer 开源权重 AI 模型：人人都可在本地运行</div>
+      </div>
+      <div class="card-content">
+        Meta 正式发布 Glimmer，一款开放权重（open-weight）AI 模型，用户可免费下载并在自有硬件上运行。该模型与内部更强大的 Muse Spark 形成对比——后者仅通过 API 提供。扎克伯格发表公开信称 AI 应"为所有人服务"，而非由少数实验室垄断。
+      </div>
+      <div class="card-source">📎 来源：TechCrunch</div>
+    </div>
+
+    <!-- 2. Perplexity + Nvidia -->
+    <div class="news-card">
+      <span class="tag tag-ai">💻 AI</span>
+      <div class="card-header">
+        <span class="emoji">⚡</span>
+        <div class="card-title">Perplexity 联手 Nvidia 推出本地 AI Agent——零 token 费用</div>
+      </div>
+      <div class="card-content">
+        Perplexity 与 Nvidia 深度合作推出 Portable Computer，完全本地运行的 AI Agent。所有模型、文件和任务均在设备端完成，不消耗任何计费 token。系统默认从本地启动，调用云端前沿模型时才请求授权。
+      </div>
+      <div class="card-source">📎 来源：VentureBeat</div>
+    </div>
+
+    <!-- 3. 小鹏 AI 记忆 -->
+    <div class="news-card">
+      <span class="tag tag-auto">🚗 汽车</span>
+      <div class="card-header">
+        <span class="emoji">🧠</span>
+        <div class="card-title">小鹏让 AI 增加 30 秒记忆：自动驾驶开始理解时间</div>
+      </div>
+      <div class="card-content">
+        小鹏发布 VLA 重大升级：端侧模型扩 3.5 倍，保留 30 秒道路历史，流式推理响应速度提升 300%，X-Foresight 可推演未来 6 秒场景。碰撞失败率相对下降 16.2%，一次训练吞吐量超 1 亿视频片段。
+      </div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 4. 机器人餐厅 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <div class="card-header">
+        <span class="emoji">🍦</span>
+        <div class="card-title">全球首个全自主机器人餐厅落地上海 Sharpa×DQ</div>
+      </div>
+      <div class="card-content">
+        AI 机器人公司 Sharpa 与 DQ 冰淇淋联合打造的全球首家机器人餐厅8月29日在上海吴江路正式落成。机器人全自主完成55步冰淇淋制作流程（每日10:00-22:00），使用为人类设计的工具，无需人工持续操控。
+      </div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 5. 开源模型收费 -->
+    <div class="news-card">
+      <span class="tag tag-business">💰 商业</span>
+      <div class="card-header">
+        <span class="emoji">📜</span>
+        <div class="card-title">开源模型开始"收费"：Kimi K3、Qwen 调整商业许可证</div>
+      </div>
+      <div class="card-content">
+        多家中国大模型公司悄然调整开源策略。Kimi K3 年营收超 2000 万美元的 MaaS 业务需另行签约；Qwen3.8-Max 限制编程/办公产品，门槛 5000 万美元；DeepSeek V4-Pro 同步将 API 高峰时段价格上调 350%。
+      </div>
+      <div class="card-source">📎 来源：PingWest品玩</div>
+    </div>
+
+    <!-- 6. Brave 邮件别名 -->
+    <div class="news-card">
+      <span class="tag tag-security">🔒 隐私</span>
+      <div class="card-header">
+        <span class="emoji">🛡️</span>
+        <div class="card-title">Brave 浏览器新增邮件别名功能，对抗大数据追踪</div>
+      </div>
+      <div class="card-content">
+        隐私浏览器 Brave 推出邮件别名功能，用户可为不同服务创建一次性 decoy 邮箱地址用于注册登录，Brave 仍会转发邮件至主邮箱，有效阻断大型科技公司的跨平台追踪。
+      </div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 7. 苹果折叠屏触控笔 -->
+    <div class="news-card">
+      <span class="tag tag-chip">📱 硬件</span>
+      <div class="card-header">
+        <span class="emoji">✏️</span>
+        <div class="card-title">苹果曾为折叠 iPhone 测试触控笔，但大概率不会推出</div>
+      </div>
+      <div class="card-content">
+        据 Mark Gurman 爆料，苹果为折叠 iPhone 打造了一款更短小的 Apple Pencil，磁吸侧边收纳充电。但因折叠屏设计精密、触控笔会刮擦屏幕，且违背乔布斯"没有人需要触控笔"立场，该配件大概率不会随新品发布。
+      </div>
+      <div class="card-source">📎 来源：The Verge / Bloomberg</div>
+    </div>
+
+    <!-- 8. AI Agent 美中合作 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🌐 地缘</span>
+      <div class="card-header">
+        <span class="emoji">🤝</span>
+        <div class="card-title">AI Agent 日益强大，美中是否将走向合作？</div>
+      </div>
+      <div class="card-content">
+        WIRED 发布深度报道，随着 AI Agent 在自动化入侵和系统操控方面能力日增，美中双方研究人员均开始呼吁在 AI 安全领域展开合作。顶级 AI 专家对失控风险均感担忧，合作或成避免灾难的唯一路径。
+      </div>
+      <div class="card-source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 9. ICE 购买 Spot 机器狗 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🐕 机器人</span>
+      <div class="card-header">
+        <span class="emoji">⚠️</span>
+        <div class="card-title">ICE 计划购买 Boston Dynamics Spot 机器狗引争议</div>
+      </div>
+      <div class="card-content">
+        美国 ICE 发布采购公告，计划投入不超过 200 万美元购买 Boston Dynamics 的 Spot 机器狗用于"公共安全"。就在数周前，ICE 还被曝计划花费 2000 万美元采购电击手套，引发广泛争议。
+      </div>
+      <div class="card-source">📎 来源：The Verge / 404 Media</div>
+    </div>
+
+    <!-- 10. 头条大卡片：企业 AI Agent 边界 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">⚙️ 企业 AI</span>
+      <div class="card-header">
+        <span class="emoji">📊</span>
+        <div class="card-title">企业 AI Agent 成败关键：限制自主权限比扩大权限更重要</div>
+      </div>
+      <div class="card-content">
+        VentureBeat 刊发企业 AI 深度分析：过去两年间，业界普遍认为"AI 自主性越高，性能越好"，但大规模真实生产环境测试表明这一假设正在失效。成功部署 AI Agent 的企业并非给予最大自由度，而是为每个 Agent 设定明确职责边界和操作规则。企业 AI 的核心竞争力将来自"规则设计"而非"模型选择"。
+      </div>
+      <div class="card-source">📎 来源：VentureBeat</div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>📡 2026-08-31 科技行业新闻简报 &nbsp;|&nbsp; 共 10 条 &nbsp;|&nbsp; Mochi AI 整理</div>
+  </footer>
+
+</div>
+</body>
+</html>

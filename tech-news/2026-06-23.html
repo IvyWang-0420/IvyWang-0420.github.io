@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-23 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-date {
+  font-size: 12px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Card Base */
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Large Card (Headline) */
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+/* Card Header with Tag */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-space { background: rgba(255,138,101,0.15); color: #ff8a65; }
+.tag-game { background: rgba(255,205,210,0.15); color: #ffcdd2; }
+.tag-security { background: rgba(255,236,179,0.15); color: #ffe59e; }
+
+/* Emoji */
+.card-emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Card Content */
+.card-content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* Card Source */
+.card-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-date">TUE · JUN 23, 2026 · 08:30 CST</div>
+    <h1 class="header-title">科技行业新闻简报</h1>
+    <div class="header-subtitle">AI · 半导体 · 互联网 · 航天 · 游戏 · 商业</div>
+  </div>
+
+  <!-- News Grid -->
+  <div class="news-grid">
+
+    <!-- 1. HEADLINE: SpaceX -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-space">🌌 航天</span>
+      </div>
+      <div class="card-emoji">🌍</div>
+      <div class="card-title">SpaceX股价大跌16%跌破IPO首日收盘价，市值蒸发4000亿美元</div>
+      <div class="card-content">美股纳指收跌1.3%，SpaceX股价大跌16%并跌破首日收盘价，市值蒸发4000亿美元。此前其市值曾一度逼近3万亿美元超越亚马逊和微软。尽管回调，但较发行价仍有约30%涨幅。公司近期披露将发行债券筹措资金（至少200亿美元），三大评级机构授予投资级评级。</div>
+      <div class="card-source">📎 来源：36氪 · The Verge · Wall Street Journal</div>
+    </div>
+
+    <!-- 2. AI: Samsung ChatGPT -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="card-emoji">🤖</div>
+      <div class="card-title">三星电子向全球员工全面部署ChatGPT Enterprise和Codex</div>
+      <div class="card-content">OpenAI宣布，三星电子正在向全球员工部署ChatGPT Enterprise和Codex，涵盖韩国所有三星员工及全球设备体验部门。这是OpenAI迄今最大的企业级部署之一，覆盖研发、制造、营销等全业务领域。</div>
+      <div class="card-source">📎 来源：36氪 · TechCrunch</div>
+    </div>
+
+    <!-- 3. Chip: SK Hynix -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-chip">💾 芯片</span>
+      </div>
+      <div class="card-emoji">💾</div>
+      <div class="card-title">SK海力士市值首超三星电子，韩国股市冠军时隔25年易主</div>
+      <div class="card-content">韩国半导体巨头SK海力士总市值达2079.7万亿韩元（约9.2万亿人民币），超越三星电子成为韩国KOSPI市值最高个股。三星自1999年登顶后稳居榜首25年。今年SK海力士股价骤增341.9%。</div>
+      <div class="card-source">📎 来源：36氪 · The Verge</div>
+    </div>
+
+    <!-- 4. AI: Nvidia Liquid Cooling -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="card-emoji">🔥</div>
+      <div class="card-title">英伟达详解Rubin平台100%液冷技术：能效重大突破</div>
+      <div class="card-content">英伟达官方博客详细介绍Rubin平台100%液冷技术，称之为"数据中心历史上最重要的能效突破之一"。Rubin是全球首个实现100%液冷的AI计算平台，可将水使用量降至"接近零"，所有超大规模云服务商正在推动相关转型。</div>
+      <div class="card-source">📎 来源：The Verge · Nvidia Official Blog</div>
+    </div>
+
+    <!-- 5. Game: Steam Machine -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-game">🎮 游戏</span>
+      </div>
+      <div class="card-emoji">🎮</div>
+      <div class="card-title">Valve Steam Machine正式发布：客厅PC起价$1,049</div>
+      <div class="card-content">Valve推出全新Steam Machine，定位为融合PC与主机体验的客厅游戏PC，起价$1,049，具备PS5级性能。首批预购将于6月29日开放。Valve与Nvidia紧密合作推进SteamOS支持，配套Dbrand Companion Cube同步开放预购。</div>
+      <div class="card-source">📎 来源：The Verge</div>
+    </div>
+
+    <!-- 6. AI: Alibaba Video -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="card-emoji">🎬</div>
+      <div class="card-title">阿里巴巴AI视频模型升至全球第二，Sora和Seedance退场</div>
+      <div class="card-content">阿里巴巴AI视频模型在全球排名中跃居第二。OpenAI因财务问题停止Sora，字节跳动因版权纠纷无限期搁置Seedance 2.0国际版，AI视频生成市场竞争格局骤变，阿里巴巴正处最佳时机。</div>
+      <div class="card-source">📎 来源：VentureBeat</div>
+    </div>
+
+    <!-- 7. Internet: Google Search -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-comm">🔍 互联网</span>
+      </div>
+      <div class="card-emoji">🔍</div>
+      <div class="card-title">谷歌25年来首次重新设计搜索框，搜索体验迎巨变</div>
+      <div class="card-content">谷歌正式宣布对其标志性搜索框进行25年来首次重新设计。这一改变意义重大，谷歌将更好地整合AI能力到搜索体验中，标志着全球最大搜索引擎进入新时代。</div>
+      <div class="card-source">📎 来源：VentureBeat</div>
+    </div>
+
+    <!-- 8. AI: Sakana Fugu -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">🤖 AI</span>
+      </div>
+      <div class="card-emoji">👁️</div>
+      <div class="card-title">Sakana推出Fugu多模型系统：不依赖最新Claude可达前沿性能</div>
+      <div class="card-content">Sakana推出Fugu多模型自动合成系统，可在不依赖最新Claude Fable 5的情况下达到前沿级AI性能。系统智能选择不同前沿模型处理特定任务，显示出聚合智能的商业可行性，获得企业广泛认可。</div>
+      <div class="card-source">📎 来源：The Verge · VentureBeat</div>
+    </div>
+
+    <!-- 9. Security: Five Eyes -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-security">🔒 安全</span>
+      </div>
+      <div class="card-emoji">🔒</div>
+      <div class="card-title">五眼联盟敦促企业"立即行动"应对AI网络威胁</div>
+      <div class="card-content">由美国、英国、加拿大、澳大利亚、新西兰组成的五眼联盟发布联合声明，称AI模型预计将在数月内根本性改变网络攻防能力，"入侵将会发生"，敦促企业加快AI防御部署，"防御者必须同样加快行动"。</div>
+      <div class="card-source">📎 来源：The Verge · Wired</div>
+    </div>
+
+    <!-- 10. HEADLINE 2: Amazon Fire TV -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-biz">📺 商业</span>
+      </div>
+      <div class="card-emoji">📺</div>
+      <div class="card-title">亚马逊Fire TV OS重大更新全面推送，23年来最重大改版</div>
+      <div class="card-content">亚马逊在CES 2026宣布的Fire TV OS重大改版现已向所有当前一代Fire TV设备推送，包括Ember TVs、Fire TV 4K Select和Fire TV Cube。海信等合作品牌TV也已陆续收到更新。这是亚马逊23年来对Fire TV平台最重大的一次界面革新。</div>
+      <div class="card-source">📎 来源：The Verge · Amazon</div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    📊 共整理10条新闻 · 覆盖AI人工智能 · 半导体 · 互联网 · 航天航空 · 游戏娱乐等领域<br>
+    整理时间：2026年6月23日 08:30 · Asia/Shanghai
+  </div>
+
+</div>
+
+</body>
+</html>

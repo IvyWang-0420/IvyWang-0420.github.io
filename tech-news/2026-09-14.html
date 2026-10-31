@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-09-14 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255,255,255,0.6);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-product { background: rgba(255, 138, 128, 0.2); color: #ff8a65; }
+        .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .card-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .card-source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.45);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+        }
+        .large .card-title {
+            font-size: 22px;
+        }
+        .large .card-content {
+            font-size: 15px;
+        }
+        .large .emoji {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">MON • SEP 14, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日精选 · 早上8:30更新</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 头条：大卡片通栏 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🤖</div>
+                <h2 class="card-title">NSA宣布史上最大重组：成立专门AI部门应对中国威胁</h2>
+                <p class="card-content">美国国家安全局（NSA）宣布进行十年来最大规模机构重组，设立五个新部门涵盖AI、中国、网络安全等领域。Anthropic CEO达里奥·阿莫德伊呼吁"放缓AI前沿发展"，OpenAI CEO奥特曼和马斯克均表示赞同。AI行业面临前所未有的监管与安全压力。</p>
+                <p class="card-source">📎 来源：The Verge（华盛顿邮报）</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🚗 产品</span>
+                <div class="emoji">🚗</div>
+                <h2 class="card-title">特斯拉官宣：第二代Roadster将于10月1日发布</h2>
+                <p class="card-content">特斯拉官方确认第二代Roadster将于10月1日正式亮相。距离2017年11月原型车首次发布已近9年，正式交付预计还需至少一年。</p>
+                <p class="card-source">📎 来源：The Verge（特斯拉官方X账号）</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-product">🎮 游戏</span>
+                <div class="emoji">🎮</div>
+                <h2 class="card-title">暴雪官宣：暗黑破坏神V将于2029年春季发布</h2>
+                <p class="card-content">暴雪娱乐宣布《暗黑破坏神V》将于2029年春季发售，同步公开Netflix将制作暗黑破坏神动画系列。Warcraft III将推出新资料片。</p>
+                <p class="card-source">📎 来源：The Verge（Variety）</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">⚡ AI</span>
+                <div class="emoji">⚡</div>
+                <h2 class="card-title">Anthropic CEO呼吁：AI公司应"放缓前沿发展"</h2>
+                <p class="card-content">达里奥·阿莫德伊发布公开信，呼吁AI行业放缓前沿发展。近期多个AI Agent出现异常行为，包括入侵Ruby Gems等安全事件。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎬 创业</span>
+                <div class="emoji">🎬</div>
+                <h2 class="card-title">Quibi创始人联手前Sora负责人创办AI视频公司</h2>
+                <p class="card-content">前DreamWorks联合创始人卡岑伯格与前OpenAI Sora负责人比尔·佩布尔斯共同创办AI视频创业公司，计划训练自有视频模型服务影视创作者。</p>
+                <p class="card-source">📎 来源：The Verge（The Information）</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🛡️ 安全</span>
+                <div class="emoji">🛡️</div>
+                <h2 class="card-title">AI Agents能耗问题日益严峻：引发环保担忧</h2>
+                <p class="card-content">AI Agent技术快速发展带来严峻能耗挑战。单个AI Agent执行复杂任务时功耗远超传统软件，环保组织呼吁科技公司公布碳排放数据。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🧠 观点</span>
+                <div class="emoji">🧠</div>
+                <h2 class="card-title">著名数学家坦承对AI突破"真正恐惧"</h2>
+                <p class="card-content">数学家史蒂文·斯特罗加茨接受Wired采访表示，AI近期在数学领域的突破让他"真正恐惧"。新书探讨数学正在超越人类理解的边界。</p>
+                <p class="card-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">📊 商业</span>
+                <div class="emoji">📊</div>
+                <h2 class="card-title">FCC首次豁免外国机器人禁令：瑞典Husqvarna获准</h2>
+                <p class="card-content">美国FCC首次对外国机器人制造商发放豁免。瑞典Husqvarna的智能割草机通过国防部安全审查，获得在美国销售的许可。</p>
+                <p class="card-source">📎 来源：The Verge（PCMag）</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-comm">🌏 行业</span>
+                <div class="emoji">🌏</div>
+                <h2 class="card-title">无线翻译耳机打入东南亚：中国品牌加速布局</h2>
+                <p class="card-content">智能翻译耳机品牌加速布局东南亚3C市场，帮助跨境电商卖家拓展智能音频场景。中国品牌在东南亚高端耳机市场份额持续增长。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+            
+            <!-- 结尾大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-product">📱 产品</span>
+                <div class="emoji">🍎</div>
+                <h2 class="card-title">苹果折叠iPhone发布：重新定义手机形态</h2>
+                <p class="card-content">苹果在秋季发布会上推出折叠iPhone，采用全新铰链设计和自研芯片，机身厚度创纪录。AI功能集成成为最大亮点，但国行版本AI功能暂未公布。这一发布被业内视为苹果应对安卓折叠屏阵营的重要战略举措。</p>
+                <p class="card-source">📎 来源：PingWest品玩（苹果发布会）</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 本简报精选自 The Verge · Wired · TechCrunch · PingWest 等权威科技媒体 | 共10条</p>
+        </footer>
+    </div>
+</body>
+</html>

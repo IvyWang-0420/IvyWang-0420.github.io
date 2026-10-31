@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-24 科技行业新闻简报</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 16px;
+  color: #8892b0;
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tag-ai { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+.tag-security { background: rgba(255, 167, 38, 0.15); color: #ffa726; }
+.tag-robot { background: rgba(206, 147, 216, 0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+.tag-business { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+.tag-data { background: rgba(255, 152, 180, 0.15); color: #ff98a8; }
+.tag-policy { background: rgba(255, 213, 79, 0.15); color: #ffd54f; }
+.tag-open { background: rgba(128, 203, 196, 0.15); color: #80cbc4; }
+
+.card-emoji {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-content {
+  font-size: 14px;
+  color: #b0b8c8;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="header-date">2026年5月24日 · 周日</div>
+    <h1 class="header-title">科技行业新闻简报</h1>
+    <div class="header-subtitle">精选全球科技资讯 · 每日8:30更新</div>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 第1条：头条大卡片 -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-business">商业</span>
+        <span class="card-emoji">🚀</span>
+      </div>
+      <div class="card-title">SpaceX递交IPO申请，估值目标创美国历史新高</div>
+      <div class="card-content">SpaceX正式向美国SEC递交S-1上市申请文件，计划在纳斯达克上市。此次IPO将通过Robinhood、富达投资和嘉信理财等平台向普通投资者发售散户份额。文件显示SpaceX定位总可寻址市场达28万亿美元，并包含与火星殖民绑定的薪酬方案，估值目标或成美国史上最大IPO。</div>
+      <div class="card-source">📎 来源：TechCrunch（2026-05-22）</div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-security">安全</span>
+        <span class="card-emoji">🐛</span>
+      </div>
+      <div class="card-title">微软紧急修复Defender零时差漏洞</div>
+      <div class="card-content">微软本周发布紧急更新，修补防毒软件Microsoft Defender中的权限提升漏洞CVE-2026-41091及阻断服务漏洞CVE-2026-45498。安全研究人员发现这些漏洞在细节被公开前就已被黑客利用，疑似与一个月前披露的RedSun、UnDefend漏洞有关。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-ai">AI</span>
+        <span class="card-emoji">🤖</span>
+      </div>
+      <div class="card-title">Anthropic扩展Project Glasswing安全工具</div>
+      <div class="card-content">Anthropic宣布扩大Project Glasswing安全工具的可用范围，符合条件的客户可申请使用skills、Claude harness及威胁模型构建器等高级安全功能。Anthropic还同步发布了Mythos Preview发现的开源漏洞披露仪表板。</div>
+      <div class="card-source">📎 来源：The Verge（2026-05-22）</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-business">商业</span>
+        <span class="card-emoji">🎵</span>
+      </div>
+      <div class="card-title">Spotify推出AI音频生成工具Studio</div>
+      <div class="card-content">Spotify宣布推出Studio by Spotify Labs桌面应用，运用AI技术生成个性化播客。用户可授权连接邮箱、日历、笔记和文档，AI将自动生成语音简报、新闻摘要和行程整理，形式与Google NotebookLM类似。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-security">安全</span>
+        <span class="card-emoji">🔐</span>
+      </div>
+      <div class="card-title">Linux内核存在9年权限提升漏洞</div>
+      <div class="card-content">安全公司Qualys披露了一个存在于Linux内核近9年的本地权限提升漏洞CVE-2026-46333，影响范围极广。Linux核心团队近日已发布修复补丁，呼吁所有用户立即检查并安装更新。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-open">开源</span>
+        <span class="card-emoji">💻</span>
+      </div>
+      <div class="card-title">Flipper公布Flipper One计划</div>
+      <div class="card-content">开源硬件与资安工具厂商Flipper Devices发布Flipper One计划，以开放ARM架构结合Linux操作系统为核心，瞄准IP网络、5G、卫星通讯与本地AI应用领域。新设备延续Flipper系列的开源理念，旨在为开发者提供最高度的定制灵活性。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-policy">政策</span>
+        <span class="card-emoji">📊</span>
+      </div>
+      <div class="card-title">特朗普推迟签署AI行政命令</div>
+      <div class="card-content">据Politico报道，白宫在最后一刻推迟签署政府AI监管行政命令。特朗普表示该命令"可能成为就业和AI带来的巨大利益的障碍"，并强调美国需要在AI领域领先中国。目前尚不清楚推迟是暂时性的还是该命令将被大幅修改。</div>
+      <div class="card-source">📎 来源：The Verge（2026-05-21）</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-security">安全</span>
+        <span class="card-emoji">📦</span>
+      </div>
+      <div class="card-title">NPM引入包暂存发布机制</div>
+      <div class="card-content">Node.js官方包管理平台NPM宣布导入套件暂存发布机制，在包正式公开前加入人工审查环节。这一机制旨在防止自动化发布流程被恶意滥用，阻止攻击者在入侵CI/CD环境或窃取令牌后直接推送恶意版本。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <div class="card-header">
+        <span class="tag tag-data">数据</span>
+        <span class="card-emoji">🏛️</span>
+      </div>
+      <div class="card-title">国家数据局推进"数据要素×"行动</div>
+      <div class="card-content">国家数据局披露"数据要素×"行动最新进展：已开展两批数据基础设施建设先行先试，推动隐私保护计算、区块链、可信数据空间等6条技术路线应用。两批试点累计覆盖15个行业、43个城市，协同1.9万个生态主体，上架3.8万个数据产品。</div>
+      <div class="card-source">📎 来源：36Kr快讯（2026-05-23）</div>
+    </div>
+
+    <!-- 第10条：底部大卡片 -->
+    <div class="news-card large">
+      <div class="card-header">
+        <span class="tag tag-security">安全</span>
+        <span class="card-emoji">⚡</span>
+      </div>
+      <div class="card-title">Linux权限提升漏洞CVE-2026-46333影响广泛</div>
+      <div class="card-content">Qualys发现的这一漏洞存在于Linux内核近9年，近日才获修补丁。该漏洞可允许攻击者获取系统最高权限，由于影响范围极广，所有使用受影响版本Linux的用户应立即检查并安装安全更新，防范潜在攻击风险。</div>
+      <div class="card-source">📎 来源：iThome（2026-05-22）</div>
+    </div>
+
+  </div>
+
+  <footer>
+    📋 本简报共收录10条新闻 | 来源：TechCrunch · The Verge · iThome · 36Kr
+  </footer>
+
+</div>
+
+</body>
+</html>

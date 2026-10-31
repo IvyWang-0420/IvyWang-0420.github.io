@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-07 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+.news-card .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-space { background: rgba(255,138,101,0.15); color: #ff8a65; }
+.tag-game { background: rgba(144,202,249,0.15); color: #90caf9; }
+.tag-car { background: rgba(255,213,79,0.15); color: #ffd54f; }
+.tag-hard { background: rgba(200,230,201,0.15); color: #c8e6c9; }
+.tag-fund { background: rgba(255,171,145,0.15); color: #ffab91; }
+
+.news-card .emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.news-card .content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.news-card .source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+.news-card.large .title {
+  font-size: 22px;
+}
+
+.news-card.large .content {
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+footer p {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="header-date">TUESDAY · JUL 07 2026</div>
+  <h1 class="header-title">科技行业新闻简报</h1>
+  <div class="header-subtitle">每日精选 · 聚焦全球科技动态</div>
+</header>
+
+<div class="news-grid">
+
+  <!-- 头条大卡片 -->
+  <div class="news-card large">
+    <span class="tag tag-space">🚀 头条</span>
+    <span class="emoji">🔭</span>
+    <div class="title">NASA TESS 用微透镜新方法发现"超级木星"，验证爱因斯坦预测</div>
+    <div class="content">NASA 行星猎手 TESS 望远镜通过微透镜技术发现一颗 1.6 倍木星质量的"超级木星"，距离地球约 4 万光年。这是首次通过 TESS 数据利用微透镜方法发现行星，验证了爱因斯坦的理论预测 ESA 2023 年由 Gaia 望远镜初步发现该行星线索。</div>
+    <div class="source">📎 来源：The Verge / NASA</div>
+  </div>
+
+  <!-- 第2条 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">⌚</span>
+    <div class="title">Siri AI 登陆 watchOS 27 开发测试版</div>
+    <div class="content">苹果在 watchOS 27 最新开发者测试版中加入 Siri AI 功能，用户可在手机和手表之间无缝切换对话。Apple Intelligence 首次登陆智能手表，需 Series 9、Ultra 3 或 SE 3 及更新设备。</div>
+    <div class="source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 第3条 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">🔓</span>
+    <div class="title">Anthropic 与特朗普政府和解，Fable 5 出口限制解除</div>
+    <div class="content">Anthropic 同意扩展 AI 安全护栏后，美国商务部解除对 Claude Fable 5 和 Mythos 5 模型的出口控制，协议预计为 TeraWulf 带来 190 亿美元收入。不过国防部长仍认为公司存在供应链风险。</div>
+    <div class="source">📎 来源：Wired</div>
+  </div>
+
+  <!-- 第4条 -->
+  <div class="news-card">
+    <span class="tag tag-biz">💼 商业</span>
+    <span class="emoji">🎯</span>
+    <div class="title">纽约 RAISE Act AI 安全法案被大幅弱化</div>
+    <div class="content">纽约州长 Hochul 签署的 RAISE Act 最终版本比最初版本大幅弱化。Meta、IBM、Intel 等组成的"AI联盟"和多所大学（NYU、Cornell、Dartmouth 等）参与广告游说，该法案原本要求 AI 公司提交安全计划并报告重大安全事件。</div>
+    <div class="source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 第5条 -->
+  <div class="news-card">
+    <span class="tag tag-car">🚗 汽车</span>
+    <span class="emoji">🚙</span>
+    <div class="title">福特 $30,000 纯电皮卡谍照曝光：emoji 伪装</div>
+    <div class="content">福特入门级纯电皮卡原型车在长滩被拍到，采用 emoji 表情符号伪装（足球、帆船、心形等），车身比 Maverick 更小，配备大型车内触摸屏，预计 2026 年正式上市。</div>
+    <div class="source">📎 来源：The Verge / The Drive</div>
+  </div>
+
+  <!-- 第6条 -->
+  <div class="news-card">
+    <span class="tag tag-car">🚗 汽车</span>
+    <span class="emoji">📈</span>
+    <div class="title">Rivian 上调 R2 销量预期，R2 开局强劲</div>
+    <div class="content">Rivian 表示得益于 R2 车型强劲开局，公司上调全年交付量预期。此前预计年销 6.2-6.7 万辆，现预计将超过这一区间。R2 被视为 Rivian 的"成败关键"车型，在乔治亚州新工厂生产。</div>
+    <div class="source">📎 来源：The Verge / Business Wire</div>
+  </div>
+
+  <!-- 第7条 -->
+  <div class="news-card">
+    <span class="tag tag-hard">💻 硬件</span>
+    <span class="emoji">📝</span>
+    <div class="title">reMarkable Paper Pure 电子纸平板：最佳手写体验</div>
+    <div class="content">reMarkable 推出第三代电子纸平板 Paper Pure，搭载 10.3 英寸 E Ink Carta 1300 面板，对比度提升 20%，配双核处理器、2GB RAM + 32GB 存储。书写手感被认为是同类最佳，售价 $399。</div>
+    <div class="source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 第8条 -->
+  <div class="news-card">
+    <span class="tag tag-ai">🤖 AI</span>
+    <span class="emoji">🚀</span>
+    <div class="title">xAI 账号正式更名为 SpaceXAI</div>
+    <div class="content">马斯克旗下 xAI 的 X 平台账号已改名为 SpaceXAI，进一步整合 SpaceX 与 AI 业务线，凸显马斯克在航天与人工智能领域的协同战略。</div>
+    <div class="source">📎 来源：The Verge</div>
+  </div>
+
+  <!-- 第9条 -->
+  <div class="news-card">
+    <span class="tag tag-game">🎮 游戏</span>
+    <span class="emoji">🎯</span>
+    <div class="title">Xbox 裁员：《上古卷轴Online》开发团队受重创</div>
+    <div class="content">据 Kotaku 报道，Xbox 关闭了《上古卷轴Online》团队大量岗位，可能影响一半开发团队。社区经理已确认游戏路线图将发生变化。目前仅 Steam 端就有超过 1.3 万玩家在线。</div>
+    <div class="source">📎 来源：The Verge / Kotaku</div>
+  </div>
+
+  <!-- 结尾大卡片 -->
+  <div class="news-card large">
+    <span class="tag tag-robot">🤖 创业</span>
+    <span class="emoji">🚛</span>
+    <div class="title">自动驾驶热潮回归：Humble Robotics 融资 $2400 万打造全自动货运车</div>
+    <div class="content">前 Otto 和 Pronto 创始人 Eyal Cohen 创立 Humble Robotics，已获 $2400 万融资打造全自动纯电货运车。Kalanick 也重返机器人领域，自动驾驶行业资本和人才竞争再度升温，2016 年 hype 循环重演。</div>
+    <div class="source">📎 来源：TechCrunch</div>
+  </div>
+
+</div>
+
+<footer>
+  <p>共 10 条新闻 | 整理时间 2026-07-07 08:30 | 数据来源：The Verge · Wired · TechCrunch</p>
+</footer>
+
+</div>
+</body>
+</html>

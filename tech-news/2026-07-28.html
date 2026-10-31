@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-28 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+
+        .card-emoji {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-card.large .card-title {
+            font-size: 22px;
+        }
+
+        .card-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .news-card.large .card-content {
+            font-size: 15px;
+        }
+
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            .news-card.large {
+                grid-column: 1;
+            }
+            .main-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">TUE · JUL 28 · 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">☀️ 早安！来看看今天有哪些科技新鲜事</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 头条：大卡片通栏 -->
+            <div class="news-card large">
+                <div class="card-header">
+                    <span class="tag tag-robot">🤖 机器人</span>
+                </div>
+                <div class="card-emoji">🚀</div>
+                <h2 class="card-title">吴恩达开源桌面AI智能体OpenWorker，推动AI Agent普及化</h2>
+                <p class="card-content">著名AI科学家吴恩达（Andrew Ng）宣布开源桌面AI智能体项目OpenWorker，旨在让AI Agent技术更加普及化，降低个人开发者和小型企业使用AI Agent的门槛。该项目支持多种大语言模型，可实现桌面任务自动化、文件管理、网页浏览等功能。开源社区反响热烈，上线首日即获得数万星标。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第2条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-ai">AI</span>
+                </div>
+                <div class="card-emoji">🐱</div>
+                <h2 class="card-title">美团全场景AI工作台CatPaw正式上线</h2>
+                <p class="card-content">美团正式发布全场景AI工作台CatPaw，集成智能客服、订单处理、数据分析等AI能力，覆盖外卖、酒旅、到店等核心业务场景，将运营效率提升40%以上。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第3条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-chip">芯片</span>
+                </div>
+                <div class="card-emoji">☁️</div>
+                <h2 class="card-title">阿里云游戏云模型服务市场份额37%位列第一</h2>
+                <p class="card-content">权威报告显示阿里云在游戏云模型服务领域以37%市场份额位居中国第一，获得网易、腾讯、米哈游等头部游戏厂商青睐。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第4条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-comm">通信</span>
+                </div>
+                <div class="card-emoji">🇰🇷</div>
+                <h2 class="card-title">首尔大学与NVIDIA共建韩国首个AI联合实验室</h2>
+                <p class="card-content">首尔大学与NVIDIA联合宣布在首尔建设韩国首个AI联合实验室，聚焦大模型训练、具身智能等前沿方向，配置NVIDIA最新AI超级计算机，预计2027年运营。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第5条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-biz">商业</span>
+                </div>
+                <div class="card-emoji">🚗</div>
+                <h2 class="card-title">上汽集团与飞书合作：AI赋能汽车研发提效</h2>
+                <p class="card-content">上汽集团与字节跳动飞书签署战略合作，基于飞书AI能力打造智能化汽车研发平台，将推动汽车研发流程全面提质增效，缩短新品研发周期约20%。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第6条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-robot">机器人</span>
+                </div>
+                <div class="card-emoji">🏭</div>
+                <h2 class="card-title">小米机器人团队WAIC访谈：工厂实习生的反常识</h2>
+                <p class="card-content">小米机器人在WAIC分享汽车工厂"实习"经验，不追求炫技而专注稳定性，自攻螺母上件成功率从90.2%提升至98%，正在向"转正"目标迈进。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第7条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-robot">机器人</span>
+                </div>
+                <div class="card-emoji">🎯</div>
+                <h2 class="card-title">影眸Hyper3D论文入围RSS 2026最佳论文奖候选</h2>
+                <p class="card-content">影眸Hyper3D关于机器人轨迹优化的论文cuNRTO入围机器人顶会RSS 2026 Outstanding Paper Award候选名单，成为8篇候选论文中仅有的两篇有商业公司参与的成果之一。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第8条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-chip">芯片</span>
+                </div>
+                <div class="card-emoji">✋</div>
+                <h2 class="card-title">一目科技完成超10亿元E轮融资</h2>
+                <p class="card-content">机器人触觉传感器企业一目科技完成超10亿元E轮融资，投后估值破100亿元。其视触觉传感器厚度低于3毫米为全球最薄可量产水平，本轮融资用于规模化量产。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第9条 -->
+            <div class="news-card">
+                <div class="card-header">
+                    <span class="tag tag-biz">商业</span>
+                </div>
+                <div class="card-emoji">💎</div>
+                <h2 class="card-title">Meshy完成近4亿美元B轮：AI 3D领域最大融资</h2>
+                <p class="card-content">AI 3D生成公司Meshy完成近4亿美元B轮融资，投后估值超100亿元，刷新AI 3D领域最大单笔融资纪录。Meshy年营收增长约12倍，注册用户超1200万。</p>
+                <p class="card-source">📎 来源：PingWest品玩</p>
+            </div>
+
+            <!-- 第十条：大卡片通栏 -->
+            <div class="news-card large">
+                <div class="card-header">
+                    <span class="tag tag-ai">AI</span>
+                </div>
+                <div class="card-emoji">🏃</div>
+                <h2 class="card-title">Keep十年首次全面盈利，All in AI战略成果显著</h2>
+                <p class="card-content">运动科技公司Keep公布2025年财报，实现十年来首次全面盈利。Keep算法负责人在WAIC论坛上表示，AI已成为Keep运动课程的主流生产方式，AI生成课程质量已超越人工编排水平。Keep今年4月发布的运动健康垂类模型Keepace.ai，正推动公司从内容平台向AI运动健康服务转型。</p>
+                <p class="card-source">📎 来源：PingWest品玩（WAIC演讲实录）</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>📰 科技行业新闻简报 · 2026年7月28日 · 共10条</p>
+            <p style="margin-top: 6px;">Sources: PingWest品玩 · 36氪 · 机器之心 · 量子位 · 虎嗅</p>
+        </footer>
+    </div>
+</body>
+</html>

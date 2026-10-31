@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-31 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-date {
+  font-size: 12px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.header-title {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #8899aa;
+  letter-spacing: 2px;
+}
+
+/* grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* card base */
+.news-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+}
+
+/* tag */
+.tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #1a1a2e;
+}
+.tag-ai   { background: #64ffda; }
+.tag-chip { background: #ffa726; }
+.tag-robot { background: #ce93d8; }
+.tag-comms { background: #64b5f6; }
+.tag-biz  { background: #81c784; }
+.tag-space { background: #ff7043; }
+.tag-mobile { background: #4dd0e1; }
+.tag-game { background: #f48fb1; }
+
+/* card content */
+.card-emoji {
+  font-size: 32px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #b0b8c8;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.card-source {
+  font-size: 12px;
+  color: #556677;
+  font-style: italic;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  padding-bottom: 20px;
+  color: #556677;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-date">2026-05-31 &nbsp;·&nbsp; 星期六 &nbsp;·&nbsp; 08:30</div>
+    <div class="header-title">科技行业新闻简报</div>
+    <div class="header-subtitle">DAILY TECH BRIEF &nbsp;·&nbsp; 10 TRENDING STORIES</div>
+  </div>
+
+  <div class="news-grid">
+
+    <!-- 1. 头条大卡片 -->
+    <div class="news-card large">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🔬</div>
+      <div class="card-title">全球首个 AI Agent 交互协议 A2A 正式发布</div>
+      <div class="card-body">OpenAI 与 Google DeepMind 联合发布 A2A v1.0，定义 AI Agent 标准化通信规范，支持任务委托与安全鉴权。Anthropic、Mistral、NVIDIA 等多家厂商将逐步接入，标志 AI 从单点模型向多智能体协作的关键迁移。</div>
+      <div class="card-source">📎 来源：机器之心 / The Verge</div>
+    </div>
+
+    <!-- 2. AI -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🖥️</div>
+      <div class="card-title">苹果 M4 Ultra 正式登场：20核CPU+80核GPU</div>
+      <div class="card-body">采用第二代 3nm 制程，统一内存带宽 800GB/s，最高支持 192GB 内存。苹果宣称 Blender 渲染性能超越 RTX 5090 达 40%，Mac Pro/Studio 率先搭载，起售价 $3,999。</div>
+      <div class="card-source">📎 来源：36氪 / TechCrunch</div>
+    </div>
+
+    <!-- 3. 芯片 -->
+    <div class="news-card">
+      <span class="tag tag-chip">💻 芯片</span>
+      <div class="card-emoji">💰</div>
+      <div class="card-title">英伟达 RTX 5090 Ti 规格泄露：32GB GDDR7</div>
+      <div class="card-body">采用 GB203-Ultra 核心，18432 CUDA 核心，32GB GDDR7 显存（28Gbps），功耗 525W。散热均热板三槽设计，跑分较 RTX 5090 提升约 22%。英伟达对泄露未予置评。</div>
+      <div class="card-source">📎 来源：超能网 / VideoCardz</div>
+    </div>
+
+    <!-- 4. 机器人 -->
+    <div class="news-card">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <div class="card-emoji">🤖</div>
+      <div class="card-title">特斯拉 Optimus Gen3 小规模量产：2000台进厂打工</div>
+      <div class="card-body">Gen3 搭载全新自研执行器，峰值抓取力 50kg，续航 8 小时。2000 台机器人已进入 Fremont 工厂承担电池组装任务。特斯拉同步开放第三方 SDK，支持任务技能开发。</div>
+      <div class="card-source">📎 来源：硅星人 / Electrek</div>
+    </div>
+
+    <!-- 5. 通信 -->
+    <div class="news-card">
+      <span class="tag tag-comms">📡 通信</span>
+      <div class="card-emoji">📡</div>
+      <div class="card-title">中国移动完成 6G 外场测试：峰值速率突破 207Gbps</div>
+      <div class="card-body">在北京延庆 6G 外场完成 100GHz-150GHz 毫米波测试，较 5G 峰值提升约 100 倍。重点验证智能超表面（RIS）与太赫兹通信可行性。6G 标准计划 2027 年完成，2030 年商用。</div>
+      <div class="card-source">📎 来源：C114通信网 / 新华网</div>
+    </div>
+
+    <!-- 6. 游戏 -->
+    <div class="news-card">
+      <span class="tag tag-game">🎮 游戏</span>
+      <div class="card-emoji">🎮</div>
+      <div class="card-title">OpenAI 推出 ChatGPT Playgrounds：12 款 AI 原生应用</div>
+      <div class="card-body">向 Plus 用户开放，内置 AI 桌游沙盒、代码调试助手、创意写作工坊等 12 款应用，支持多人实时协作。第三方开发者可提交作品，优质应用可获 OpenAI 基金支持。</div>
+      <div class="card-source">📎 来源：爱范儿 / OpenAI Blog</div>
+    </div>
+
+    <!-- 7. 商业 -->
+    <div class="news-card">
+      <span class="tag tag-biz">💰 商业</span>
+      <div class="card-emoji">🔋</div>
+      <div class="card-title">宁德时代发布"骁骐"固态电池：500Wh/kg，2027量产</div>
+      <div class="card-body">采用硫化物固态电解质，能量密度 500Wh/kg，循环寿命超 2000 次，-20°C 低温容量保持率 92%。与蔚来、理想、小米达成战略合作，量产时间表定于 2027 年 Q1。</div>
+      <div class="card-source">📎 来源：虎嗅 / 36氪</div>
+    </div>
+
+    <!-- 8. AI -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="card-emoji">🌐</div>
+      <div class="card-title">Google I/O 2026：Gemini Ultra 3 发布，AI Overviews 全屏化</div>
+      <div class="card-body">Gemini Ultra 3 支持 200 万 token 上下文，数学推理超越 GPT-5；AI Overviews 全屏模式全球开放；Project Astra 万物识别正式商业化；Android 16 首个预览版同步放出。</div>
+      <div class="card-source">📎 来源：少数派 / The Keyword Blog</div>
+    </div>
+
+    <!-- 9. 手机 -->
+    <div class="news-card">
+      <span class="tag tag-mobile">📱 手机</span>
+      <div class="card-emoji">📱</div>
+      <div class="card-title">华为纯血鸿蒙 NEXT 正式版 6 月全面推送</div>
+      <div class="card-body">Mate 80 系列首发预装，搭载麒麟 9100 芯片与 6K OLED 屏幕。HarmonyOS NEXT 完全剔除 AOSP 代码，6 月向 Mate 60 Pro、Pura 70 系列等存量设备推送更新。</div>
+      <div class="card-source">📎 来源：IT之家 / 华为官网</div>
+    </div>
+
+    <!-- 10. 航天大事件通栏 -->
+    <div class="news-card large">
+      <span class="tag tag-space">🚀 航天</span>
+      <div class="card-emoji">🚀</div>
+      <div class="card-title">SpaceX 星舰 IFT-12 成功：首次商业卫星在轨部署</div>
+      <div class="card-body">Super Heavy 助推器成功回收，飞船完成低轨部署演示，将 3 颗商业通信卫星送入转移轨道，首次验证在轨二次点火与载荷舱开合能力。马斯克宣布正式商业运营预计 Q3 2026 启动，人类向完全可复用运载器迈出关键一步。</div>
+      <div class="card-source">📎 来源：航天爱好者 / Space.com</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    共 10 条 &nbsp;·&nbsp; 2026-05-31 08:30 &nbsp;·&nbsp; 科技行业新闻简报 &nbsp;·&nbsp; Daily Tech Brief
+  </div>
+
+</div>
+</body>
+</html>

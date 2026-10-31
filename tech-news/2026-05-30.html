@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-05-30 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #fff;
+}
+.container { max-width: 900px; margin: 0 auto; }
+header { text-align: center; margin-bottom: 40px; }
+.header-date {
+  font-size: 13px;
+  color: #64ffda;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.header-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+.header-sub { font-size: 16px; color: rgba(255,255,255,0.5); }
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.news-card.large {
+  grid-column: 1 / -1;
+  padding: 30px;
+}
+
+.news-card .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; }
+.tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+.tag-space { background: rgba(255,138,101,0.15); color: #ff8564; }
+.tag-product { background: rgba(255,213,79,0.15); color: #ffd54f; }
+
+.news-card .emoji { font-size: 32px; margin-bottom: 10px; }
+.news-card.large .emoji { font-size: 40px; }
+
+.news-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.news-card.large .title { font-size: 22px; }
+
+.news-card .content {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.news-card .source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-date">2026.05.30 · SAT</div>
+    <h1 class="header-title">科技行业新闻简报</h1>
+    <div class="header-sub">精选全球科技动态 · 每早8:30更新</div>
+  </header>
+
+  <div class="news-grid">
+    <!-- 头条 - 大通栏 -->
+    <div class="news-card large">
+      <span class="tag tag-space">🚀 航天</span>
+      <div class="emoji">💥</div>
+      <div class="title">蓝色起源"新格伦"火箭发射爆炸，重大挫折</div>
+      <div class="content">蓝色起源公司的"新格伦"（New Glenn）火箭在佛罗里达州发射时发生剧烈爆炸，形成巨大火球。这一事件可能对该公司未来的太空野心产生深远影响。作为亚马逊创始人杰夫·贝索斯的太空公司，蓝色起源正在挑战SpaceX的市场地位，此次事故为竞争格局增添变数。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 普通卡片2-3 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="emoji">🧠</div>
+      <div class="title">谷歌发布Gemini Spark：AI助手深度整合个人生活</div>
+      <div class="content">谷歌推出全新AI代理Gemini Spark，可访问用户的邮件、日历和文档来规划任务。有媒体测试后发现，该AI甚至能为主人规划生日派对，却"忽略"了最重要的亲人。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-business">💼 商业</span>
+      <div class="emoji">✊</div>
+      <div class="title">Meta欧洲总部外包员工抗议裁员</div>
+      <div class="content">Meta位于爱尔兰的欧洲总部爆发抗议活动，被裁撤的外包承包商指控公司对待正式员工和合同工存在双重标准，承包商获得的遣散费远低于全职员工。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 普通卡片4-5 -->
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="emoji">🎨</div>
+      <div class="title">AI动画《好建议纸杯蛋糕》惹争议</div>
+      <div class="content">亚马逊制作了一档由AI动画的《好建议纸杯蛋糕》电视连续剧，但该角色的原创作者表示，亚马逊在未获得她同意的情况下授权并用AI重新创作了这一角色。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-ai">🤖 AI</span>
+      <div class="emoji">📚</div>
+      <div class="title">"真相的未来"作者使用AI写作引争议</div>
+      <div class="content">《Future of Truth》一书的作者因使用AI生成的引用引发广泛批评。出版业面临AI使用规范难题，作者自身使用AI写作的行为受到强烈质疑。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 普通卡片6-7 -->
+    <div class="news-card">
+      <span class="tag tag-space">🚀 航天</span>
+      <div class="emoji">👽</div>
+      <div class="title">白宫"aliens.gov"网站引争议</div>
+      <div class="content">特朗普政府推出的移民执法信息网站引发轩然大波。该网站将无证移民比作外星人，并高调宣传ICE逮捕美国公民的数据，被批评为政治宣传手段。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-business">💼 商业</span>
+      <div class="emoji">⛪</div>
+      <div class="title">教皇与Anthropic：梵蒂冈的AI影响力</div>
+      <div class="content">教皇利奥十四世与AI公司Anthropic有特殊关系。外界猜测这位曾是主教的教皇对AI伦理有独特影响力，梵蒂冈在AI行业扮演幕后角色。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 普通卡片8-9 -->
+    <div class="news-card">
+      <span class="tag tag-product">💻 产品</span>
+      <div class="emoji">🎮</div>
+      <div class="title">下一代主机或淘汰光盘驱动器</div>
+      <div class="content">PS6和微软Project Helix可能成为最后一代配备光盘驱动器的游戏主机。实体媒介正在复苏，但新一代主机可能彻底淘汰光驱。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <div class="news-card">
+      <span class="tag tag-product">💻 产品</span>
+      <div class="emoji">📺</div>
+      <div class="title">三星Movingstyle：轮子上的智能屏幕</div>
+      <div class="content">三星推出移动式显示器，配备滚轮可在不同房间之间移动。32英寸屏幕可推到任何房间，用完再收进柜子，适合不想固定安装电视的用户。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+
+    <!-- 底部大卡片 - 重要事件 -->
+    <div class="news-card large">
+      <span class="tag tag-robot">🤖 机器人</span>
+      <div class="emoji">🏊</div>
+      <div class="title">2026最佳泳池清洁机器人推荐：Beatbot、iGarden、Dreame</div>
+      <div class="content">WIRED评测了多款高端泳池清洁机器人，包括Beatbot、iGarden和Dreame品牌。这些智能设备可自动维护水质、清洁池底和池壁，帮助用户省去泳池维护的烦恼，智能家居再添新成员。</div>
+      <div class="source">📎 来源：WIRED</div>
+    </div>
+  </div>
+
+  <footer>
+    📊 共 10 条科技行业最新资讯 · 整理于 2026-05-30 08:30 AM
+  </footer>
+</div>
+</body>
+</html>

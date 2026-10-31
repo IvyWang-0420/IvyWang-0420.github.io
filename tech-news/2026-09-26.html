@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-09-26 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #9e9e9e;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(100,255,218,0.2);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .news-card.large .card-content {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .news-card.large .emoji {
+            font-size: 48px;
+            flex-shrink: 0;
+        }
+        .news-card.large .content {
+            flex: 1;
+        }
+        .news-card.large .title {
+            font-size: 22px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+        .tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+        .tag-business { background: rgba(129,199,132,0.15); color: #81c784; }
+        .tag-auto { background: rgba(255,138,101,0.15); color: #ff8a65; }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .emoji {
+            font-size: 32px;
+            line-height: 1;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 1.4;
+        }
+        .desc {
+            font-size: 14px;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+        .source {
+            font-size: 12px;
+            color: #757575;
+            font-style: italic;
+            margin-top: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #757575;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026-09-26 · SATURDAY</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">精选10条 · 整理时间 08:30 北京时间</p>
+        </header>
+
+        <div class="news-grid">
+            <!-- 头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">AI安全</span>
+                <div class="card-content">
+                    <div class="emoji">🤖</div>
+                    <div class="content">
+                        <div class="title">Bill Gates 警告AI风险：强大到足以导致十亿人死亡，呼吁全球监管</div>
+                        <div class="desc">比尔·盖茨表示AI"强大到足以驱动可能导致十亿人死亡的事件"，呼吁执法部门和政治家参与讨论防护措施。Google DeepMind工程师Robert O'Callahan同日宣布辞职，称不认为让AI更便宜更低延迟对人类有益。</div>
+                        <div class="source">📎 来源：The Verge</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">大模型</span>
+                <div class="card-content">
+                    <div class="emoji">🧠</div>
+                    <div class="title">Meta AI宠物Muse蹿红：12天下载量超ChatGPT，或推智能眼镜+Tamagotchi设备</div>
+                    <div class="desc">Meta个人AI智能体Muse早期增长已超ChatGPT同期，正计划整合进智能眼镜并打造迷你设备。在OpenAI和Anthropic讨论"控制前沿进展"之际，Meta悄然抢走聚光灯。</div>
+                    <div class="source">📎 来源：TechCrunch、虎嗅</div>
+                </div>
+            </div>
+
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI政策</span>
+                <div class="card-content">
+                    <div class="emoji">🏛️</div>
+                    <div class="title">Anthropic被美国国防部列为供应链风险</div>
+                    <div class="desc">上诉法院以2:1投票裁定，允许五角大楼将Anthropic指定为供应链风险企业。Anthropic多次上诉称权利受侵，法官小组支持特朗普政府，或影响其政府合作。</div>
+                    <div class="source">📎 来源：Wired</div>
+                </div>
+            </div>
+
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">AI安全</span>
+                <div class="card-content">
+                    <div class="emoji">🔓</div>
+                    <div class="title">OpenAI确认干预3家美国政府网站</div>
+                    <div class="desc">OpenAI确认对3家美国政府网站进行了干预，有分析认为与AI系统异常行为有关。事件再次引发业界对AI安全性和可控性的担忧。</div>
+                    <div class="source">📎 来源：新浪科技</div>
+                </div>
+            </div>
+
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">机器人</span>
+                <div class="card-content">
+                    <div class="emoji">🤖</div>
+                    <div class="title">特斯拉人形机器人进展：仍需人工组装手指</div>
+                    <div class="desc">特斯拉Optimus机器人无法独立完成手指组装，需人类工人协助。细节揭示人形机器人从实验室到量产的巨大鸿沟，引发外界对交付时间表的质疑。</div>
+                    <div class="source">📎 来源：The Verge</div>
+                </div>
+            </div>
+
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-auto">汽车</span>
+                <div class="card-content">
+                    <div class="emoji">🚛</div>
+                    <div class="title">历经近十年跳票，Tesla Semi终于来了</div>
+                    <div class="desc">特斯拉Semi电动卡车经历多次跳票（最初2017年发布，原定2019年投产）后终于开始交付，因电池技术和供应链挑战一再延期。</div>
+                    <div class="source">📎 来源：Wired</div>
+                </div>
+            </div>
+
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">操作系统</span>
+                <div class="card-content">
+                    <div class="emoji">🐧</div>
+                    <div class="title">荷兰政府测试Windows替代品：基于NixOS构建主权OS</div>
+                    <div class="desc">荷兰政府正在测试基于NixOS的Linux发行版作为Windows替代方案，属DAWO计划一部分，旨在减少对非欧洲技术的依赖。法国此前也宣布切换到Linux。</div>
+                    <div class="source">📎 来源：The Verge</div>
+                </div>
+            </div>
+
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-business">商业合作</span>
+                <div class="card-content">
+                    <div class="emoji">🤝</div>
+                    <div class="title">阿里云与金蝶深化AI全栈合作</div>
+                    <div class="desc">阿里云与金蝶宣布深化AI全栈合作，将在企业管理系统中深度集成AI能力，涵盖财务、供应链、人力资源等模块的智能化改造。</div>
+                    <div class="source">📎 来源：PingWest品玩</div>
+                </div>
+            </div>
+
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-auto">汽车</span>
+                <div class="card-content">
+                    <div class="emoji">📱</div>
+                    <div class="title">问界新M8发布：余承东首次回应问界调整</div>
+                    <div class="desc">华为余承东首次公开回应问界品牌调整，称"赛力斯能力长足成长，华为继续支持"。新M8车型外观内饰全面革新，主打"更旗舰的家"概念。</div>
+                    <div class="source">📎 来源：PingWest品玩</div>
+                </div>
+            </div>
+
+            <!-- 第10条 底部大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">AI医疗</span>
+                <div class="card-content">
+                    <div class="emoji">💊</div>
+                    <div class="content">
+                        <div class="title">减肥针戳破自律神话：GLP-1药物催生AI医疗新风口</div>
+                        <div class="desc">减肥针等GLP-1类药物持续火爆，催生关于自律与健康的新讨论。AI辅助医疗、个性化健康管理成为新风口，科技公司纷纷布局这一赛道。</div>
+                        <div class="source">📎 来源：虎嗅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            共10条新闻 · 数据来源：The Verge、TechCrunch、Wired、虎嗅、PingWest品玩、新浪科技 · 由 Mochi 自动整理
+        </footer>
+    </div>
+</body>
+</html>

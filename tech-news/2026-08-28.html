@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-08-28 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(100, 255, 218, 0.1);
+        }
+        
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-business { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-game { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .tag-security { background: rgba(239, 83, 80, 0.2); color: #ef5350; }
+        
+        .card-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .card-content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .card-source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">AUGUST 28, 2026</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日科技资讯精选 · 2026年8月28日</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="card-emoji">🤖</div>
+                <h2 class="card-title">智谱AI开源GLM-5.3-Flash：3200亿参数MoE架构，支持100万Token上下文</h2>
+                <p class="card-content">8月26日，智谱发布并开源GLM-5系列首款原生多模态模型GLM-5.3-Flash。该模型采用MoE架构，总参数量3200亿，激活180亿参数，支持文本和图像输入。以MIT许可证开放权重，在Artificial Analysis评测中得分57分，与Claude Opus 4.8 Max Effort持平，API定价仅为GLM-5.3的十分之一。</p>
+                <p class="card-source">📎 来源：少数派</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">💻 端侧AI</span>
+                <div class="card-emoji">💻</div>
+                <h2 class="card-title">Perplexity携手NVIDIA推出Portable Computer</h2>
+                <p class="card-content">端侧AI智能体Portable Computer发布，支持设备端完整运行AI工作流。首发支持NVIDIA DGX Spark，本地完成任务不消耗任何Credits，真正实现零Token成本。</p>
+                <p class="card-source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-game">🎮 游戏</span>
+                <div class="card-emoji">🎮</div>
+                <h2 class="card-title">GTA VI preview预览片发布</h2>
+                <p class="card-content">Rockstar发布GTA VI 26分钟实机预览，展示好莱坞级画质与互动体验。多家媒体给出高度评价，被誉为十年来最受期待的游戏作品。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🗣️ AI语音</span>
+                <div class="card-emoji">🗣️</div>
+                <h2 class="card-title">Google发布Gemini 3.5 Transcribe</h2>
+                <p class="card-content">支持85种以上语言的语音转文字模型，端到端延迟较上一代缩短70%。可自动删除语气词和重复内容，开发者可通过Google AI Studio使用。</p>
+                <p class="card-source">📎 来源：Google/Wired</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🧠 开源AI</span>
+                <div class="card-emoji">🧠</div>
+                <h2 class="card-title">Meta发布Glimmer开源AI模型</h2>
+                <p class="card-content">Meta发布Glimmer开源模型，任何人可下载在自有硬件运行。扎克伯格发文称AI应"为所有人服务"，与闭源的Muse Spark形成鲜明对比。</p>
+                <p class="card-source">📎 来源：TechCrunch</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💾 芯片</span>
+                <div class="card-emoji">💾</div>
+                <h2 class="card-title">NVIDIA推出NVHBM定制高带宽内存</h2>
+                <p class="card-content">NVIDIA发布面向定制XPU的NVHBM技术，带宽最高提升30%，功耗降低15%。亚马逊Annapurna Labs成为首家合作厂商，下一代Trainium 4将支持NVLink Fusion。</p>
+                <p class="card-source">📎 来源：NVIDIA/少数派</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎥 视频AI</span>
+                <div class="card-emoji">🎥</div>
+                <h2 class="card-title">Google推出Gemini Omni 1.1 Flash视频生成模型</h2>
+                <p class="card-content">新增场景扩展、首尾帧插值、视频参考和高分辨率输出功能。支持每次10秒扩展累计40秒，360p草稿模式生成速度提升60%。</p>
+                <p class="card-source">📎 来源：Google</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔒 安全</span>
+                <div class="card-emoji">🔒</div>
+                <h2 class="card-title">OpenAI/Anthropic/Google联合签署AI网络安全公开信</h2>
+                <p class="card-content">超过100家公司联署公开信，呼吁"全球网络安全防御大动员"。签署方警告AI网络攻击将更加普遍，呼吁将网络能力AI交到防御者手中。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-comm">🛒 互联网</span>
+                <div class="card-emoji">🛒</div>
+                <h2 class="card-title">Google AI Mode新增酒店预订功能</h2>
+                <p class="card-content">Google AI Mode即将支持酒店预订，覆盖Expedia、Booking.com、希尔顿、万豪等主流平台。用户还可设置航班追踪，以积分或里程查看价格。</p>
+                <p class="card-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 结尾大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-game">🎮 硬件</span>
+                <div class="card-emoji">🕹️</div>
+                <h2 class="card-title">Xbox 25周年限量版绿色Series X主机售罄：eBay转售价超2000美元</h2>
+                <p class="card-content">微软Xbox 25周年限量版绿色Series X主机以899.99美元开售，短时间内即告售罄。eBay上已确认的预购订单转售价格超过2000美元，收藏价值凸显。该主机采用独特绿色设计，配备定制手柄和包装。</p>
+                <p class="card-source">📎 来源：The Verge / Polygon</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>共10条新闻 · 整理自多个可靠科技媒体 · 2026年8月28日</p>
+        </footer>
+    </div>
+</body>
+</html>

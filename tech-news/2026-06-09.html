@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-06-09 科技行业新闻简报</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: auto;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #e0e0e0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.date-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #64ffda;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.main-title {
+  font-size: 42px;
+  font-weight: 900;
+  background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 1px;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.news-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100,255,218,0.2);
+}
+.news-card.large {
+  grid-column: 1 / -1;
+}
+.tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+.tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; border: 1px solid rgba(100,255,218,0.3); }
+.tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; border: 1px solid rgba(255,167,38,0.3); }
+.tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; border: 1px solid rgba(206,147,216,0.3); }
+.tag-comm { background: rgba(100,181,246,0.15); color: #64b5f6; border: 1px solid rgba(100,181,246,0.3); }
+.tag-biz { background: rgba(129,199,132,0.15); color: #81c784; border: 1px solid rgba(129,199,132,0.3); }
+.tag-car { background: rgba(255,138,101,0.15); color: #ff8a65; border: 1px solid rgba(255,138,101,0.3); }
+.emoji-large {
+  font-size: 32px;
+  margin-bottom: 8px;
+  display: block;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.card-body {
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.card-source {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  font-style: italic;
+  font-weight: 400;
+}
+footer {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 0.5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="date-label">TUESDAY · JUNE 9 · 2026</div>
+  <h1 class="main-title">科技行业新闻简报</h1>
+  <p class="subtitle">AI · 苹果 · 芯片 · 汽车 · 商业 &nbsp;|&nbsp; 整理时间 08:30</p>
+</header>
+
+<!-- 第1条：头条大卡片 -->
+<div class="news-card large">
+  <span class="tag tag-ai">🤖 AI</span>
+  <span class="emoji-large">🔥</span>
+  <h2 class="card-title">Apple WWDC26 发布全面升级 Siri AI：接入 Google Gemini，智能体架构重磅革新</h2>
+  <p class="card-body">苹果在 WWDC26 开幕式 Keynote 发布全新 Apple 智能架构，Siri 全面升级为 Siri AI。新架构引入 Google Gemini 训练技术并重新训练 Apple Foundation Models，支持文字、图像、语音多模态输入。Siri AI 新增独立 App、屏幕感知、App 操作、视觉智能等能力，可提取邮件中的地址自动起草邮件，与「聚焦」搜索深度集成。欧盟与中国大陆地区暂未上线。</p>
+  <p class="card-source">📎 来源：The Verge / 少数派</p>
+</div>
+
+<!-- 第2-9条：双栏普通卡片 -->
+<div class="news-grid">
+
+<div class="news-card">
+  <span class="tag tag-ai">📱 苹果</span>
+  <span class="emoji-large">🍎</span>
+  <h2 class="card-title">iOS 27 / watchOS 27 / macOS Golden Gate 全面更新</h2>
+  <p class="card-body">Safari 新增 AI 标签页自动整理与网页内容监测；密码应用可一键自动更新弱密码；相册新增 AI 消除、扩图、空间构图工具；AirPods 获得自定义 EQ。Liquid Glass 设计语言进一步精调，新系统开发者预览版已上线，今秋正式发布。</p>
+  <p class="card-source">📎 来源：Wired / 少数派</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-ai">🤖 AI</span>
+  <span class="emoji-large">🧠</span>
+  <h2 class="card-title">微软脱离 OpenAI：发布 7 款自研 MAI 模型剑指超级智能</h2>
+  <p class="card-body">微软 AI CEO Mustafa Suleyman 披露微软约 6 个月前已获授权追求"超级智能"，同日发布 MAI 模型家族 7 款，包括旗舰推理模型 MAI-Thinking-1（350 亿参数）、MAI-Code-1-Flash、MAI-Image-2.5 等，所有模型从零训练，使用商业许可数据。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-ai">💻 AI</span>
+  <span class="emoji-large">⚡</span>
+  <h2 class="card-title">Anthropic 80% 生产代码由 Claude 自动编写，吞吐量提升 8 倍</h2>
+  <p class="card-body">Anthropic 发布报告显示 2026 年 5 月超过 80% 生产代码由 Claude 自动编写，代码吞吐量同比增长 8 倍。公司展示「递归自我改进」路线图，Claude Opus 4.6 可持续运行 12 小时任务，Claude Mythos Preview 可超过 16 小时连续问题解决。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-ai">🔧 开源</span>
+  <span class="emoji-large">🔓</span>
+  <h2 class="card-title">Google Gemma 4 12B 发布：支持音视频分析，16GB 笔记本本地运行</h2>
+  <p class="card-body">Google 发布开源模型 Gemma 4 12B，采用创新"统一"无编码器架构，音视频数据无需二次编码即可直接输入 LLM 主干。支持 256K token 上下文、原生工具调用、逐步推理模式，Apache 2.0 许可证，已在 Hugging Face 上线。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-chip">📡 芯片</span>
+  <span class="emoji-large">📡</span>
+  <h2 class="card-title">高通 Computex 发布"计算连续体"：推动 AI 分布式推理部署</h2>
+  <p class="card-body">高通 CEO 安蒙在 Computex 发布"计算连续体"概念，将 AI 推理能力从毫瓦级可穿戴设备到千瓦级数据中心统一编排。同步发布骁龙 C 平台（入门级笔记本无风扇设计）和 Dragonwing IQ10 机器人参考设计（700 TOPS 算力）。</p>
+  <p class="card-source">📎 来源：智东西（zhidx.com）</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-chip">💻 硬件</span>
+  <span class="emoji-large">🖥️</span>
+  <h2 class="card-title">微软 Surface RTX Spark Dev Box：128GB 统一内存，本地跑千亿参数模型</h2>
+  <p class="card-body">微软发布 Surface RTX Spark Dev Box，搭载 Nvidia Blackwell RTX Spark 处理器和 128GB 统一内存，可加载运行超过 1000 亿参数模型无需云端 API，将于今年通过 Microsoft.com 独家销售，此举显示微软在 AI 经济学上的战略转移。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-ai">🔐 安全</span>
+  <span class="emoji-large">🔐</span>
+  <h2 class="card-title">微软发布 MXC：OS 级 AI 智能体安全沙箱，OpenAI/Nvidia 已加入</h2>
+  <p class="card-body">微软发布 Microsoft Execution Containers（MXC），嵌入 Windows 内核的策略驱动执行层，精确声明 AI 智能体访问边界并由 OS 内核强制执行。智能体执行与桌面、剪贴板、UI 完全隔离并绑定强身份，OpenAI 和 Nvidia 已宣布加入支持。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+<div class="news-card">
+  <span class="tag tag-comm">📡 通信</span>
+  <span class="emoji-large">🛰️</span>
+  <h2 class="card-title">Perplexity AI 发布混合本地云推理系统：自动判断任务路由</h2>
+  <p class="card-body">Perplexity AI 在 Computex 2026 发布首个混合本地-云端推理编排系统，实时自动判断哪些任务保留本地、哪些发送到云端 Frontier 模型，敏感数据留本地、重度推理任务送云端，无需用户预先选择。</p>
+  <p class="card-source">📎 来源：VentureBeat</p>
+</div>
+
+</div>
+
+<!-- 第10条：重要大卡片（航天/重大突破） -->
+<div class="news-card large">
+  <span class="tag tag-biz">🚀 商业</span>
+  <span class="emoji-large">🚀</span>
+  <h2 class="card-title">OpenAI 秘密提交 IPO 申请：AI 行业最大规模上市加速推进</h2>
+  <p class="card-body">据英国《金融时报》报道，OpenAI 已向相关机构秘密提交 IPO 申请，公司正推进自 2023 年以来最大规模重组，此前已完成约 400 亿美元融资、估值超 1500 亿美元。OpenAI 同时宣布对 ChatGPT 进行史上最大幅度升级改造，新增代码开发工具与 AI 智能体功能，目标打造"超级应用"，提升上市前营收。</p>
+  <p class="card-source">📎 来源：Wired / 少数派</p>
+</div>
+
+<footer>
+  <p>📊 2026-06-09 科技行业新闻简报 · 共 10 条 · Mochi 整理</p>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-10-20 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .date-line {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #64ffda;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .main-title {
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: #8899aa;
+    letter-spacing: 1px;
+  }
+
+  /* NEWS GRID */
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* LARGE CARD (头条 & 末条) */
+  .news-card.large {
+    grid-column: 1 / -1;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 28px 32px;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .news-card.large .card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+  }
+
+  .news-card.large .card-body {
+    flex: 1;
+  }
+
+  /* NORMAL CARD */
+  .news-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s;
+  }
+
+  .news-card:hover {
+    border-color: rgba(100, 255, 218, 0.3);
+  }
+
+  .card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  /* TAG */
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .tag-ai    { background: rgba(100, 255, 218, 0.15); color: #64ffda; }
+  .tag-chip  { background: rgba(255, 167, 38, 0.15);  color: #ffa726; }
+  .tag-robot { background: rgba(206, 147, 216, 0.15);  color: #ce93d8; }
+  .tag-comm  { background: rgba(100, 181, 246, 0.15); color: #64b5f6; }
+  .tag-biz   { background: rgba(129, 199, 132, 0.15); color: #81c784; }
+  .tag-sec   { background: rgba(255, 138, 101, 0.15);  color: #ff8a65; }
+  .tag-space { background: rgba(128, 203, 196, 0.15);  color: #80cbc4; }
+
+  /* EMOJI BIG */
+  .emoji-big {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  /* CARD NUMBER */
+  .card-num {
+    font-size: 11px;
+    color: #556677;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  /* NEWS TITLE */
+  .news-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .large .news-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* NEWS DESC */
+  .news-desc {
+    font-size: 13px;
+    color: #99aabb;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+
+  /* SOURCE */
+  .news-source {
+    font-size: 11px;
+    color: #667788;
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 10px;
+    margin-top: auto;
+  }
+
+  .news-source strong {
+    color: #64b5f6;
+    font-style: normal;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #556677;
+  }
+
+  footer span {
+    color: #64ffda;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="date-line">TUESDAY · 2026-10-20 · 08:30 CST</div>
+    <h1 class="main-title">�TECH DAILY</h1>
+    <p class="subtitle">科技行业新闻简报 · 每日早8点更新</p>
+  </header>
+
+  <!-- NEWS GRID -->
+  <div class="news-grid">
+
+    <!-- 1. HEADLINE (large, full width) -->
+    <div class="news-card large">
+      <div class="card-left">
+        <span class="emoji-big">🧠</span>
+        <span class="card-num">01</span>
+      </div>
+      <div class="card-body">
+        <span class="tag tag-ai">AI · 收购</span>
+        <div class="news-title">Apple 收购 AI 音乐创作工具 Samplab，布局生成式音乐生态</div>
+        <div class="news-desc">Apple 正式收购专注 AI 音乐制作的公司 Samplab，将强化 Logic Pro 的 AI 音乐功能。外界认为这是科技巨头在 AI 生成音乐领域的重要布局。</div>
+        <div class="news-source">📎 来源：<strong>The Verge</strong></div>
+      </div>
+    </div>
+
+    <!-- 2. NVIDIA VL Model -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🤖</span>
+        <span class="card-num">02</span>
+      </div>
+      <span class="tag tag-ai">AI · 芯片</span>
+      <div class="news-title">英伟达发布 Nemotron 3.5 Super VL：1200 亿参数开源多模态模型</div>
+      <div class="news-desc">该模型可处理 PDF、图表、表格和网页，在多项专业基准测试中超越 Claude Opus 5 和 GPT-6.1 Sol，企业可基于自有数据对模型进行后训练。</div>
+      <div class="news-source">📎 来源：<strong>VentureBeat</strong></div>
+    </div>
+
+    <!-- 3. Amazon TorchNeuron -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🔧</span>
+        <span class="card-num">03</span>
+      </div>
+      <span class="tag tag-chip">芯片 · 云计算</span>
+      <div class="news-title">Amazon 推出 TorchNeuron：撼动英伟达 CUDA 护城河</div>
+      <div class="news-desc">通过 TorchNeuron，开发者仅改一行配置即可将 PyTorch 应用迁移至 Amazon 自研 Trainium 芯片，Deepgram 迁移后每美元处理量提升 70%。</div>
+      <div class="news-source">📎 来源：<strong>TechCrunch</strong></div>
+    </div>
+
+    <!-- 4. Microsoft Security -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🛡️</span>
+        <span class="card-num">04</span>
+      </div>
+      <span class="tag tag-sec">安全</span>
+      <div class="news-title">微软警告：前沿 AI 模型不可信任，Agent 如同内部威胁</div>
+      <div class="news-desc">微软安全团队发布重磅报告称"frontier models cannot be trusted"，并推出 Project Perception 安全系统，用于监控和管控 AI Agent 行为。</div>
+      <div class="news-source">📎 来源：<strong>The Verge / TechCrunch</strong></div>
+    </div>
+
+    <!-- 5. OpenCode Hack -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🏴‍☠️</span>
+        <span class="card-num">05</span>
+      </div>
+      <span class="tag tag-sec">安全</span>
+      <div class="news-title">AI 编程工具 OpenCode 遭黑客攻击，用户账户被滥用</div>
+      <div class="news-desc">黑客入侵 OpenCode 用户账号，在用户 AI 服务账户上产生大量费用。安全专家提醒用户及时检查账单并启用双因素认证。</div>
+      <div class="news-source">📎 来源：<strong>TechCrunch</strong></div>
+    </div>
+
+    <!-- 6. Amazon Nuclear -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">⚡</span>
+        <span class="card-num">06</span>
+      </div>
+      <span class="tag tag-biz">商业 · 能源</span>
+      <div class="news-title">Amazon 投资 12 座小型核反应堆，为 AI 数据中心供能</div>
+      <div class="news-desc">Amazon 将在印第安纳州退役煤电厂旧址建设 12 座小型模块化核反应堆（SMR），这是科技公司对核能最大规模的投资之一。</div>
+      <div class="news-source">📎 来源：<strong>TechCrunch</strong></div>
+    </div>
+
+    <!-- 7. Amazon Luna -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🎵</span>
+        <span class="card-num">07</span>
+      </div>
+      <span class="tag tag-comm">云计算 · 游戏</span>
+      <div class="news-title">Amazon Luna 云游戏登陆 Prime Video，扩展至更多欧洲国家</div>
+      <div class="news-desc">Prime Video 内置 Luna 云游戏服务新上线加拿大、法国、意大利和西班牙，11 月将进一步扩展至德国、荷兰等 8 个欧洲市场。</div>
+      <div class="news-source">📎 来源：<strong>The Verge</strong></div>
+    </div>
+
+    <!-- 8. Rivian -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">🏎️</span>
+        <span class="card-num">08</span>
+      </div>
+      <span class="tag tag-robot">自动驾驶</span>
+      <div class="news-title">Rivian CEO：自动驾驶将带来"根本性不同"的汽车设计</div>
+      <div class="news-desc">Rivian CEO 表示完全自动驾驶技术将使方向盘、踏板不再是必需，车内空间将转变为真正的"生活空间"，呼应特斯拉 Robotaxi 设计理念。</div>
+      <div class="news-source">📎 来源：<strong>TechCrunch</strong></div>
+    </div>
+
+    <!-- 9. Town Unicorn -->
+    <div class="news-card">
+      <div class="card-left">
+        <span class="emoji-big">💰</span>
+        <span class="card-num">09</span>
+      </div>
+      <span class="tag tag-biz">AI · 创业</span>
+      <div class="news-title">AI 助手 Town 成立 4 个月晋身独角兽，估值超 10 亿美元</div>
+      <div class="news-desc">AI 个人助手初创公司 Town 完成新一轮融资，估值突破 10 亿美元，成为 2026 年最快晋身独角兽行列的 AI 创业公司。</div>
+      <div class="news-source">📎 来源：<strong>TechCrunch</strong></div>
+    </div>
+
+    <!-- 10. JAXA Mars Moon Mission (large, full width) -->
+    <div class="news-card large">
+      <div class="card-left">
+        <span class="emoji-big">🛰️</span>
+        <span class="card-num">10</span>
+      </div>
+      <div class="card-body">
+        <span class="tag tag-space">航天 · 探测</span>
+        <div class="news-title">JAXA 主导 MMX 任务：日本挑战最复杂星际探测，从火星卫星带回样本</div>
+        <div class="news-desc">日本宇宙航空研究开发机构（JAXA）主导的国际火星卫星探测任务（MMX）正式启动，计划从火星福波斯卫星采集样本并带回地球。若成功，将首次为人类带回火星卫星样本，开启太阳系演化研究新篇章。</div>
+        <div class="news-source">📎 来源：<strong>Wired</strong></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    📊 本简报精选自 The Verge · TechCrunch · VentureBeat · Wired · 共 <span>10</span> 条新闻 ·
+    整理时间：2026-10-20 08:30
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);font-family:"Noto Sans CJK SC","Microsoft YaHei",-apple-system,sans-serif;color:#e8ecf5;padding:40px 30px}
+.wrap{width:900px;margin:0 auto}
+header{text-align:center;margin-bottom:40px}
+.date{color:#4fd1e0;font-size:14px;letter-spacing:3px;margin-bottom:12px}
+h1{font-size:42px;font-weight:800;background:linear-gradient(90deg,#4fd1e0,#7f9cf5,#f687b3);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.25}
+.sub{color:#9aa7c4;font-size:13px;margin-top:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px 24px;transition:.2s}
+.card.large{grid-column:1/-1}
+.num{font-size:13px;color:#4fd1e0;font-weight:700;letter-spacing:1px}
+.ttl{font-size:19px;font-weight:700;margin:8px 0 10px;line-height:1.45}
+.large .ttl{font-size:26px}
+.desc{font-size:14px;color:#b8c3da;line-height:1.75}
+.src{margin-top:14px;font-size:12px;color:#7f9cf5}
+.src a{color:#7f9cf5;text-decoration:none;word-break:break-all}
+.footer{text-align:center;color:#6b7a99;font-size:12px;margin-top:36px}
+</style></head><body><div class="wrap">
+<header>
+<div class="date">2026 · 10 · 25 &nbsp; 08:30 CST</div>
+<h1>科技行业新闻简报</h1>
+<div class="sub">今日精选 10 条 · 来源：TechCrunch / Ars Technica / WIRED / IT之家 / 36氪</div>
+</header>
+<div class="grid">
+
+<div class="card large"><div class="num">NO.01</div><div class="ttl">🐛 PHP "Meltdown" 敲响警钟：AI 正在放大漏洞可利用性</div><div class="desc">两个关键的 PHP 底层漏洞几乎一度让互联网陷入瘫痪，WIRED 与 TechCrunch 复盘了这次事件，并指出一个更严峻的趋势——AI 辅助的漏洞挖掘让原本需要专家数周才能发现的缺陷，在极短时间内被自动化利用。PHP 基金会负责人也坦言资金告急，目前仅剩 1 名全职员工。</div><div class="src">📎 来源：WIRED &nbsp;·&nbsp; <a href="https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/">wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/</a></div></div>
+
+<div class="card"><div class="num">NO.02</div><div class="ttl">🧠 OpenAI 宣布不再用"实时互联网"训练模型</div><div class="desc">理由是存在"重大风险"。这一转向意味着依赖公开网络数据迭代的模型厂商需换赛道，合成数据与授权语料将成为行业主线。</div><div class="src">📎 来源：TechCrunch &nbsp;·&nbsp; <a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/">techcrunch.com/2026/10/23/...</a></div></div>
+
+<div class="card"><div class="num">NO.03</div><div class="ttl">🎙️ Block 发布全新语音模型，声音"逼真得瘆人"</div><div class="desc">语音合成正从"能被听出是机器"跨入"难以分辨"的临界点，对客服与陪伴类应用既是能力跃迁，也是新的伦理争议点。</div><div class="src">📎 来源：TechCrunch &nbsp;·&nbsp; <a href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/">techcrunch.com/2026/10/24/...</a></div></div>
+
+<div class="card"><div class="num">NO.04</div><div class="ttl">🚀 GPU Unlock 释放英伟达 RTX 30 系隐藏 AI 算力</div><div class="desc">开源项目通过解锁被封存的 Tensor Core 与 AI 算力单元，实际 AI 性能提升最高可达 60%，对本地部署大模型玩家意义重大。</div><div class="src">📎 来源：IT之家 &nbsp;·&nbsp; <a href="https://www.ithome.com/1/017/525.htm">ithome.com/1/017/525.htm</a></div></div>
+
+<div class="card"><div class="num">NO.05</div><div class="ttl">🎯 字节再整合 AI 应用，小云雀并入即梦</div><div class="desc">把对话助手与图像视频创作能力合并到统一入口，反映出国内大厂 AI 端侧应用正在进入"减法"阶段。</div><div class="src">📎 来源：36氪快讯 &nbsp;·&nbsp; <a href="https://www.36kr.com/newsflashes/4039686487364480">36kr.com/newsflashes/4039686487364480</a></div></div>
+
+<div class="card"><div class="num">NO.06</div><div class="ttl">🛒 Instacart 据报曾与 DoorDash、Uber 洽谈出售</div><div class="desc">三家本地生活与即时零售巨头的潜在整合，将显著改变北美外卖与生鲜零售的竞争格局。</div><div class="src">📎 来源：TechCrunch &nbsp;·&nbsp; <a href="https://techcrunch.com/2026/10/24/instacart-reportedly-discussed-selling-itself-with-doordash-and-uber/">techcrunch.com/2026/10/24/...</a></div></div>
+
+<div class="card"><div class="num">NO.07</div><div class="ttl">🏭 Intel 获豁免：外国制造机器人禁令不冲击自家晶圆厂</div><div class="desc">凸显 AI 硬件产业链与贸易/国安政策交叉叠加，企业合规风险正深入到供应链身份认定层面。</div><div class="src">📎 来源：Ars Technica &nbsp;·&nbsp; <a href="https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs/">arstechnica.com/ai/2026/10/...</a></div></div>
+
+<div class="card"><div class="num">NO.08</div><div class="ttl">🌕 NASA 调整登月着陆器方案，解决 Orion 遗留难题</div><div class="desc">新方案将影响 2030 年前重返月球的时间表，也为后续月球基地建设排除了关键工程隐患。</div><div class="src">📎 来源：Ars Technica &nbsp;·&nbsp; <a href="https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/">arstechnica.com/space/2026/10/...</a></div></div>
+
+<div class="card"><div class="num">NO.09</div><div class="ttl">🤖 腾讯 WorkBuddy 接入模型 Kimi-K3.1-Pro</div><div class="desc">国内厂商"产品 + 外部大模型"的组合策略加速，企业级 Agent 赛道的竞争愈发密集。</div><div class="src">📎 来源：36氪快讯 &nbsp;·&nbsp; <a href="https://www.36kr.com/newsflashes/4039662177653892">36kr.com/newsflashes/4039662177653892</a></div></div>
+
+<div class="card large"><div class="num">NO.10</div><div class="ttl">🤖✨ 智元 110 台人形机器人同台共舞，刷新吉尼斯世界纪录</div><div class="desc">智元机器人让 110 台人形机器人同时完成编舞表演，刷新吉尼斯世界纪录。从"单机表演"到"百机同步"，人形机器人的群体协同控制与量产能力正在被公开验证，也是国产人形机器人走向规模化落地的重要标志。</div><div class="src">📎 来源：36氪快讯 &nbsp;·&nbsp; <a href="https://www.36kr.com/newsflashes/4039510353007750">36kr.com/newsflashes/4039510353007750</a></div></div>
+
+</div>
+<div class="footer">本简报由 Mochi 自动采集整理 · 仅供快速浏览参考</div>
+</div></body></html>

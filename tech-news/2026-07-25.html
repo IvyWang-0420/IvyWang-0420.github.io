@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-07-25 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            font-size: 14px;
+            color: #64ffda;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .news-card .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100, 255, 218, 0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255, 167, 38, 0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206, 147, 216, 0.2); color: #ce93d8; }
+        .tag-comms { background: rgba(100, 181, 246, 0.2); color: #64b5f6; }
+        .tag-business { background: rgba(129, 199, 132, 0.2); color: #81c784; }
+        .tag-space { background: rgba(255, 138, 101, 0.2); color: #ff8a65; }
+        .news-card .emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .news-card .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .news-card .content {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .news-card .source {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026年7月25日 · 周六</div>
+            <h1 class="main-title">🚀 科技行业新闻简报</h1>
+            <p class="subtitle">精选10条 · 8:30 更新</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 头条大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-space">🚀 航天</span>
+                <div class="emoji">🚀</div>
+                <h2 class="title">SpaceX 第13次星舰试飞成功发射，部署20颗V3星链卫星</h2>
+                <p class="content">SpaceX 第13次星舰测试飞行于周五晚成功发射，部署了20颗V3版星链卫星。虽然Super Heavy助推器发动机在尝试软着陆时出现问题，但整体测试仍取得重要进展。本周特斯拉和SpaceX股价分别下跌18%和7%，对马斯克而言此次测试意义重大。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="emoji">🤖</div>
+                <h2 class="title">百度发布"百度搭子"通用智能体</h2>
+                <p class="content">百度在WAIC 2026发布通用智能体"百度搭子"，能自主拆解步骤、调用工具，完成文件处理、数据分析、PPT制作的全流程交付，入选展会"镇馆之宝"。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🎧 硬件</span>
+                <div class="emoji">🎧</div>
+                <h2 class="title">阿里千问发布首款AI耳夹式耳机</h2>
+                <p class="content">阿里千问首款AI智能体耳机首次亮相，采用耳夹式设计，融入千问AI助手能力，支持同声传译、会议纪要、健康记录等功能。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-robot">📱 机器人</span>
+                <div class="emoji">📱</div>
+                <h2 class="title">荣耀Robot Phone开放预约</h2>
+                <p class="content">荣耀Robot Phone机器人手机自7月18日起全渠道开放预约，搭载可探出头观察世界的云台，是本届WAIC热度最高的AI硬件之一。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🧠 AI</span>
+                <div class="emoji">🧠</div>
+                <h2 class="title">Inflection AI携Pi Journeys重返消费市场</h2>
+                <p class="content">Inflection AI成立公共研究部门并发布Pi Journeys，能适应用户人生阶段（成为父母、职业转变等），为Pi聊天机器人带来重大升级。</p>
+                <p class="source">📎 来源：VentureBeat</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💾 芯片</span>
+                <div class="emoji">💾</div>
+                <h2 class="title">奕行智能发布首个RISC-V AI算力超节点</h2>
+                <p class="content">国内RISC-V AI芯片独角兽奕行智能在WAIC发布业界首个RISC-V AI算力超节点方案，基于自研Epoch芯片实现全栈自主可控。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 大模型</span>
+                <div class="emoji">🔥</div>
+                <h2 class="title">国产Fable级模型集体爆发</h2>
+                <p class="content">2.8T参数Kimi K3开源即爆火，DeepSeek-V4灰测中，阿里发布2.4T参数Qwen3.8预览版号称"只输Fable 5"，国产大模型迎来爆发期。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-business">💼 商业</span>
+                <div class="emoji">📊</div>
+                <h2 class="title">Intel报告15年来最强营收增长</h2>
+                <p class="content">Intel CEO表示AI驱动算力需求，Q2财报实现15年来最强营收增长，CPU、ASICs、先进封装和晶圆代工业务全面增长。</p>
+                <p class="source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-business">🌍 行业</span>
+                <div class="emoji">🌐</div>
+                <h2 class="title">欧盟对谷歌罚款10亿美元</h2>
+                <p class="content">欧盟委员会对谷歌处以10亿美元罚款，指控其在搜索结果中非法偏袒自家服务。特朗普警告将对欧洲实施"实质性"关税。</p>
+                <p class="source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第10条 大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-robot">🤖 机器人</span>
+                <div class="emoji">🦾</div>
+                <h2 class="title">我国四足机器人占全球销量近70%，人形机器人超400款</h2>
+                <p class="content">工信部数据显示，我国研发的四足机器人占全球销量份额接近70%，人形机器人整机产品达400余款、超全球半数。机器人进入"真干活"元年，但场景演示同质化严重，散热和续航仍是难题。</p>
+                <p class="source">📎 来源：智东西</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📌 本简报综合自The Verge、VentureBeat、Wired、智东西等媒体 | 共10条精选新闻</p>
+        </footer>
+    </div>
+</body>
+</html>

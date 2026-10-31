@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-04-27 科技行业新闻简报</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    color: #e0e0e0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .date {
+    font-size: 13px;
+    color: #64ffda;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  .main-title {
+    font-size: 42px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+  .news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .news-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .news-card.large {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+  }
+  .tag-ai { background: rgba(100,255,218,0.15); color: #64ffda; }
+  .tag-robot { background: rgba(206,147,216,0.15); color: #ce93d8; }
+  .tag-chip { background: rgba(255,167,38,0.15); color: #ffa726; }
+  .tag-comms { background: rgba(100,181,246,0.15); color: #64b5f6; }
+  .tag-energy { background: rgba(129,199,132,0.15); color: #81c784; }
+  .tag-auto { background: rgba(255,183,77,0.15); color: #ffb74d; }
+
+  .card-emoji {
+    font-size: 32px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .card-content { flex: 1; }
+  .card-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .card-text {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+  }
+  .card-source {
+    font-size: 12px;
+    color: rgba(255,255,255,0.38);
+    font-style: italic;
+    margin-top: 4px;
+  }
+  .footer {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    color: rgba(255,255,255,0.35);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="date">2026.04.27 · MONDAY</div>
+    <h1 class="main-title">科技行业新闻简报</h1>
+    <p class="subtitle">精选每日科技资讯 · 来源：36氪 / 新浪科技 / 证券时报 等</p>
+  </header>
+
+  <div class="news-grid">
+
+    <!-- 头条大卡片 -->
+    <div class="news-card large">
+      <div class="card-emoji">🧠</div>
+      <div class="card-content">
+        <span class="tag tag-ai">AI</span>
+        <div class="card-title">蚂蚁灵光 App 上线"体验世界模型"功能</div>
+        <div class="card-text">业界首个可在移动端体验世界模型的 AGI 产品发布。用户上传一张图片，即可在手机上最长 60 秒探索 3D 世界，用手游操控视角像玩游戏一样走动探索，触发到开始仅需秒级响应。</div>
+        <div class="card-source">📎 来源：36氪</div>
+      </div>
+    </div>
+
+    <!-- 第2条 -->
+    <div class="news-card">
+      <span class="tag tag-robot">机器人</span>
+      <div class="card-title">星动纪元获 2 亿美元新融资，顺丰集团领投</div>
+      <div class="card-text">人形机器人头部企业星动纪元完成 2 亿美元新一轮融资，顺丰集团领投。融资将加速其技术研发与商业化落地进程。</div>
+      <div class="card-source">📎 来源：新浪财经</div>
+    </div>
+
+    <!-- 第3条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <div class="card-title">中科创达推出滴水 AIOS 2.1 和 Kanzi 4</div>
+      <div class="card-text">专为 AIOS 而生的新一代汽车 HMI 引擎 Kanzi 4 发布，完成操作系统从内核到应用的全栈重构，智能座舱由"被动响应"向"主动全域智能"进阶。</div>
+      <div class="card-source">📎 来源：36氪</div>
+    </div>
+
+    <!-- 第4条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <div class="card-title">DeepSeek 大幅降价，AI 模型调用成本持续走低</div>
+      <div class="card-text">DeepSeek 今日宣布大幅下调大模型 API 调用价格，推动 AI 技术普惠化应用，预计加速 AI 在各行业的渗透。</div>
+      <div class="card-source">📎 来源：新浪科技</div>
+    </div>
+
+    <!-- 第5条 -->
+    <div class="news-card">
+      <span class="tag tag-auto">汽车</span>
+      <div class="card-title">小鹏汽车在广州成立新科技公司，注册资本 6 亿元</div>
+      <div class="card-text">广州鹏研科技成立，经营范围含智能机器人研发、服务消费机器人制造、可穿戴智能设备制造，由小鹏汽车全资持股。</div>
+      <div class="card-source">📎 来源：36氪</div>
+    </div>
+
+    <!-- 第6条 -->
+    <div class="news-card">
+      <span class="tag tag-energy">能源</span>
+      <div class="card-title">一季度氢能、新型储能等领域投资加快释放</div>
+      <div class="card-text">国家能源局发布一季度能源数据，氢能、煤制油气、新型储能投资加快。全国首个民营资本核电项目浙江三澳 1 号机组并网发电。</div>
+      <div class="card-source">📎 来源：证券时报</div>
+    </div>
+
+    <!-- 第7条 -->
+    <div class="news-card">
+      <span class="tag tag-energy">充电桩</span>
+      <div class="card-title">全国充电桩达 2148 万个，一季度同比增长 46.9%</div>
+      <div class="card-text">截至 3 月底全国充电基础设施达 2148.1 万个，公共充电桩 486.3 万个，私人充电桩 1661.8 万个，私人桩增速高达 53.5%。</div>
+      <div class="card-source">📎 来源：国家能源局 / 36氪</div>
+    </div>
+
+    <!-- 第8条 -->
+    <div class="news-card">
+      <span class="tag tag-ai">AI</span>
+      <div class="card-title">B 站举办首届 AI 造物联赛，AI 智能体搜索增长超 500%</div>
+      <div class="card-text">哔哩哔哩开启《硅碳合战·S1——首届 bilibili AI 造物联赛》，2026 年 AI Agent、AI 创业等关键词搜索量同比增长超 500%。</div>
+      <div class="card-source">📎 来源：36氪</div>
+    </div>
+
+    <!-- 第9条 -->
+    <div class="news-card">
+      <span class="tag tag-auto">汽车</span>
+      <div class="card-title">腾势 Z 北京车展首秀：超 1000 匹马力，零百 2 秒内</div>
+      <div class="card-text">腾势 Z 亮相北京车展，拥有超 1000 匹马力，零百加速跑进 2 秒，将于今年 7 月全球上市，代表国产高端电动性能车新高度。</div>
+      <div class="card-source">📎 来源：新浪科技</div>
+    </div>
+
+    <!-- 第10条大卡片（重要事件） -->
+    <div class="news-card large">
+      <div class="card-emoji">🚗</div>
+      <div class="card-content">
+        <span class="tag tag-auto">汽车</span>
+        <div class="card-title">理想 L9 Livis 首秀：自研 800V 主动悬架，5 月 15 日上市</div>
+        <div class="card-text">全新理想 L9 Livis 北京车展首秀，搭载自研 800V 主动悬架系统，将于 5 月 15 日正式上市。理想汽车旗舰 SUV 实现底盘智能化重大突破，在底盘控制精度与舒适性方面达到新高度。</div>
+        <div class="card-source">📎 来源：新浪科技</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    共 10 条精选科技新闻 · 整理自公开网络资讯 · 2026-04-27
+  </footer>
+
+</div>
+</body>
+</html>

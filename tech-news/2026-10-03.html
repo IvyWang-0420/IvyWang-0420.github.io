@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-10-03 科技行业新闻简报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .date {
+            color: #64ffda;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .main-title {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #64ffda, #00bcd4, #03a9f4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: rgba(255,255,255,0.6);
+            font-size: 16px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .news-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.2s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-2px);
+        }
+        .news-card.large {
+            grid-column: 1 / -1;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .tag-ai { background: rgba(100,255,218,0.2); color: #64ffda; }
+        .tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+        .tag-robot { background: rgba(206,147,216,0.2); color: #ce93d8; }
+        .tag-comm { background: rgba(100,181,246,0.2); color: #64b5f6; }
+        .tag-biz { background: rgba(129,199,132,0.2); color: #81c784; }
+        .tag-security { background: rgba(239,83,80,0.2); color: #ef5350; }
+        .tag-mobile { background: rgba(255,112,67,0.2); color: #ff7043; }
+        .tag-entertainment { background: rgba(255,202,40,0.2); color: #ffca28; }
+        .tag-cloud { background: rgba(41,182,246,0.2); color: #29b6f6; }
+        .tag-chip { background: rgba(255,167,38,0.2); color: #ffa726; }
+        .news-emoji {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .news-content {
+            font-size: 14px;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .news-source {
+            font-size: 12px;
+            color: rgba(255,255,255,0.45);
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">2026-10-03 · SAT</div>
+            <h1 class="main-title">科技行业新闻简报</h1>
+            <p class="subtitle">每日精选 · 10条前沿科技资讯</p>
+        </header>
+        
+        <div class="news-grid">
+            <!-- 第1条：通栏大卡片（头条） -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🔥 头条</span>
+                <div class="news-emoji">🤝</div>
+                <h2 class="news-title">特朗普白宫宴请AI领袖签署AI协议，OpenAI等企业"自我监管"应对风险</h2>
+                <p class="news-content">特朗普在白宫宴请AI领袖企业高管，签署AI协议，提出"自我监管"应对AI风险。OpenAI、Anthropic、Google、Microsoft等主要AI企业参与此次闭门会议。协议内容主要涉及AI安全标准制定、企业自律机制以及政府与行业的协作框架。</p>
+                <p class="news-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第2条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🤖 AI</span>
+                <div class="news-emoji">🧠</div>
+                <h2 class="news-title">OpenAI发布Dot智能体，Apple移动睡眠呼吸暂停提示软件国内获批</h2>
+                <p class="news-content">OpenAI正式发布Dot智能体，这是其面向消费者的首个Agent产品，具备多步骤任务执行能力。Apple的移动睡眠呼吸暂停迹象提示软件获得国内医疗器械批准。</p>
+                <p class="news-source">📎 来源：少数派</p>
+            </div>
+            
+            <!-- 第3条 -->
+            <div class="news-card">
+                <span class="tag tag-chip">💻 芯片</span>
+                <div class="news-emoji">⚡</div>
+                <h2 class="news-title">高通发布2nm双旗舰芯片，为智能体AI重造架构</h2>
+                <p class="news-content">高通发布最新2nm制程双旗舰芯片，专为智能体AI设计。该芯片支持在手机上运行300亿参数大模型，实现端侧AI推理能力的重大突破。</p>
+                <p class="news-source">📎 来源：智东西</p>
+            </div>
+            
+            <!-- 第4条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔒 安全</span>
+                <div class="news-emoji">🚨</div>
+                <h2 class="news-title">加州男子因走私3亿美元Nvidia AI芯片至中国被捕</h2>
+                <p class="news-content">美国司法部逮捕加州男子Greg Lui，涉嫌多年密谋将受出口管制的Nvidia AI芯片（H200系列）通过马来西亚或新加坡转运至中国，涉案金额超3亿美元。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第5条 -->
+            <div class="news-card">
+                <span class="tag tag-ai">🦙 AI</span>
+                <div class="news-emoji">🗣️</div>
+                <h2 class="news-title">Anthropic秘密游说梵蒂冈：Claude已有意识</h2>
+                <p class="news-content">AI公司Anthropic被曝秘密游说梵蒂冈，声称其AI助手Claude已经具备意识。这一爆料引发AI伦理和安全广泛讨论，Anthropic尚未正式回应。</p>
+                <p class="news-source">📎 来源：虎嗅/新智元</p>
+            </div>
+            
+            <!-- 第6条 -->
+            <div class="news-card">
+                <span class="tag tag-mobile">📱 手机</span>
+                <div class="news-emoji">📶</div>
+                <h2 class="news-title">iPhone 18 Pro Max存在AT&T蜂窝服务问题</h2>
+                <p class="news-content">少量iPhone 18 Pro Max用户在AT&T网络上可能出现蜂窝服务完全中断的问题。Apple已发布iOS 27.0.1更新修复，但已受影响用户需进行硬件更换。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第7条 -->
+            <div class="news-card">
+                <span class="tag tag-security">🔒 安全</span>
+                <div class="news-emoji">💻</div>
+                <h2 class="news-title">ChatGPT Mac应用存在漏洞，可能泄露敏感数据</h2>
+                <p class="news-content">OpenAI的ChatGPT Mac应用被发现存在安全漏洞，可能允许攻击者获取用户敏感数据。该漏洞已被修复，OpenAI建议所有Mac用户更新至最新版本。</p>
+                <p class="news-source">📎 来源：Wired</p>
+            </div>
+            
+            <!-- 第8条 -->
+            <div class="news-card">
+                <span class="tag tag-entertainment">🎬 影视</span>
+                <div class="news-emoji">🎮</div>
+                <h2 class="news-title">Sony拿下《Battlefield》电影改编权，迈克尔·B·乔丹主演</h2>
+                <p class="news-content">Sony Pictures击败华纳兄弟、亚马逊、环球和Netflix，成功拿下EA热门FPS游戏《Battlefield》的电影改编权。影片由Christopher McQuarrie执导，男主角由迈克尔·B·乔丹出演。</p>
+                <p class="news-source">📎 来源：The Verge</p>
+            </div>
+            
+            <!-- 第9条 -->
+            <div class="news-card">
+                <span class="tag tag-cloud">☁️ 云计算</span>
+                <div class="news-emoji">🌏</div>
+                <h2 class="news-title">腾讯斥资70亿美元在东南亚采购算力服务</h2>
+                <p class="news-content">腾讯宣布在东南亚地区投资70亿美元用于采购算力服务，重点布局云计算和AI基础设施。此举被视为中国科技企业算力出海战略的重要组成部分。</p>
+                <p class="news-source">📎 来源：虎嗅</p>
+            </div>
+            
+            <!-- 第10条：通栏大卡片 -->
+            <div class="news-card large">
+                <span class="tag tag-ai">🎧 智能穿戴</span>
+                <div class="news-emoji">🔊</div>
+                <h2 class="news-title">2026骁龙峰会：耳机迈入个人AI智能体时代</h2>
+                <p class="news-content">在2026骁龙峰会上，高通宣布其最新芯片将支持耳机从"听音乐"升级为"调用服务"的个人AI智能体。英伟达CEO黄仁勋、高通CEO安蒙、微软CEO纳德拉等科技大佬均参加同期举办的欢迎国宴。</p>
+                <p class="news-source">📎 来源：PingWest</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 共收录10条新闻 | 覆盖AI智能体、芯片半导体、手机数码、网络安全、云计算、影视娱乐等行业动态</p>
+            <p style="margin-top: 8px;">整理时间：2026-10-03 08:30 (Asia/Shanghai)</p>
+        </footer>
+    </div>
+</body>
+</html>
