@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);font-family:"PingFang SC","Microsoft YaHei",-apple-system,sans-serif;color:#e8eaf6;padding:40px 30px}
+.container{max-width:900px;margin:0 auto}
+header{text-align:center;margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.12)}
+.date{font-size:14px;color:#4dd0e1;letter-spacing:3px;margin-bottom:10px}
+h1{font-size:42px;font-weight:800;background:linear-gradient(90deg,#4dd0e1,#7b9cff,#c77dff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.25}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.news-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px 24px;backdrop-filter:blur(4px)}
+.news-card.large{grid-column:1/-1}
+.num{font-size:13px;color:#4dd0e1;font-weight:700;letter-spacing:1px}
+.title{font-size:20px;font-weight:700;margin:8px 0 12px;line-height:1.45}
+.news-card.large .title{font-size:26px}
+.desc{font-size:14.5px;line-height:1.75;color:#b9c0da}
+.src{margin-top:14px;font-size:13px;color:#7b9cff}
+.src a{color:#7b9cff;text-decoration:none;word-break:break-all}
+footer{margin-top:32px;text-align:center;font-size:12.5px;color:#6b7391}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="date">2026 年 11 月 17 日 · 08:30</div>
+<h1>科技行业新闻简报</h1>
+</header>
+<div class="grid">
+
+<div class="news-card large">
+<div class="num">01</div>
+<div class="title">🔥 英伟达发布 Rubin HPC GPU，单卡超 5 万 CUDA 核心创纪录</div>
+<div class="desc">英伟达正式推出 Rubin 架构 HPC GPU，单卡 CUDA 核心数突破 5 万大关，预计 2028 年上市；性能与能效比大幅提升，将继续巩固其 AI 算力霸权。</div>
+<div class="src">📎 来源：IT之家 · <a href="https://www.ithome.com/1/027/998.htm">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">02</div>
+<div class="title">⚖️ 加州总检察长起诉 OpenAI</div>
+<div class="desc">起诉书中同时点名 Hugging Face 遭入侵及其他 AI 模型"失控"事件，认为厂商对智能体风险管控失职。</div>
+<div class="src">📎 来源：The Verge · <a href="https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">03</div>
+<div class="title">🎯 黄仁勋回归风波持续</div>
+<div class="desc">回归议题未进入英伟达董事会议程，已有 18 万人联署呼吁其复职；科技圈流传"回归是被针对"的阴谋论。</div>
+<div class="src">📎 来源：IT之家 · <a href="https://www.ithome.com/1/028/032.htm">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">04</div>
+<div class="title">🔐 Uber 确认数据泄露</div>
+<div class="desc">黑客窃取了接近 15 万份驾驶员驾照信息，公司已展开调查并通知受影响用户。</div>
+<div class="src">📎 来源：TechCrunch · <a href="https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">05</div>
+<div class="title">💻 英特尔 350W 新卡 D270 亮剑</div>
+<div class="desc">针对金融与推理场景性能较英伟达 600W 加速卡提升 5.9 倍，被视为专业市场对英伟达发起正面挑战。</div>
+<div class="src">📎 来源：IT之家 · <a href="https://www.ithome.com/1/027/972.htm">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">06</div>
+<div class="title">🍎 苹果给 iPhone Duo 加入"面部解锁"</div>
+<div class="desc">同时推出全新 Mac 安全控制，应对 AI 智能体时代日益上升的隐私风险。</div>
+<div class="src">📎 来源：WIRED · <a href="https://www.wired.com/story/iphone-duo-is-getting-a-limited-version-of-face-id/">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">07</div>
+<div class="title">⚡ 美国数据中心用电激增</div>
+<div class="desc">约 400 个数据中心用电已超密歇根州全州；超大规模数据中心消耗全国约 2% 电力，能源与环保压力加剧。</div>
+<div class="src">📎 来源：WIRED · <a href="https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">08</div>
+<div class="title">📈 Anthropic 上市前"紧箍咒"</div>
+<div class="desc">要求所有普通员工出售股票前 30 天提交书面计划，将高管级股票交易限制下放到每一位员工。</div>
+<div class="src">📎 来源：IT之家 · <a href="https://www.ithome.com/1/028/040.htm">查看原文</a></div>
+</div>
+
+<div class="news-card">
+<div class="num">09</div>
+<div class="title">📺 苹果为 Apple TV 引入竖屏短视频</div>
+<div class="desc">新增视频播客功能，用户无需订阅即可观看播客，覆盖 iPhone、iPad、Mac 等多端设备。</div>
+<div class="src">📎 来源：IT之家 · <a href="https://www.ithome.com/1/028/042.htm">查看原文</a></div>
+</div>
+
+<div class="news-card large">
+<div class="num">10</div>
+<div class="title">🧪 IBM、费米实验室与英伟达将推出量子协同设计平台</div>
+<div class="desc">三方联手打造面向量子的协同设计平台，推动量子计算与 AI 算力在芯片与系统层面的协同开发，量子计算产业化再进一步。</div>
+<div class="src">📎 来源：36氪快讯 · <a href="https://www.36kr.com/newsflashes/4073078841463682">查看原文</a></div>
+</div>
+
+</div>
+<footer>本简报由 Mochi 自动整理 · 数据来源：TechCrunch / The Verge / Ars Technica / WIRED / IT之家 / 36氪</footer>
+</div>
+</body>
+</html>
